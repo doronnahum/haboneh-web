@@ -1,0 +1,3430 @@
+{
+  "share": {
+    "toggle": {
+      "title": "שיתוף עם המלווה",
+      "description_shared": "המלווה שלכם רואה את הפריט הזה. אפשר להפוך אותו לפרטי בכל רגע.",
+      "description_private": "הפריט פרטי — רק אתם רואים אותו. הפעילו כדי לשתף עם המלווה."
+    }
+  },
+  "app_name": "הבונה",
+  "common": {
+    "continue": "המשך",
+    "cancel": "ביטול",
+    "back": "חזרה",
+    "close": "סגירה",
+    "save": "שמירה",
+    "loading": "טוען...",
+    "error_generic": "שגיאה לא צפויה. נסו שוב.",
+    "inline_error_title": "משהו השתבש",
+    "inline_error_body": "לא הצלחנו לטעון את המידע. הנתונים שלכם שמורים.",
+    "dismiss": "סגירה",
+    "optional": "אופציונלי",
+    "clear": "ניקוי הבחירה",
+    "retry": "נסו שוב",
+    "undo": "בטלו",
+    "notifications_coming_soon": "התראות יגיעו בקרוב",
+    "notifications_bell_a11y": "התראות",
+    "user_avatar_a11y": "פרופיל"
+  },
+  "main_tabs": {
+    "home": "בית",
+    "budget": "תקציב",
+    "expenses": "הוצאות",
+    "tasks": "משימות",
+    "documents": "מסמכים",
+    "community": "קהילה"
+  },
+  "expense": {
+    "form": {
+      "title_create": "הוצאה חדשה",
+      "title_edit": "עריכת הוצאה",
+      "cta_create": "צרו הוצאה",
+      "submit_hint": "כדי להמשיך צריך סכום ותיאור",
+      "discard": {
+        "title": "לצאת בלי לשמור?",
+        "message": "מה שהזנתם לא יישמר.",
+        "discard": "יציאה בלי שמירה",
+        "keep": "המשך עריכה"
+      },
+      "more_details": "הוסיפו פרטים נוספים",
+      "amount_placeholder": "0",
+      "amountCaption": "סכום הוצאה",
+      "amountSectionLabel": "סכום",
+      "receiptLabel": "קבלה / חשבונית",
+      "receiptCta": "צלמו או צרפו קבלה",
+      "documentLabel": "שיוך למסמך (חוזה / הצעת מחיר)",
+      "documentPlaceholder": "ללא שיוך",
+      "spreadLabel": "פריסה",
+      "spreadSingle": "תשלום אחד",
+      "spreadInstallments": "תשלומים",
+      "spreadInfo": "כל תשלום ייספר ב״הוצאה בפועל״ רק כשמועדו — עד אז הוא יופיע בלוח התשלומים העתידיים.",
+      "attachLabel": "מצרפים",
+      "attachCta": "הוספו קבלה או חוזה",
+      "attachHint": "עד 10MB · PDF, JPG, PNG",
+      "descriptionLabel": "תיאור",
+      "descriptionPlaceholder": "מקדמה לקבלן",
+      "categoryLabel": "קטגוריה",
+      "dateLabel": "תאריך",
+      "dateToday": "היום",
+      "dateYesterday": "אתמול",
+      "dateTomorrow": "מחר",
+      "professionalLabel": "איש מקצוע",
+      "professionalPlaceholder": "בחרו מהרשימה או הוסיפו חדש",
+      "proPicker": {
+        "add_cta": "+ הוסיפו חדש",
+        "empty_helper": "אין עדיין אנשי מקצוע. הוסיפו את הראשון.",
+        "role_subtext_fallback": "—"
+      },
+      "stageLabel": "שלב בפרויקט",
+      "paymentMethodLabel": "אמצעי תשלום",
+      "partialToggleTitle": "תשלום חלקי",
+      "partialToggleBody": "פצלו את הסכום למספר תשלומים לאורך זמן",
+      "partial": {
+        "countLabel": "מספר תשלומים",
+        "frequencyLabel": "תדירות",
+        "frequencyMonthly": "חודשי",
+        "frequencyQuarterly": "רבעוני",
+        "frequencyCustom": "מותאם אישית",
+        "cadenceMonthly": "כל חודש",
+        "cadenceCustom": "תאריכים מותאמים",
+        "rowLabelPlaceholder": "תיאור התשלום",
+        "rowAmountA11y": "עריכת סכום תשלום {{i}}",
+        "customSumMismatch": "נותרו {{amount}} לפריסה בין התשלומים",
+        "firstDateLabel": "תאריך תשלום ראשון",
+        "customDatesLabel": "תאריכי תשלום מותאמים",
+        "installmentRow": "תשלום {{i}}",
+        "previewHeading": "תצוגה מקדימה",
+        "previewTotal": "סה״כ",
+        "mismatchSoftWarn": "סכום התשלומים לא מתחלק בדיוק — השלמת הסכום תיווסף לתשלומים הראשונים.",
+        "stepper": {
+          "decrementA11y": "הפחת תשלום",
+          "incrementA11y": "הוספת תשלום",
+          "valueA11y_one": "תשלום אחד",
+          "valueA11y_other": "{{count}} תשלומים"
+        }
+      },
+      "sourceLabel": "מקור תשלום",
+      "sourceHelper": "עוזר לעקוב אחר ניצול מקורות המימון שלכם",
+      "notesLabel": "הערות",
+      "notesPlaceholder": "פרטים נוספים, תזכורות או הבהרות…",
+      "save_error": "השמירה נכשלה, נסו שוב.",
+      "error": {
+        "amount_required": "יש להזין סכום",
+        "amount_positive": "הסכום חייב להיות חיובי",
+        "amount_too_large": "הסכום חורג מהמותר",
+        "description_required": "יש להזין תיאור",
+        "description_too_long": "התיאור ארוך מדי",
+        "category_required": "יש לבחור קטגוריה",
+        "date_too_far_future": "התאריך רחוק מדי בעתיד",
+        "partial": {
+          "count_required": "יש לבחור מספר תשלומים",
+          "frequency_required": "יש לבחור תדירות",
+          "first_date_required": "יש לבחור תאריך תשלום ראשון",
+          "custom_dates_required": "יש לבחור תאריכי תשלום מותאמים",
+          "custom_amounts_required": "יש להזין סכום לכל תשלום",
+          "custom_sum_mismatch": "סכום התשלומים חייב להשתוות לסכום הכולל"
+        }
+      }
+    },
+    "proCreate": {
+      "sheet": {
+        "title": "איש מקצוע חדש",
+        "subtitle": "ייווסף לרשימה ותוכלו לבחור בו ישירות."
+      },
+      "field": {
+        "name": {
+          "label": "שם",
+          "placeholder": "שם מלא"
+        },
+        "role": {
+          "label": "תפקיד"
+        },
+        "phone": {
+          "label": "טלפון",
+          "placeholder": "050-0000000"
+        },
+        "email": {
+          "label": "אימייל",
+          "placeholder": "@"
+        },
+        "area": {
+          "label": "אזור",
+          "placeholder": "מרכז"
+        }
+      },
+      "cta": {
+        "save": "שמרו והמשיכו"
+      },
+      "save_error": "השמירה נכשלה. נסו שוב.",
+      "error": {
+        "name_required": "שם נדרש",
+        "name_too_long": "שם ארוך מדי",
+        "role_required": "בחרו תפקיד",
+        "email_invalid": "כתובת אימייל לא תקינה",
+        "area_too_long": "האזור ארוך מדי"
+      }
+    },
+    "edit": {
+      "cta_save": "שמירה",
+      "partial_locked_banner": "תשלום חלקי — סכום, תאריך והגדרות התשלומים נעולים בעריכה",
+      "not_found": "ההוצאה לא נמצאה"
+    },
+    "extraction": {
+      "pill_label_pro": "חילוץ אוטומטי",
+      "action_sheet_title": "מקור הקבלה",
+      "action_sheet_camera": "צילום",
+      "action_sheet_library": "מהגלריה",
+      "action_sheet_document": "קובץ PDF",
+      "action_sheet_cancel": "ביטול",
+      "permission_denied": "יש לאפשר גישה כדי לצלם או לבחור קובץ",
+      "uploading": "מעלה את הקבלה...",
+      "extracting": "מחלץ נתונים...",
+      "error_capture": "הצילום נכשל. נסו שוב.",
+      "error_upload": "ההעלאה נכשלה. נסו שוב.",
+      "error_extract": "החילוץ נכשל. אפשר להמשיך ידנית.",
+      "accept_field_a11y": "אשר שדה {{field}}",
+      "reject_field_a11y": "דחה שדה {{field}}",
+      "upgrade_banner": {
+        "title": "חילוץ אוטומטי מקבלות",
+        "body": "זמין בליווי הדיגיטלי",
+        "upgrade_cta": "שדרוג",
+        "continue_manual_cta": "המשך הזנה ידנית",
+        "upgrade_cta_a11y": "שדרוג לליווי הדיגיטלי לחילוץ אוטומטי",
+        "continue_manual_a11y": "המשך עם הזנה ידנית של ההוצאה"
+      }
+    }
+  },
+  "budget": {
+    "header": {
+      "eyebrow": "ניהול כסף",
+      "title": "תקציב"
+    },
+    "action_bar": {
+      "new_expense_cta": "הוספת הוצאה",
+      "list_view": "רשימה",
+      "summary_cta": "סיכומים",
+      "future_payments_cta": "תשלומים עתידיים"
+    },
+    "section": {
+      "count_label_one": "הוצאה אחת",
+      "count_label_other": "{{count}} הוצאות"
+    },
+    "row": {
+      "partial_badge": "תשלום חלקי",
+      "edit_action": "עריכה",
+      "delete_action": "מחיקה"
+    },
+    "filter": {
+      "clear_label": "הסירו סינון",
+      "bar_button": "סינון",
+      "menu_title": "סינון הוצאות",
+      "value_all": "הכל",
+      "clear_all": "נקו הכל",
+      "category": {
+        "chip_label": "קטגוריה",
+        "sheet_title": "סינון לפי קטגוריה"
+      },
+      "stage": {
+        "chip_label": "שלב",
+        "sheet_title": "סינון לפי שלב"
+      },
+      "professional": {
+        "chip_label": "איש מקצוע",
+        "sheet_title": "סינון לפי איש מקצוע"
+      },
+      "payment_method": {
+        "chip_label": "אמצעי תשלום",
+        "sheet_title": "סינון לפי אמצעי תשלום"
+      },
+      "date": {
+        "chip_label": "תאריך",
+        "sheet_title": "סינון לפי תאריך",
+        "from_label": "מתאריך",
+        "to_label": "עד תאריך",
+        "apply_cta": "החל",
+        "clear_cta": "נקה",
+        "error": {
+          "range_invalid": "תאריך התחלה מאוחר מתאריך סיום"
+        }
+      },
+      "source": {
+        "chip_label": "מקור מימון",
+        "sheet_title": "סינון לפי מקור מימון"
+      }
+    },
+    "empty": {
+      "title": "עוד לא תיעדתם הוצאות",
+      "body": "בואו נתחיל מהראשונה",
+      "cta": "+ הוצאה חדשה",
+      "no_matches": {
+        "title": "אין הוצאות שתואמות את הסינון",
+        "clear_filters_cta": "נקה סינון"
+      }
+    },
+    "delete": {
+      "confirm_title": "מחיקת הוצאה",
+      "confirm_body": "האם למחוק את ההוצאה ‟{{description}}״?",
+      "confirm_cta": "מחיקה",
+      "cancel_cta": "ביטול"
+    },
+    "summary": {
+      "hero": {
+        "title": "לאן הולך הכסף שלכם",
+        "subtitle": "חיתוך התקציב של הבית שלכם ב{{regionLabel}}",
+        "subtitle_no_region": "חיתוך התקציב של הבית שלכם"
+      },
+      "cut": {
+        "category": "קטגוריה",
+        "stage": "שלב",
+        "professional": "איש מקצוע",
+        "source": "מקור מימון"
+      },
+      "cut_unit": {
+        "category": "קטגוריות",
+        "stage": "שלבים",
+        "professional": "אנשי מקצוע",
+        "source": "מקורות מימון"
+      },
+      "top": {
+        "remaining_label": "נותרו לכם",
+        "total_label": "מתוך {{total}}",
+        "paid_dot": "שולם",
+        "planned_dot": "מתוכנן",
+        "remaining_dot": "נותר",
+        "remaining_a11y": "נותר לכם {{amount}}"
+      },
+      "center": {
+        "total_label": "סך הכל",
+        "unit_label": "פריטים"
+      },
+      "breakdown": {
+        "title": "פירוט מלא",
+        "row_hint": "הקישו כדי לראות את ההוצאות בקבוצה"
+      },
+      "uncategorised": {
+        "category": "ללא קטגוריה",
+        "stage": "ללא שלב",
+        "professional": "ללא איש מקצוע",
+        "source": "ללא מקור"
+      },
+      "other_bucket_label": "אחר",
+      "cut_select_label": "לפי {{cut}}",
+      "cut_select_a11y": "בחירת חיתוך — כרגע לפי {{cut}}",
+      "cut_sheet_title": "איך לחתוך את התקציב?",
+      "empty": {
+        "title": "עוד מעט יהיו לכם תובנות",
+        "body": "כדי לראות חיתוך משמעותי צריך לפחות {{needed}} הוצאות — כרגע יש {{current}}.",
+        "cta": "+ הוסיפו הוצאה"
+      },
+      "error": {
+        "title": "לא הצלחנו לטעון את הסיכומים",
+        "retry_cta": "נסו שוב"
+      }
+    },
+    "future_payments": {
+      "hero": {
+        "title": "תשלומים עתידיים",
+        "subtitle": "נשארו לכם {{count}} תשלומים פתוחים",
+        "subtitle_zero": "אין תשלומים פתוחים",
+        "subtitle_one": "נשאר לכם תשלום פתוח אחד",
+        "subtitle_other": "נשארו לכם {{count}} תשלומים פתוחים"
+      },
+      "horizon": {
+        "this_week": "השבוע",
+        "this_month": "החודש",
+        "this_quarter": "הרבעון",
+        "further": "בהמשך"
+      },
+      "section_count_label_one": "תשלום אחד",
+      "section_count_label_other": "{{count}} תשלומים",
+      "row": {
+        "mark_complete": "סמן כבוצע",
+        "postpone": "דחה תאריך",
+        "completed_badge": "✓ הושלם",
+        "sequence_label": "{{n}}/{{total}}"
+      },
+      "empty": {
+        "title": "אין תשלומים מתוזמנים",
+        "body": "כשתסמנו הוצאה כתשלום חלקי, השלבים יופיעו כאן",
+        "cta": "+ הוצאה חדשה"
+      },
+      "completed": {
+        "section_label": "הושלם ({{count}})",
+        "toggle_a11y_hint": "הקישו כדי לפתוח או לסגור את רשימת התשלומים שהושלמו"
+      },
+      "postpone": {
+        "title": "דחיית תאריך תשלום",
+        "date_label": "תאריך חדש",
+        "save_cta": "שמירה",
+        "error": {
+          "must_be_future": "התאריך החדש חייב להיות בעתיד"
+        }
+      },
+      "error": {
+        "title": "לא הצלחנו לטעון את התשלומים",
+        "retry_cta": "נסו שוב"
+      },
+      "out_of_order": {
+        "message": "סמנת תשלום מספר {{n}} לפני {{skipped}}",
+        "dismiss_a11y": "סגור את ההודעה",
+        "conjunction_two": "ו-",
+        "conjunction_many": ", "
+      },
+      "confirm_complete": {
+        "title": "לסמן את התשלום כבוצע?",
+        "body": "התשלום יעבור לרשימת התשלומים שבוצעו ויתעדכן בתקציב.",
+        "confirm_cta": "סימון כבוצע"
+      },
+      "complete_failed": "סימון התשלום נכשל. נסו שוב.",
+      "mark_paid": {
+        "success": "סימנתם את התשלום ל{{payee}} כבוצע",
+        "success_no_payee": "סימנתם את התשלום כבוצע",
+        "undo_restored": "הסימון בוטל — התשלום חזר לרשימת התשלומים העתידיים"
+      }
+    },
+    "export": {
+      "bar": {
+        "cta": "ייצוא דוח",
+        "upgrade_cta": "שדרגו לליווי דיגיטלי",
+        "grant_badge": "ייצוא חד-פעמי",
+        "a11y": {
+          "cta": "ייצוא דוח התקציב",
+          "cta_locked": "ייצוא דוח זמין בליווי הדיגיטלי",
+          "upgrade": "שדרוג לליווי הדיגיטלי לפתיחת ייצוא"
+        }
+      },
+      "sheet": {
+        "title": "בחרו פורמט ייצוא",
+        "subtitle": "הדוח יכלול את החיתוך הנוכחי ואת הפירוט המלא",
+        "a11y": {
+          "title": "בחרו פורמט לייצוא דוח התקציב"
+        },
+        "format": {
+          "xlsx": {
+            "title": "Excel (.xlsx)",
+            "body": "גיליון מסודר — מתאים לעריכה ותחשיבים",
+            "a11y": "ייצוא ל-Excel"
+          },
+          "pdf": {
+            "title": "PDF",
+            "body": "דוח מעוצב — מתאים להדפסה ולשיתוף",
+            "a11y": "ייצוא ל-PDF"
+          }
+        }
+      },
+      "progress": {
+        "preparing": "מכין דוח…"
+      },
+      "success": {
+        "share_title": "דוח התקציב שלי"
+      },
+      "error": {
+        "generic": "ייצוא נכשל. נסו שוב.",
+        "no_data": "אין הוצאות לייצא",
+        "unauthorized": "ההרשאה פגה. היכנסו מחדש.",
+        "forbidden": "אין הרשאה לייצא"
+      }
+    },
+    "hero": {
+      "title": "תקציב חי",
+      "total": "תקציב כולל",
+      "spent": "הוצא",
+      "card_caption": "מתוך {{total}} · נותר {{remaining}}",
+      "remaining": "נותר"
+    },
+    "category": {
+      "section_title": "לפי קטגוריה",
+      "edit": "ערוך תקציב",
+      "done": "סיום",
+      "all_expenses": "כל ההוצאות",
+      "amounts": "הוצא {{spent}} מתוך {{planned}}",
+      "amounts_unplanned": "הוצא {{spent}} · ללא תקציב מתוכנן",
+      "status": {
+        "in_budget": "בטווח התקציב",
+        "not_started": "טרם התחיל",
+        "over": "חריגה · {{amount}}"
+      },
+      "empty": "עדיין לא הגדרתם תקציב לקטגוריות. הגדירו תקציב כדי לעקוב אחרי ההוצאות מול היעד.",
+      "set_budgets_cta": "הגדרת תקציב",
+      "amount_placeholder": "תקציב",
+      "delete_a11y": "מחיקת התקציב של {{name}}"
+    },
+    "expenses": {
+      "title": "כל ההוצאות",
+      "status": {
+        "paid": "אושר",
+        "pending": "ממתין"
+      }
+    }
+  },
+  "appConfig": {
+    "fallback": {
+      "banner": "נטענה גרסה בסיסית של ההגדרות. נסו שוב את הסנכרון"
+    }
+  },
+  "errorBoundary": {
+    "fallback": {
+      "title": "משהו השתבש",
+      "body": "נסו לטעון מחדש. אם זה ממשיך, צוות התמיכה כבר יודע.",
+      "retry": "נסו שוב"
+    }
+  },
+  "home": {
+    "header_overline": "הפרויקט שלכם",
+    "app_name_fallback": "הבית שלכם",
+    "welcome": "ברוכים הבאים להבונה",
+    "signed_in_as": "מחובר כ־{{phone}}",
+    "sign_out": "התנתקות",
+    "tier_free": "חינם",
+    "tier_pro": "ליווי דיגיטלי",
+    "upgrade_cta": "שדרוג לליווי דיגיטלי",
+    "manage_subscription": "ניהול מנוי",
+    "project_label": "הפרויקט שלי: {{name}}",
+    "profile_row_label": "פרופיל",
+    "pro_banner": {
+      "title": "ליווי דיגיטלי",
+      "subtitle": "חילוץ קבלות אוטומטי, ייעוץ ללא הגבלה והשוואות חכמות"
+    },
+    "activation": {
+      "eyebrow": "{{done}} מתוך {{total}} הושלמו",
+      "title": "בואו נתחיל",
+      "subhead": "שלושת הצעדים הראשונים",
+      "steps": {
+        "set_budget": "הגדירו את תקציב הפרויקט",
+        "add_expense": "רשמו הוצאה ראשונה",
+        "ask_builder": "שאלו את יועץ הבנייה שאלה",
+        "invite_partner": "הזמינו בן/בת זוג"
+      },
+      "step_subtitles": {
+        "set_budget": "כדי שנתחיל לעקוב אחרי ההוצאות",
+        "add_expense": "כל שקל נספר — נתחיל מהראשון",
+        "ask_builder": "העוזר החכם שמכיר את הפרויקט שלכם"
+      }
+    },
+    "status_card": {
+      "remaining_label": "נותרו לכם בתקציב",
+      "spent_of_budget": "הוצאתם {{spent}} מתוך {{budget}}",
+      "stage_counter": "שלב {{current}} מתוך {{total}}",
+      "tri": {
+        "paid": "שולם",
+        "planned": "מתוכנן",
+        "remaining": "נותר"
+      },
+      "expand_label": "פרטי השלב",
+      "expand_aria": "פרטי השלב — מעבר למסך השלב",
+      "error_label": "לא הצלחנו לטעון את פרטי הפרויקט",
+      "over": {
+        "indicator_label": "חריגה מהתקציב",
+        "primary_label": "חרגתם ב-{{amount}}",
+        "bar_indicator": "חריגה",
+        "reassurance": "זה לא חוסם אתכם — אבל שווה לבדוק את הצפי לחודשים הבאים."
+      },
+      "empty": {
+        "meta_label": "תקציב",
+        "body": "לפני הכל — כמה תקציב יש לבית הזה?",
+        "cta": "הזנת תקציב"
+      }
+    },
+    "actions_feed": {
+      "section_title": "פעולות נדרשות",
+      "see_all_inline": "הכל",
+      "see_all_overflow": "ראה הכל ({{count}} פעולות)",
+      "empty": "אין פעולות דחופות — כל הכבוד!",
+      "error": "לא הצלחנו לטעון את פעולות הנדרשות",
+      "from_partner": "מ־{{name}}",
+      "urgency": {
+        "critical": "קריטי",
+        "opportunity": "הזדמנות",
+        "insight": "אינסייט"
+      },
+      "handled": {
+        "mark_label": "סמן כהושלם",
+        "unmark_label": "בטל סימון",
+        "pill": "הסתיים"
+      },
+      "task_overdue": {
+        "title": "משימה באיחור",
+        "body": "{{title}}",
+        "cta": "פתחו"
+      },
+      "payment_due": {
+        "title": "תשלום קרוב — {{amount}}",
+        "body": "בעוד {{days}} ימים. אפשר להעתיק את פרטי החשבון או לסמן כשולם.",
+        "body_pro": "{{amount}} ל{{name}}, בעוד {{days}} ימים.",
+        "cta": "פרטי תשלום"
+      },
+      "payment_upcoming": {
+        "title": "תשלום מתוכנן — {{amount}}",
+        "body": "בעוד {{days}} ימים. שווה לוודא שהתקציב מוכן.",
+        "body_pro": "{{amount}} ל{{name}}, בעוד {{days}} ימים.",
+        "cta": "פרטי תשלום"
+      },
+      "payment_overdue": {
+        "title": "תשלום באיחור — {{amount}}",
+        "body": "באיחור של {{days}} ימים. כדאי לטפל בהקדם.",
+        "body_pro": "{{amount}} ל{{name}}, באיחור של {{days}} ימים.",
+        "cta": "פרטי תשלום"
+      },
+      "defect_urgent": {
+        "title": "ליקוי דחוף — {{title}}",
+        "body": "סומן כדחוף וממתין לטיפול.",
+        "cta": "פתחו"
+      },
+      "defect_open": {
+        "title": "ליקוי פתוח",
+        "body": "{{title}}",
+        "cta": "פתחו"
+      },
+      "survey_waiting": {
+        "title": "סקר זוגי ממתין לתשובתכם",
+        "body": "{{title}}",
+        "cta": "ענו על הסקר"
+      },
+      "checklist_suggestion": {
+        "eyebrow": "בינתיים — אפשר להתחיל מ־",
+        "title": "צ׳קליסטים מומלצים לשלב שלכם",
+        "see_all_cta": "ראו את כולם"
+      }
+    },
+    "tools": {
+      "section_title": "כלי עבודה",
+      "stage_recommended_badge": "מומלץ לשלב שלך",
+      "tile_a11y": "{{tool}} — פתחו"
+    },
+    "pro_attention": {
+      "strip_a11y_label": "בעלי מקצוע הדורשים תשומת לב",
+      "card_a11y": "{{name}} — {{indicator}}",
+      "kinds": {
+        "payment_due": "תשלום בעוד {{days}} ימים",
+        "payment_overdue": "תשלום באיחור",
+        "overdue_task": "משימה באיחור",
+        "open_defect": "ליקוי פתוח"
+      },
+      "roles": {
+        "architect": "אדריכל·ית"
+      },
+      "empty_dev_label": "אין בעלי מקצוע הדורשים תשומת לב כרגע."
+    },
+    "hero": {
+      "greeting_morning": "בוקר טוב",
+      "greeting_afternoon": "צהריים טובים",
+      "greeting_evening": "ערב טוב",
+      "spent_label": "נוצל מהתקציב",
+      "out_of": "מתוך {{amount}}",
+      "in_range": "בטווח התקציב",
+      "over_budget": "חריגה מהתקציב",
+      "set_budget_cta": "הזנת תקציב",
+      "stage_chip_a11y": "שלב נוכחי: {{stage}} — שינוי השלב"
+    },
+    "stage_picker": {
+      "title": "באיזה שלב אתם?",
+      "subtitle": "השלב קובע אילו משימות, תכנים והתראות תראו",
+      "current_pill": "נוכחי",
+      "row_a11y": "בחירת שלב {{stage}}",
+      "notify_note": "נעדכן את {{name}} (המלווה) על שינוי השלב",
+      "notify_note_partner": "נעדכן את השותפים שלכם על שינוי השלב",
+      "notify_fallback_name": "המלווה שלכם",
+      "error_generic": "לא הצלחנו לעדכן את השלב. נסו שוב."
+    },
+    "quick_actions": {
+      "section_title": "פעולות מהירות",
+      "payments": "תשלומים",
+      "docs": "מסמכים",
+      "decisions": "החלטות",
+      "defects": "ליקויים",
+      "expenses": "הוצאות",
+      "budget": "תקציב",
+      "tasks": "משימות",
+      "tile_open_a11y": "{{label}} — {{count}} פתוחות",
+      "my_pros": "אנשי המקצוע שלי"
+    },
+    "milestone_banner": {
+      "title": "פעימה {{n}} ממתינה לאישור",
+      "subtitle": "תישלח לבנק לאחר אישור המלווה"
+    },
+    "activity": {
+      "section_title": "פעילות אחרונה",
+      "see_all": "הצג הכל",
+      "empty": "אין עדיין פעילות בפרויקט",
+      "expense": "נרשמה הוצאה: {{desc}} — {{amount}}",
+      "document": "{{name}} הועלה למסמכים",
+      "milestone_sent": "פעימה {{n}} נשלחה לאישור הבנק",
+      "milestone_approved": "פעימה {{n}} אושרה",
+      "today": "היום",
+      "yesterday": "אתמול",
+      "tomorrow": "מחר"
+    }
+  },
+  "stage": {
+    "why_now_eyebrow": "למה זה חשוב עכשיו",
+    "content_unavailable_title": "התוכן זמני לא זמין",
+    "content_unavailable_body": "ננסה לטעון שוב בפעם הבאה שתפתחו את האפליקציה.",
+    "no_active_project": "טוענים פרטי פרויקט…",
+    "past_pill_label": "שלב שהושלם — לעיון",
+    "future_pill_label": "שלב עתידי — אפשר לעיין מראש",
+    "tabs": {
+      "checklists": "צ׳קליסטים",
+      "guides": "מדריכים",
+      "pros": "מקצוענים",
+      "costs": "עלויות",
+      "items_count_one": "פריט אחד",
+      "items_count_other": "{{count}} פריטים"
+    },
+    "checklists": {
+      "section_title": "צ׳קליסטים זמינים",
+      "section_sub": "צ׳קליסטים מובנים שאפשר לאמץ ל״משימות״ שלכם",
+      "tasks_count_one": "משימה אחת",
+      "tasks_count_other": "{{count}} משימות",
+      "adopt_cta": "אמץ",
+      "empty_title": "אין צ׳קליסטים זמינים בשלב הזה כרגע",
+      "empty_body": "צ׳קליסטים נוספים יתווספו בעדכונים הבאים. בינתיים, אפשר ליצור משימות באופן ידני כשהמסך משימות ייפתח.",
+      "adopt_error_title": "אימוץ הצ׳קליסט נכשל",
+      "adopt_error_body": "משהו השתבש בעת יצירת המשימות. נסו שוב בעוד רגע."
+    },
+    "guides": {
+      "section_title": "מדריכים ומאמרים",
+      "section_sub": "קצר ולעניין · נכתב למי שבונה עכשיו",
+      "reading_time": "{{count}} דק׳ קריאה",
+      "empty_title": "אין מדריכים זמינים בשלב הזה כרגע",
+      "empty_body": "תוכן חדש יתווסף בעדכונים הבאים.",
+      "not_found_title": "המדריך לא נמצא",
+      "not_found_body": "המדריך הזה כבר לא זמין. אפשר לחזור לרשימה ולבחור אחר.",
+      "back_to_stage": "חזרה לשלב",
+      "reading_view_a11y_label": "מסך קריאת מדריך"
+    },
+    "pros": {
+      "section_title": "מי כדאי שיהיה איתכם בשלב הזה",
+      "section_sub": "התחומים שמומלצים לשלב הזה",
+      "empty_title": "אין המלצות זמינות בשלב הזה כרגע",
+      "empty_body": "הצוות העריכה יוסיף המלצות בעדכונים הבאים.",
+      "search_cta": "חיפוש",
+      "navigate_coming_soon_title": "מסך אנשי מקצוע יושק בקרוב",
+      "navigate_coming_soon_body": "המסך לניהול אנשי מקצוע יתווסף בהמשך. בינתיים אפשר לעיין בסוגי המקצוע המומלצים לשלב הזה."
+    },
+    "benchmarks": {
+      "section_title": "כמה זה עולה בערך",
+      "section_sub": "טווחי שוק · להערכה בלבד · לא נכנס אוטומטית לתקציב שלכם",
+      "source_note": "מבוסס על נתונים שהוזנו ידנית ע״י עורכי הבונה",
+      "empty_title": "אין עדיין נתונים לשלב שלך",
+      "empty_body_no_data": "טווחי עלויות לשלב הזה ולאזור שלכם עדיין לא הוזנו. הצוות העריכה יוסיף נתונים בעדכונים הבאים.",
+      "empty_body_quality_unset": "כדי לראות טווחים מותאמים, הגדירו רמת גימור בפרופיל הפרויקט.",
+      "quality_unset": "רמת גימור לא הוגדרה"
+    },
+    "advance": {
+      "cta_label": "סיים שלב והמשך ל{{stage}}",
+      "caption": "פותח דיאלוג אישור — אפשר לחזור גם אחרי",
+      "confirm_title": "להעביר ל{{stage}}?",
+      "confirm_body": "שלב {{stage}} יסומן כהושלם. תמיד אפשר לחזור לעיין בו אחר כך.",
+      "confirm_button": "כן, להעביר שלב",
+      "error_generic": "משהו השתבש במעבר השלב. בדקו את החיבור ונסו שוב.",
+      "error_already_final": "אתם כבר בשלב האחרון של הפרויקט.",
+      "success_toast": "מזל טוב — עברתם ל{{stage}}"
+    },
+    "milestone": {
+      "eyebrow": "סיום הפרויקט",
+      "title": "הגעתם הביתה",
+      "body": "סיימתם את כל ששת השלבים. הבית שלכם — והמסע שעבר עליו — מתועדים ושמורים כאן. תמיד אפשר לחזור לעיין."
+    }
+  },
+  "professional_screen": {
+    "placeholder_heading": "בעל·ת מקצוע"
+  },
+  "professional": {
+    "create": {
+      "title": "איש מקצוע חדש",
+      "cta": {
+        "save": "שמירת איש מקצוע",
+        "saving": "יוצר…"
+      },
+      "save_error": "השמירה נכשלה. נסו שוב.",
+      "field": {
+        "name": {
+          "label": "שם",
+          "placeholder": "נעמה כהן"
+        },
+        "role": {
+          "label": "תפקיד",
+          "placeholder": "בחרו תפקיד"
+        },
+        "businessName": {
+          "label": "שם עסק",
+          "placeholder": "בית בקריות · אדריכלות ועיצוב"
+        },
+        "phone": {
+          "label": "טלפון",
+          "placeholder": "050-1234567"
+        },
+        "email": {
+          "label": "אימייל",
+          "placeholder": "naama@example.com"
+        },
+        "area": {
+          "label": "אזור פעילות",
+          "placeholder": "מרכז"
+        },
+        "contractAmount": {
+          "label": "סכום חוזה כולל",
+          "helper": "אם חתמתם על חוזה — הזינו את הסכום הכולל. נראה לכם כמה שילמתם מתוכו לאורך הפרויקט.",
+          "placeholder": "0"
+        },
+        "notes": {
+          "label": "הערות",
+          "placeholder": "מאיפה הגעתם אליהם, מה אהבתם, מה לבדוק"
+        }
+      },
+      "error": {
+        "name_required": "יש להזין שם",
+        "name_too_long": "שם ארוך מדי",
+        "role_required": "בחרו תפקיד",
+        "business_name_too_long": "שם העסק ארוך מדי",
+        "phone_invalid": "מספר טלפון לא תקין",
+        "email_invalid": "כתובת אימייל לא תקינה",
+        "area_too_long": "האזור ארוך מדי",
+        "contract_invalid": "סכום החוזה לא תקין",
+        "notes_too_long": "ההערות ארוכות מדי",
+        "avatar_post_create_failed": "איש המקצוע נוצר, אך התמונה לא נשמרה. תוכלו להוסיף תמונה דרך עריכה."
+      }
+    },
+    "edit": {
+      "title": "עריכת איש מקצוע",
+      "cta": {
+        "save": "שמירת שינויים",
+        "saving": "שומר…"
+      },
+      "not_found": "איש המקצוע לא נמצא",
+      "save_error": "השמירה נכשלה. נסו שוב.",
+      "error": {
+        "save_failed": "השמירה נכשלה. נסו שוב.",
+        "not_authorized": "אין הרשאה לערוך — ייתכן שיצאתם מהפרויקט.",
+        "not_found": "איש המקצוע לא קיים. רעננו את הרשימה.",
+        "avatar_upload_failed": "העלאת התמונה נכשלה. נסו שוב או בחרו תמונה אחרת.",
+        "avatar_too_large": "התמונה גדולה מדי. הגודל המקסימלי הוא 5MB.",
+        "avatar_path_too_long": "נתיב התמונה חורג מהגבול."
+      }
+    },
+    "avatar": {
+      "upload_sheet": {
+        "title": "תמונת פרופיל",
+        "camera": "צילום",
+        "library": "מהגלריה",
+        "cancel": "ביטול"
+      },
+      "action": {
+        "change_label": "החלף תמונה"
+      },
+      "error": {
+        "camera_permission_denied": "צריך הרשאת מצלמה כדי לצלם תמונת פרופיל. אפשר לאשר דרך הגדרות > יישומים > הבונה.",
+        "library_permission_denied": "צריך הרשאת תמונות כדי לבחור תמונת פרופיל. אפשר לאשר דרך הגדרות > יישומים > הבונה.",
+        "unavailable": "המצלמה אינה זמינה. נסו לבחור מהגלריה."
+      }
+    },
+    "detail": {
+      "edit_cta": "עריכה",
+      "not_found": "איש המקצוע לא נמצא"
+    },
+    "financial": {
+      "title": "מצב כספי",
+      "contractPrefix": "חוזה",
+      "paidLabel": "שולם",
+      "remainingLabel": "יתרה",
+      "percentPaid": "{{percent}}% מהחוזה שולם",
+      "paidToDateLabel": "שולם עד כה",
+      "addContractCta": "הוספת סכום חוזה"
+    },
+    "delete": {
+      "cta": "מחיקת איש מקצוע",
+      "confirm": {
+        "title": "למחוק את {{name}}?",
+        "body_with_expenses": "יש {{count}} הוצאות מקושרות ל{{name}} — הן יישמרו, אבל בלי שיוך לאיש המקצוע. להמשיך?",
+        "body_no_links": "מחיקה תסיר את {{name}} מהרשימה. כל הוצאה או מסמך שקושרו יישמרו — אבל בלי שיוך. להמשיך?",
+        "cta": "מחיקה"
+      },
+      "error": "המחיקה נכשלה. נסו שוב."
+    },
+    "menu": {
+      "more_a11y": "אפשרויות נוספות",
+      "edit": "עריכת פרטים",
+      "share": "שתף איש קשר",
+      "delete": "מחיקה",
+      "cancel": "ביטול"
+    },
+    "share": {
+      "label": {
+        "role": "תפקיד",
+        "phone": "טלפון",
+        "email": "אימייל"
+      }
+    },
+    "actions": {
+      "call": "חיוג",
+      "message": "הודעה",
+      "contract": "חוזה",
+      "uploadContract": "העלאת חוזה",
+      "messageSheetTitle": "שליחת הודעה",
+      "messageSms": "הודעת SMS",
+      "messageWhatsapp": "וואטסאפ",
+      "messageCancel": "ביטול",
+      "whatsappUnavailable": "וואטסאפ אינו מותקן במכשיר"
+    },
+    "tabs": {
+      "overview": "סקירה",
+      "tasks": "משימות",
+      "payments": "תשלומים",
+      "files": "קבצים"
+    },
+    "main_tabs": {
+      "home": "בית",
+      "budget": "תקציב",
+      "tasks": "משימות",
+      "documents": "מסמכים",
+      "community": "קהילה"
+    },
+    "dashboard": {
+      "tasks": {
+        "header": "{{count}} משימות עם {{name}}",
+        "newCta": "משימה חדשה",
+        "emptyHeading": "אין משימות עדיין",
+        "emptyBody": "משימות שתשייכו ל{{name}} יופיעו כאן — מעקב, אישורים והחלטות.",
+        "emptyCta": "צרו משימה ראשונה"
+      },
+      "payments": {
+        "header": "{{count}} תשלומים ל{{name}}",
+        "newCta": "תשלום חדש",
+        "emptyHeading": "אין תשלומים עדיין",
+        "emptyBody": "כל תשלום שתעבירו ל{{name}} יופיע כאן — מקדמה, אבני דרך, ויתרות.",
+        "emptyCta": "הוספת תשלום ראשון"
+      },
+      "files": {
+        "header": "{{count}} קבצים מ{{name}}",
+        "newCta": "העלאת קובץ",
+        "emptyHeading": "אין קבצים עדיין",
+        "emptyBody": "חוזה, תכניות, סקיצות וכל מסמך שתעלו ישוייך אוטומטית ל{{name}}.",
+        "emptyCta": "העלאת קובץ ראשון"
+      }
+    },
+    "contact": {
+      "phoneLabel": "טלפון",
+      "emailLabel": "אימייל"
+    },
+    "overview": {
+      "nextPaymentLabel": "תשלום הבא"
+    }
+  },
+  "actions_screen": {
+    "placeholder_heading": "פעולות נדרשות"
+  },
+  "defects_screen": {
+    "placeholder_heading": "ליקויי בנייה"
+  },
+  "defects": {
+    "screen_title": "ליקויים",
+    "add_button": "הוספת ליקוי",
+    "summary": {
+      "open": "{{count}} פתוחים",
+      "in_repair": "{{count}} בתיקון",
+      "closed": "{{count}} סגורים",
+      "open_label": "פתוחים",
+      "in_repair_label": "בתיקון",
+      "closed_label": "סגורים"
+    },
+    "status": {
+      "open": "פתוח",
+      "in_repair": "בתיקון",
+      "closed": "סגור",
+      "verified_closed": "תוקן ונבדק"
+    },
+    "urgency": {
+      "low": "נמוכה",
+      "medium": "בינונית",
+      "urgent": "דחוף"
+    },
+    "row": {
+      "no_professional": "ללא איש מקצוע"
+    },
+    "empty": {
+      "title": "אין ליקויים. נהדר!",
+      "body": "התחילו לתעד פגמים שאתם מוצאים באתר — תמונה, מיקום, ואיש המקצוע האחראי.",
+      "cta": "ליקוי ראשון"
+    },
+    "loading": "טוען ליקויים…",
+    "error": "לא הצלחנו לטעון את הליקויים. נסו שוב.",
+    "export": {
+      "button": "ייצוא PDF",
+      "preparing": "מכין PDF…",
+      "dialog_title": "דוח ליקויים",
+      "fault": "ייצוא ה-PDF נכשל. נסו שוב.",
+      "banner_title": "ייצוא PDF לקבלן זמין בליווי הדיגיטלי",
+      "banner_body": "רשימה מסוננת מותאמת לאיש מקצוע, בעברית, מוכן לוואטסאפ.",
+      "upgrade_cta": "שדרוג"
+    },
+    "detail": {
+      "title": "ליקוי",
+      "not_found": "הליקוי לא נמצא.",
+      "status_label": "סטטוס",
+      "notes_label": "הערות",
+      "options_label": "אפשרויות",
+      "menu_edit": "עריכה",
+      "menu_delete": "מחיקה",
+      "report_fields_label": "מהדוח",
+      "citation": "אסמכתא: {{citation}}",
+      "repair_cost": "אומדן עלות תיקון: {{amount}}",
+      "verified_evidence_label": "אימות התיקון"
+    },
+    "delete": {
+      "confirm_title": "מחיקת ליקוי",
+      "confirm_body": "האם למחוק את הליקוי ‟{{title}}״?",
+      "confirm_cta": "מחיקה",
+      "button_a11y": "מחיקת ליקוי",
+      "error_message": "המחיקה נכשלה. נסו שוב.",
+      "success": "הליקוי נמחק",
+      "restored": "הליקוי שוחזר"
+    },
+    "comments": {
+      "title": "תגובות",
+      "empty": "אין עדיין תגובות.",
+      "placeholder": "הוסיפו תגובה…",
+      "send": "שליחה",
+      "you": "אני",
+      "partner": "השותף",
+      "delete": {
+        "action": "לחיצה ארוכה למחיקת התגובה",
+        "confirm_title": "מחיקת תגובה",
+        "confirm_body": "התגובה תוסר מהשיחה.",
+        "confirm_cta": "מחיקה",
+        "success": "התגובה נמחקה",
+        "restored": "התגובה שוחזרה",
+        "error": "המחיקה נכשלה. נסו שוב."
+      }
+    },
+    "form": {
+      "title_create": "ליקוי חדש",
+      "title_edit": "עריכת ליקוי",
+      "add_photo": "הוסיפו תמונה",
+      "photo_helper": "עד 8 תמונות מהמצלמה או הגלריה. הצילום הזה שווה אלפי שקלים בוויכוח עם קבלן.",
+      "remove_photo": "הסירו תמונה",
+      "title_label": "מה הליקוי?",
+      "title_placeholder": "סדק בקיר סלון",
+      "title_error": "צריך לכתוב כותרת קצרה — מספיק שורה",
+      "location_label": "איפה זה?",
+      "location_placeholder": "בחרו מיקום",
+      "status_label": "סטטוס",
+      "professional_label": "מי אחראי לתקן?",
+      "professional_placeholder": "בחרו מהרשימה או + הוסיפו חדש",
+      "professional_add": "+ הוסיפו חדש",
+      "professional_helper": "הם לא מקבלים הודעה אוטומטית — תיעוד אישי שלכם.",
+      "urgent_title": "דחוף — צריך טיפול מיידי",
+      "urgent_helper": "יסומן בפעמון אדום ברשימה",
+      "notes_label": "הערות",
+      "notes_placeholder": "פרטים נוספים — מה ניסיתם, מתי הופיע, מה הקבלן אמר",
+      "submit": "צרו ליקוי",
+      "creating": "יוצר…",
+      "save": "שמירה",
+      "saving": "שומר…",
+      "created_toast": "הליקוי נוסף",
+      "save_error": "השמירה נכשלה — הפרטים נשמרו, אפשר לנסות שוב"
+    }
+  },
+  "inspirations": {
+    "screen_title": "השראות",
+    "upload_button": "+ הוסף השראה",
+    "upload_first_button": "+ הוספת השראה ראשונה",
+    "no_active_project": "התחברו לפרויקט כדי להוסיף השראות",
+    "empty": {
+      "title": "עוד אין כאן השראות",
+      "body": "כל תמונה שתאהבו — מהגלריה, מהמצלמה או מקישור — תישמר כאן ותעזור לכם להחליט יחד."
+    },
+    "card": {
+      "source_manual_label": "העליתי ידנית",
+      "source_community_label": "מהקהילה",
+      "a11y_label_with_description": "השראה: {{description}}",
+      "a11y_label_no_description": "השראה ({{source}})",
+      "long_press_a11y": "מחיקה: לחיצה ארוכה",
+      "favorite_on_a11y": "הסרה מהמועדפים",
+      "favorite_off_a11y": "הוספה למועדפים",
+      "room_badge_a11y": "חלל: {{room}}"
+    },
+    "rooms": {
+      "livingRoom": "סלון",
+      "bedroom": "חדר שינה",
+      "bathroom": "חדר רחצה",
+      "kitchen": "מטבח",
+      "entrance": "כניסה",
+      "yard": "חצר",
+      "general": "כללי"
+    },
+    "styles": {
+      "modern": "מודרני",
+      "rustic": "כפרי",
+      "scandinavian": "סקנדינבי",
+      "industrial": "תעשייתי",
+      "minimalist": "מינימליסטי",
+      "warm": "חם",
+      "boho": "בוהו",
+      "classic": "קלאסי"
+    },
+    "viewer": {
+      "close_label": "סגירה",
+      "community_source_note": "מהפוסט הקהילתי",
+      "open_original_post_a11y": "פתחו את הפוסט המקורי",
+      "delete_button_a11y": "מחיקת השראה"
+    },
+    "delete": {
+      "confirm_title": "למחוק את ההשראה?",
+      "confirm_body_with_description": "„{{description}}” תימחק לצמיתות. לא ניתן לבטל את הפעולה.",
+      "confirm_body_no_description": "ההשראה תימחק לצמיתות. לא ניתן לבטל את הפעולה.",
+      "confirm_button": "מחיקה",
+      "success_toast": "ההשראה נמחקה",
+      "error_toast": "מחיקת ההשראה נכשלה. נסו שוב.",
+      "error_inline_generic": "מחיקת ההשראה נכשלה. נסו שוב."
+    },
+    "upload_sheet": {
+      "title": "בחרו מקור",
+      "camera": "צילום",
+      "library": "בחירה מהגלריה",
+      "cancel": "ביטול"
+    },
+    "upload": {
+      "progress": "שומר השראה…",
+      "success": "ההשראה נשמרה",
+      "error_generic": "השמירה נכשלה. נסו שוב.",
+      "error_permission_denied": "אין הרשאה לגשת למקור הזה. ניתן לאשר בהגדרות המכשיר.",
+      "error_permission_denied_title": "אין הרשאה לגשת",
+      "error_permission_denied_body": "כדי להעלות מהמקור הזה, יש לאשר את ההרשאה בהגדרות המכשיר.",
+      "open_settings": "פתחו הגדרות",
+      "error_unavailable": "המקור אינו זמין במכשיר זה. נסו מקור אחר.",
+      "error_cancelled": "",
+      "image_default_name": "השראה-{{date}}"
+    },
+    "form": {
+      "title": "השראה חדשה",
+      "subtitle": "אפשר להוסיף תיאור — או לדלג ולשמור.",
+      "photo_section_label": "תמונה",
+      "photo_empty_title": "הוסיפו תמונה שעשתה לכם חשק",
+      "photo_empty_subtitle": "חדר, פינה, חומר או גוון שתפס לכם את העין",
+      "source_link": "קישור",
+      "source_gallery": "גלריה",
+      "source_camera": "מצלמה",
+      "recent_gallery_label": "אחרונות בגלריה",
+      "replace_button": "החלפה",
+      "badge_from_gallery": "מהגלריה",
+      "badge_from_camera": "מהמצלמה",
+      "badge_from_link": "מהקישור",
+      "link_input_placeholder": "pinterest.com/pin/8841…",
+      "link_fetch_button": "משיכה",
+      "link_fetching": "מושכים את התמונה מהקישור…",
+      "link_error_generic": "לא הצלחנו למשוך תמונה מהקישור. בדקו את הכתובת ונסו שוב.",
+      "link_error_no_image": "לא מצאנו תמונה בכתובת הזו. נסו קישור ישיר לתמונה.",
+      "link_error_invalid_url": "הכתובת לא תקינה. הדביקו קישור מלא.",
+      "photo_required_error": "השראה מתחילה מתמונה — הוסיפו אחת כדי להמשיך",
+      "description_label": "מה תפס לכם את העין?",
+      "description_placeholder": "התאורה השקועה, גוון העץ הבהיר, הקו הנקי של הארון…",
+      "description_optional_helper": "אופציונלי",
+      "description_counter": "{{count}}/120",
+      "optional_label": "אופציונלי",
+      "room_section_label": "חלל בבית",
+      "styles_section_label": "סגנון",
+      "save_to_board_label": "שמירה ללוח",
+      "save_button": "שמירת השראה",
+      "save_error": "השמירה נכשלה. נסו שוב.",
+      "cancel_button": "ביטול",
+      "errors": {
+        "description_too_long": "התיאור ארוך מדי (עד 120 תווים)",
+        "invalid_room": "חלל לא תקין",
+        "invalid_style": "סגנון לא תקין"
+      }
+    },
+    "boards": {
+      "all_label": "כל ההשראות",
+      "new_board": "+ לוח חדש",
+      "create_title": "לוח חדש",
+      "create_confirm": "יצירה",
+      "name_placeholder": "שם הלוח (למשל: הבית בחיפה)",
+      "saved_count": "{{count}} שמורים",
+      "none_label": "בלי לוח",
+      "create_error": "יצירת הלוח נכשלה. נסו שוב."
+    },
+    "list": {
+      "subtitle_saved": "{{count}} שמורים",
+      "search_placeholder": "חיפוש בהשראות",
+      "search_a11y": "חיפוש",
+      "search_clear_a11y": "ניקוי החיפוש",
+      "add_a11y": "הוספת השראה",
+      "category_all": "הכל",
+      "no_matches": "לא נמצאו השראות שתואמות את הסינון",
+      "no_matches_hint": "נסו לשנות את הלוח, החלל או החיפוש"
+    },
+    "picker": {
+      "sheet_title": "תמונה לאופציה",
+      "from_my_inspirations": "מההשראות שלי",
+      "upload_new": "העלאה חדשה",
+      "cancel": "ביטול",
+      "grid_modal_title": "בחרו השראה",
+      "grid_modal_close_a11y": "סגור",
+      "empty_cta_label": "+ הוסיפו השראה ראשונה",
+      "no_active_project": "התחברו לפרויקט כדי להוסיף תמונה"
+    }
+  },
+  "auth": {
+    "phone": {
+      "title": "התחברות",
+      "subtitle": "נשלח לכם קוד אימות בהודעת SMS",
+      "input_label": "מספר טלפון",
+      "input_placeholder": "050-123-4567",
+      "send_code": "שליחת קוד",
+      "dev_numbers_label": "מספרים לפיתוח:"
+    },
+    "otp": {
+      "title": "הזנת קוד אימות",
+      "subtitle": "שלחנו קוד בן 6 ספרות אל {{phone}}",
+      "verify": "אימות",
+      "resend": "שליחה מחדש",
+      "resend_cooldown": "ניתן לשלוח שוב בעוד {{seconds}} שניות"
+    },
+    "errors": {
+      "invalid_phone": "מספר הטלפון אינו תקין. הזינו מספר בן 10 ספרות שמתחיל ב־05.",
+      "unregistered_dev_number": "מספר זה לא רשום לפיתוח. השתמש באחד משלושת המספרים הזמינים.",
+      "invalid_otp": "הקוד שגוי או שפג תוקפו. בדקו את הספרות או שלחו קוד חדש.",
+      "expired_otp": "תוקף הקוד פג. שלחו קוד חדש.",
+      "send_failed": "שליחת הקוד נכשלה. נסו שוב.",
+      "verify_failed": "אימות הקוד נכשל. נסו שוב.",
+      "rate_limited": "המתן כמה שניות לפני בקשה נוספת.",
+      "support_prompt_3_failures": "לא הצליח? פנה אלינו",
+      "support_link_label": "support@haboneh.app",
+      "support_subject": "בעיה בהתחברות לאפליקציה"
+    }
+  },
+  "onboarding": {
+    "choose": {
+      "title": "בואו נתחיל",
+      "subtitle": "מי אתם?",
+      "family_title": "זוג או משפחה",
+      "family_desc": "בונים או משפצים בית משלכם",
+      "pro_title": "איש מקצוע",
+      "pro_desc": "מלווים לקוחות בבנייה ובשיפוץ",
+      "have_code_cta": "כבר קיבלתם קוד ממקצוען?"
+    },
+    "pro_intro": {
+      "title": "פורטל אנשי המקצוע",
+      "subtitle": "נהלו את הלקוחות שלכם, אשרו פעימות מימון ולוו את הבנייה — הכל במקום אחד.",
+      "benefit_clients": "כל הלקוחות שלכם במקום אחד",
+      "benefit_approve": "אישור פעימות ותשלומים בקליק",
+      "benefit_free": "הלקוח הראשון — בחינם",
+      "start_free_cta": "התחלה — הלקוח הראשון בחינם",
+      "have_code_cta": "יש לי קוד הזמנה"
+    },
+    "pro_code": {
+      "title": "קוד הזמנה",
+      "subtitle": "הדביקו את הקוד או הקישור שקיבלתם מהמשפחה.",
+      "placeholder": "קוד או קישור הזמנה",
+      "error_required": "צריך להזין קוד הזמנה"
+    },
+    "pro_setup": {
+      "title": "ספרו לנו עליכם",
+      "subtitle": "השם שתזינו יופיע למשפחות שתלוו.",
+      "name_label": "שם מלא",
+      "name_placeholder": "דנה",
+      "continue": "המשך",
+      "error": "שמירת הפרטים נכשלה. נסו שוב."
+    },
+    "name": {
+      "title": "ברוכים הבאים",
+      "subtitle": "איך נקרא לך?",
+      "placeholder": "דנה",
+      "next": "המשך",
+      "error_required": "כדי להמשיך צריך למלא שם"
+    },
+    "project": {
+      "title": "פרטי הפרויקט",
+      "subtitle": "באיזה אזור הבית ובאיזה שלב אתם?",
+      "build_type_label": "סוג פרויקט",
+      "build_type": {
+        "construction": "בנייה חדשה",
+        "renovation": "שיפוץ"
+      },
+      "region_label": "אזור",
+      "region_placeholder": "בחרו אזור",
+      "stage_label": "שלב נוכחי",
+      "stage_placeholder": "בחרו שלב",
+      "next": "המשך",
+      "error_selection_required": "כדי להמשיך צריך לבחור אזור ושלב"
+    },
+    "review": {
+      "title": "סקירה ויצירת פרויקט",
+      "name_row": "שם: {{name}}",
+      "build_type_row": "סוג פרויקט: {{buildType}}",
+      "region_row": "אזור: {{region}}",
+      "stage_row": "שלב: {{stage}}",
+      "create_project": "יצירת פרויקט",
+      "create_failed": "יצירת הפרויקט נכשלה. נסו שוב.",
+      "create_failed_single_family": "כבר יש לכם פרויקט פעיל. אפשר לנהל פרויקט בנייה אחד בלבד בכל זמן.",
+      "implicit_consent": "בלחיצה על המשך אתם מאשרים שאתם מעל גיל 18 ומסכימים ל<terms>תנאי השימוש</terms>"
+    },
+    "error": {
+      "no_config": "ההגדרות עוד נטענות. נסו שוב בעוד רגע."
+    }
+  },
+  "terms": {
+    "title": "תנאי השימוש",
+    "placeholder_tag": "גרסה מקדימה",
+    "placeholder_body": "תנאי השימוש המלאים יעודכנו לפני השקת האפליקציה לציבור. בינתיים, השימוש באפליקציה כפוף לתנאים המקובלים בענף האפליקציות לצרכן ולחוק הישראלי, כולל חוק הגנת הפרטיות ותיקון 13. אם יש לכם שאלות, ניתן לפנות לדוא\"ל התמיכה."
+  },
+  "profile": {
+    "title": "הפרופיל שלי",
+    "account": {
+      "section_title": "חשבון",
+      "edit_row_label": "עריכת פרופיל",
+      "name_fallback": "החשבון שלי",
+      "header_a11y": "פרופיל של {{name}}, טלפון {{phone}}",
+      "avatar_a11y": "תמונת פרופיל של {{name}}",
+      "edit": {
+        "first_name_label": "שם פרטי",
+        "first_name_empty": "—",
+        "edit_action": "עריכה",
+        "edit_first_name": "עריכת שם פרטי",
+        "save": "שמירה",
+        "cancel": "ביטול",
+        "name_length_error": "השם יכול להכיל עד 40 תווים.",
+        "phone_label": "מספר טלפון",
+        "phone_empty": "—",
+        "phone_helper": "החלפת המספר תדרוש אימות SMS מחודש.",
+        "phone_screen_title": "החלפת מספר טלפון",
+        "phone_step1_intro": "הזינו את המספר החדש. נשלח אליו SMS עם קוד אימות.",
+        "phone_step2_intro": "הזינו את הקוד שנשלח אל {{phone}}.",
+        "phone_taken": "המספר הזה כבר רשום אצלנו. השתמשו במספר אחר.",
+        "send_code": "שליחת קוד",
+        "verify_and_save": "אישור ושמירה",
+        "change_number": "החלפת מספר"
+      }
+    },
+    "settings": {
+      "section_title": "הגדרות",
+      "row_label": "הגדרות האפליקציה",
+      "language": {
+        "section_title": "שפה",
+        "row_label": "שפת הממשק",
+        "helper": "החלפת השפה תפעיל את האפליקציה מחדש, כדי לעדכן את כיוון הקריאה.",
+        "he": "עברית",
+        "en": "English",
+        "confirm_title": "לעבור ל-{{name}}?",
+        "confirm_body": "האפליקציה תופעל מחדש כדי לעדכן את כיוון הקריאה ואת שפת הממשק.",
+        "confirm_button": "החלפה והפעלה מחדש",
+        "cancel_button": "ביטול"
+      },
+      "notifications": {
+        "section_title": "התראות",
+        "row_label": "ניהול התראות",
+        "coming_soon": "העדפות ההתראות יגיעו עם עדכון הפוש הקרוב.",
+        "master_label": "התראות מופעלות",
+        "master_description": "כיבוי כאן ישתיק את כל ההתראות.",
+        "categories": {
+          "task_reminders": {
+            "label": "תזכורות למשימות",
+            "description": "משימות לביצוע, תשלומים ופגישות."
+          },
+          "community_comments": {
+            "label": "תגובות בקהילה",
+            "description": "תגובות על פוסטים ושיחות שאתם חלק מהן."
+          },
+          "invites_partners": {
+            "label": "הזמנות ושותפים",
+            "description": "פעילות של השותף, הזמנות וסקרים."
+          },
+          "haboneh": {
+            "label": "התראות מהבונה",
+            "description": "עדכוני מנוי והודעות מערכת."
+          }
+        }
+      }
+    },
+    "exports": {
+      "section_title": "ייצוא",
+      "row_label": "ייצוא נתונים",
+      "options": {
+        "budget_xlsx": "תקציב (Excel)",
+        "budget_pdf": "תקציב (PDF)",
+        "documents_zip": "כל המסמכים (ZIP)",
+        "full_backup": "ייצוא הכל"
+      },
+      "one_time_badge": "ייצוא חד-פעמי",
+      "one_time_helper": "הליווי הדיגיטלי פג, ונשאר לכם ייצוא אחד לפני שיוצעו לכם תכניות חדשות.",
+      "upgrade_title": "הייצוא זמין בליווי הדיגיטלי",
+      "upgrade_body": "הצטרפו לליווי הדיגיטלי כדי לייצא את הנתונים שלכם בכל פורמט.",
+      "upgrade_cta": "צפייה בחבילות",
+      "coming_soon_title": "בקרוב",
+      "coming_soon_body": "ייצוא המסמכים והגיבוי המלא יגיעו בעדכון הבא. אתם יכולים כבר עכשיו לייצא את התקציב.",
+      "error_title": "הייצוא נכשל",
+      "error_body": "משהו השתבש. נסו שוב בעוד רגע."
+    },
+    "help": {
+      "section_title": "עזרה ותמיכה",
+      "row_label": "עזרה ותמיכה",
+      "intro": "תשובות לשאלות נפוצות וערוצי קשר ישירים. אם משהו לא ברור — כתבו לנו.",
+      "cards": {
+        "faq": "שאלות נפוצות",
+        "email": "צרו קשר במייל",
+        "whatsapp": "צרו קשר בוואטסאפ",
+        "changelog": "מה חדש"
+      },
+      "contact": {
+        "email_address": "support@haboneh.app",
+        "email_subject": "פנייה מתוך אפליקציית הבונה",
+        "whatsapp_number": "972000000000"
+      },
+      "faq_content": "# שאלות נפוצות\n\n## איך מזמינים בן או בת זוג?\n\nמתוך הפרופיל, היכנסו להזמנת שותף. ההזמנה דורשת מנוי Pro פעיל. הקישור שיישלח תקף ל-7 ימים.\n\n## מה קורה אם המנוי פג?\n\nאתם נשארים עם גישה לקריאה ולכתיבה לכל הנתונים, ומקבלים אפשרות חד-פעמית לייצוא מלא. השיתוף ביניכם נשמר.\n\n## איך מוחקים פרויקט?\n\nמתוך פרופיל ← אזור מסוכן. הפעולה לא הפיכה — קחו רגע לפני שאתם מאשרים.\n\n## מי רואה את ההוצאות שלכם?\n\nרק אתם ובן או בת הזוג שהוזמנו. אף אחד אחר. הנתונים מוצפנים, ורק אתם ובן או בת הזוג שהוזמנו ניגשים אליהם.",
+      "changelog_content": "# מה חדש\n\n## גרסה 1.0 (Sprint 0)\n\nגרסת ה-MVP הראשונה: התחברות עם מספר טלפון, יצירת פרויקט, הזמנת שותף, ניהול הוצאות, מסמכים, משימות, סקרי זוגיות, ובעלי מקצוע.\n\n## מה הלאה?\n\nאנחנו עובדים על שיפורים שתבקשו — אל תתביישו לפנות אלינו בעמוד הזה."
+    },
+    "legal": {
+      "section_title": "מסמכים משפטיים",
+      "row_label": "מסמכים משפטיים",
+      "entries": {
+        "terms": "תנאי שימוש",
+        "privacy": "מדיניות פרטיות",
+        "licences": "רישיונות צד-שלישי"
+      },
+      "terms_content": "# תנאי שימוש\n\nברוכים הבאים להבונה. תנאי השימוש האלה מסבירים מה אנחנו אוספים, איפה הנתונים נשמרים ואיך לסיים את ההתקשרות. שמרנו אותם קצרים, אבל אם משהו לא ברור — כתבו לנו ב-support@haboneh.app.\n\n## איסוף נתונים\n\nהבונה אוסף את הנתונים שאתם מזינים: שם פרטי, מספר טלפון, פרטי הפרויקט, ההוצאות, המסמכים, המשימות, וההודעות לצ׳אט AI. הנתונים נשמרים בענן ב-Supabase האירופי.\n\n## העברה חוצת-גבולות\n\nשירותי צד-שלישי שאיתם אנחנו עובדים (Supabase, RevenueCat, Sentry, Google Gemini AI) ממוקמים מחוץ לישראל. בהמשך שימוש באפליקציה אתם מאשרים העברת נתונים חוצת-גבולות לצורך אספקת השירות.\n\n## תיקון 13 לחוק הגנת הפרטיות\n\nאנחנו פועלים בהתאם לתיקון 13. יש לכם זכות עיון, תיקון ומחיקה. פנו אלינו ב-support@haboneh.app.\n\n## תקופת שמירה\n\nנתוני הפרויקט נשמרים כל עוד החשבון פעיל. לאחר מחיקת חשבון — 30 יום עד מחיקה מלאה. אירועי מערכת ולוגים שאינם מכילים PII — עד 12 חודשים.\n\n## ביטול ושיפוי תחת חוק הגנת הצרכן 51\n\nניתן לבטל את המנוי בכל עת מתוך האפליקציה תחת פרופיל → חבילה. אישור בכתב יישלח תוך 24 שעות. אין צורך לפנות ל-Apple/Google.\n\n## כתב ויתור — ייעוץ AI\n\nהצ׳אט המבוסס AI נועד לסיוע כללי בלבד ואינו ייעוץ מקצועי. החלטות בנייה, משפטיות, רגולטוריות, פיננסיות או רפואיות — התייעצו עם איש מקצוע מורשה.\n\n## שיתוף בין בני זוג (שתי כיסאות)\n\nכאשר אתם מזמינים שותף, הוא רואה את כל הנתונים בפרויקט. שני בעלי הכיסאות שווים בקריאה ובכתיבה.",
+      "privacy_content": "# מדיניות פרטיות\n\nהפרטיות שלכם חשובה לנו. כאן מסביר בקצרה מה אנחנו אוספים, איך אנחנו משתמשים במידע ומה הזכויות שלכם.\n\n## איזה מידע אנחנו אוספים\n\nשם פרטי, מספר טלפון (לאימות בלבד), נתוני פרויקט שהזנתם, אירועי אנליטיקס מצומצמים (PostHog) ודוחות שגיאה (Sentry) — שניהם ללא PII.\n\n## למה אנחנו משתמשים בו\n\nכדי לספק את האפליקציה, לסנכרן בין שני בני הזוג, לתקלוקה לטעויות, ולשפר את החוויה. לעולם לא מוכרים לצד-שלישי לצורך פרסום.\n\n## עוגיות וזיהויים\n\nאין לנו עוגיות. יש לנו זיהוי מכשיר אנונימי לצורך אנליטיקס בלבד.\n\n## הזכויות שלכם\n\n- עיון: ראו את כל הנתונים במסכי האפליקציה.\n- תיקון: ערכו בתוך האפליקציה.\n- מחיקה: מתוך פרופיל ← אזור מסוכן ← מחיקת חשבון, או דרך תכתובת אלינו.\n\n## פנייה אלינו\n\nsupport@haboneh.app",
+      "licences_content": "# רישיונות צד-שלישי\n\nהאפליקציה משתמשת ברכיבי קוד פתוח שאנחנו מודים להם. ביניהם:\n\n- React Native (MIT)\n- Expo SDK (MIT)\n- Supabase JS (MIT)\n- TanStack Query (MIT)\n- React Hook Form (MIT)\n- Zod (MIT)\n- react-native-ui-lib (MIT)\n- libphonenumber-js (Apache 2.0)\n\nרשימה מלאה זמינה ב-package.json של הפרויקט."
+    },
+    "delete_account": {
+      "section_title": "מחיקת חשבון",
+      "row_label": "מחיקת החשבון שלי",
+      "title": "מחיקת חשבון",
+      "confirm1_title": "אתם בטוחים?",
+      "consequences": "הפרויקטים שיצרתם יימחקו. תוסרו מפרויקטים שאליהם הוזמנתם. הפעולה לא הפיכה.",
+      "retention_note": "המחיקה תושלם תוך 30 יום, בהתאם למדיניות שמירת הנתונים.",
+      "continue": "המשך למחיקה",
+      "cancel": "ביטול",
+      "phone_intro": "הזינו את מספר הטלפון המלא ({{phone}}) כדי לאשר את המחיקה.",
+      "phone_mismatch": "המספר לא תואם למספר הרשום. בדקו ונסו שוב.",
+      "final_confirm": "אישור מחיקה",
+      "success_title": "בקשת המחיקה התקבלה",
+      "success_body": "המחיקה תושלם תוך 30 יום. אם תשנו את דעתכם — צרו איתנו קשר תוך 14 יום ב-support@haboneh.app."
+    },
+    "sign_out": {
+      "section_title": "התנתקות",
+      "row_label": "התנתקות מהחשבון",
+      "confirm_title": "להתנתק?",
+      "confirm_body": "תצטרכו להזין שוב את מספר הטלפון כדי לחזור.",
+      "confirm_button": "התנתקות",
+      "cancel_button": "ביטול"
+    },
+    "placeholder": {
+      "coming_soon": "התוכן יגיע בעדכון הקרוב."
+    },
+    "my_project": {
+      "section_title": "הפרויקט שלי",
+      "row_label": "פרטי פרויקט",
+      "no_project": "אין פרויקט פעיל"
+    },
+    "professionals": {
+      "row_label": "אנשי מקצוע",
+      "screen_title": "אנשי מקצוע",
+      "add_cta": "+ הוסף",
+      "add_a11y": "הוספת איש מקצוע",
+      "section_title": "בעלי מקצוע בפרויקט",
+      "advisor": {
+        "title": "מלווה הפרויקט",
+        "scope_full": "גישה מלאה לפרויקט",
+        "scope_scoped": "גישה מותאמת",
+        "role_scope": "מלווה הפרויקט · {{scope}}",
+        "connected_chip": "מחובר",
+        "connected_caption": "רואה את מה ששיתפתם · מאשר פעימות",
+        "connected_caption_full": "רואה את כל הפרויקט · מאשר פעימות",
+        "none_body": "אין עדיין מלווה לפרויקט — הזמינו אדריכל או מפקח שיראה בדיוק את מה שאתם רואים.",
+        "none_cta": "הזמינו",
+        "pending_body": "ההזמנה נשלחה — ממתינים שהמלווה יצטרף לפרויקט.",
+        "pending_cta": "מעקב הזמנה"
+      },
+      "row": {
+        "role_business_separator": "·"
+      },
+      "empty": {
+        "title": "עוד לא הוספתם אנשי מקצוע",
+        "body": "התחילו עם האדריכל, הקבלן או כל איש מקצוע שכבר עובד איתכם — הם יסונכרנו עם ההוצאות, המשימות והמסמכים.",
+        "cta": "הוספת איש מקצוע ראשון"
+      }
+    },
+    "subscription": {
+      "section_title": "חבילה",
+      "row_label": "חבילה ומנוי",
+      "manage_row": "ניהול מנוי",
+      "restore_row": "שחזור רכישות",
+      "cancel_row": "ביטול מנוי",
+      "cancel_confirm_title": "ביטול המנוי",
+      "cancel_confirm_body": "המנוי שלכם יישאר פעיל עד תום תקופת החיוב הנוכחית. נקבל את הבקשה ונשלח לכם אישור בכתב תוך 24 שעות.",
+      "cancel_confirm_button": "המשך לביטול",
+      "cancel_keep_button": "השאר את המנוי",
+      "cancel_success": "ההזמנה לביטול התקבלה. אישור בכתב יישלח תוך 24 שעות.",
+      "free_helper": "אין לכם מנוי פעיל. שדרגו לליווי הדיגיטלי כדי לפתוח את כל היכולות.",
+      "upgrade_cta": "שדרוג לליווי הדיגיטלי",
+      "field": {
+        "plan": "חבילה",
+        "status": "סטטוס",
+        "renews_on": "מתחדש בתאריך",
+        "expires_on": "פג תוקף בתאריך",
+        "billing_source": "אמצעי תשלום"
+      },
+      "plan": {
+        "free": "Free",
+        "founding_member": "חבר מייסד",
+        "standard_pro": "ליווי דיגיטלי"
+      },
+      "status": {
+        "active": "פעיל",
+        "cancelled": "מבוטל",
+        "lapsed": "פג תוקף"
+      },
+      "billing": {
+        "apple": "Apple Pay",
+        "google": "Google Pay",
+        "stripe": "Stripe",
+        "unknown": "—",
+        "none": "—"
+      }
+    },
+    "groups": {
+      "account_settings": "חשבון והגדרות",
+      "help_info": "עזרה ומידע"
+    },
+    "danger_zone_section": "אזור מסוכן",
+    "delete_project_row": "מחיקת פרויקט",
+    "remove_partner_row": "הסרת שותף {{name}}",
+    "remove_partner_row_no_name": "הסרת שותף",
+    "leave_project_row": "עזיבת פרויקט",
+    "project": {
+      "title": "פרטי הפרויקט",
+      "no_project": "אין פרויקט להציג. השלם את ההגדרה הראשונית כדי להתחיל.",
+      "update_failed": "השמירה נכשלה. נסו שוב.",
+      "fields": {
+        "name": "שם הפרויקט",
+        "region": "אזור",
+        "plot_size": "גודל מגרש",
+        "house_size": "גודל בית",
+        "floors": "מספר קומות",
+        "basement": "מרתף",
+        "basement_yes_no_label": "האם יש מרתף?",
+        "build_quality": "רמת גימור",
+        "total_budget": "תקציב כולל",
+        "land_cost": "עלות מגרש",
+        "build_start_date": "תאריך התחלת בנייה",
+        "projected_handover_date": "תאריך מסירה צפוי",
+        "plot_gush": "גוש",
+        "plot_helka": "חלקה"
+      },
+      "yes_no": {
+        "yes": "כן",
+        "no": "לא"
+      },
+      "build_quality": {
+        "budget": "חסכוני",
+        "mid": "סטנדרט",
+        "premium": "יוקרתי",
+        "none": "—"
+      },
+      "placeholder": {
+        "empty": "—"
+      },
+      "units": {
+        "sqm": "{{value}} מ\"ר"
+      },
+      "error": {
+        "handover_before_start": "תאריך המסירה חייב להיות אחרי תאריך ההתחלה",
+        "invalid_number": "ערך לא תקין",
+        "budget_zero": "התקציב חייב להיות גדול מ-0"
+      }
+    }
+  },
+  "invitation": {
+    "pending_pill": "הזמנה ממתינה",
+    "title": "הוזמנת לפרויקט",
+    "subtitle": "הזמנה מ-{{inviterFirstName}} להצטרף לפרויקט\n«{{projectName}}»\nכשותפים.",
+    "fallback_inviter": "שותף",
+    "cta_accept": "אשר והצטרף",
+    "cta_reject": "דחה",
+    "expires_in_days": "ההזמנה תפוג בעוד {{count}} ימים",
+    "expires_in_hours": "ההזמנה תפוג בעוד {{count}} שעות",
+    "error_retry": "שגיאה — נסו שוב",
+    "expired_title": "ההזמנה פגה",
+    "expired_subtitle": "בקשו ממי ששלח את ההזמנה לשלוח קישור חדש.",
+    "expired_copy_link_cta": "העתק קישור חדש",
+    "expired_copy_link_template": "הצטרפו לפרויקט שלי באפליקציית הבונה: https://haboneh.app/inv/<NEW_TOKEN>",
+    "expired_copy_link_confirm": "הקישור הועתק. בקשו ממי ששלח את ההזמנה ליצור הזמנה חדשה.",
+    "phone_mismatch_title": "ההזמנה נשלחה למספר אחר",
+    "phone_mismatch_subtitle": "הזמנה זו נשלחה למספר טלפון אחר. יש להתחבר עם המספר שאליו נשלחה ההזמנה.",
+    "phone_mismatch_relogin_cta": "התחברות עם המספר הנכון",
+    "phone_mismatch_close_cta": "סגור",
+    "token_invalid_title": "ההזמנה אינה תקפה",
+    "token_invalid_subtitle": "הקישור שנפתח אינו תקין או פג תוקף.",
+    "token_invalid_cta": "חזרה לכניסה",
+    "already_handled_title": "ההזמנה כבר טופלה",
+    "already_handled_subtitle": "הזמנה זו אינה ממתינה יותר.",
+    "already_handled_cta": "המשך"
+  },
+  "partner": {
+    "invite": {
+      "row_label": "הזמנת שותף",
+      "title": "הזמנת שותף",
+      "hero_title": "הזמינו את בן או בת הזוג לפרויקט",
+      "hero_body": "נשלח קישור ב-SMS שיאפשר לבן או בת הזוג להצטרף לפרויקט מהמכשיר שלהם.",
+      "phone_label": "מספר הטלפון של בן או בת הזוג",
+      "phone_placeholder": "050-123-4567",
+      "cta": "שליחת הזמנה",
+      "cta_pro": "שליחת הזמנה (Pro)",
+      "error_not_pro": "להזמנת שותף נדרש מנוי Pro",
+      "error_invalid_phone": "מספר לא תקין",
+      "error_rate_limited": "ניתן לשלוח עוד הזמנה בעוד {{minutes}} דקות",
+      "error_not_creator": "שליחת הזמנה זמינה רק למי שיצר את הפרויקט",
+      "error_network": "אין חיבור — נסו שוב",
+      "success_title": "ההזמנה נשלחה",
+      "success_body": "שלחנו קישור ל-{{phone}}. כדאי לבקש מבן או בת הזוג לפתוח את ה-SMS.",
+      "cancel_invite_cta": "ביטול הזמנה"
+    }
+  },
+  "paywall": {
+    "fm_counter": {
+      "subtitle": "₪149 לשנה הראשונה — מחיר מייסדים, חד-פעמי",
+      "body": "נותרו {{count}} מתוך 100 מקומות",
+      "accessibility_label": "עוד {{count}} מתוך 100 מקומות מייסדים נותרו"
+    },
+    "disclosure": {
+      "body": "₪149 לשנה הראשונה · יחודש אוטומטית ב-₪499 לשנה. ניתן לבטל בכל עת מתוך האפליקציה (חוק הגנת הצרכן, תיקון 51).",
+      "terms_link": "תנאי שימוש"
+    },
+    "ownership": {
+      "body": "הנתונים שלכם נשארים שלכם. גם אם המנוי יסתיים, הגישה נשמרת וניתן לייצא את כל המידע.",
+      "accessibility_label": "בעלות על הנתונים"
+    },
+    "pro_note": {
+      "body": "המנוי מכסה את כל הלקוחות שלכם. הלקוח הראשון תמיד חינם.",
+      "accessibility_label": "מידע על מנוי הפרו"
+    }
+  },
+  "destructive": {
+    "cancel": "ביטול",
+    "delete_project_title": "מחיקת הפרויקט",
+    "delete_project_body": "מחיקת הפרויקט תמחק את כל הנתונים. פעולה זו אינה הפיכה.",
+    "delete_project_confirm": "מחיקה",
+    "remove_partner_title": "הסרת שותף",
+    "remove_partner_body": "הסרת {{name}} מהפרויקט. הגישה שלכם תישמר.",
+    "remove_partner_body_no_name": "הסרת השותף מהפרויקט. הגישה שלכם תישמר.",
+    "remove_partner_confirm": "הסרה",
+    "leave_project_title": "עזיבת הפרויקט",
+    "leave_project_body": "עזיבת הפרויקט מסירה את הגישה שלכם. תמיד אפשר להצטרף לפרויקט אחר בהמשך.",
+    "leave_project_confirm": "עזיבה",
+    "generic_error": "הפעולה נכשלה. נסו שוב."
+  },
+  "notifications": {
+    "cancellation_confirmation": {
+      "title": "אישור ביטול מנוי",
+      "body": "ההזמנה לביטול המנוי שלך התקבלה. המנוי יישאר פעיל עד תום תקופת החיוב הנוכחית."
+    },
+    "renewal_reminder": {
+      "title": "תזכורת לחידוש מנוי",
+      "body": "המנוי שלך יחודש בתאריך {{renewal_date}} במחיר ₪{{renewal_price_ils}}. ניתן לבטל מתוך האפליקציה."
+    },
+    "permission": {
+      "title": "רוצים להישאר מעודכנים?",
+      "body": "כדי שתוכלו לקבל עדכונים מהשותף, תזכורות לפגישות ועוד, נצטרך אישור להתראות",
+      "confirm": "אישור התראות",
+      "later": "אולי מאוחר יותר",
+      "android_channel_name": "התראות"
+    },
+    "screen": {
+      "title": "התראות",
+      "empty": "אין התראות חדשות",
+      "mark_all_read": "סמן הכל כנקרא",
+      "mark_unread": "סמן כלא-נקראה",
+      "delete": "מחיקה"
+    },
+    "zones": {
+      "required": "פעולות נדרשות",
+      "activation": "התחלה"
+    },
+    "dismiss": "הסרה",
+    "deep_link": {
+      "unavailable": "התראה זו אינה זמינה יותר"
+    },
+    "groups": {
+      "today": "היום",
+      "yesterday": "אתמול",
+      "week": "השבוע",
+      "month": "החודש",
+      "earlier": "קודם"
+    },
+    "items": {
+      "partner-invite-accepted": {
+        "title": "{{partner_name}} הצטרף/ה לפרויקט",
+        "body": "אתם שותפים מלאים עכשיו."
+      },
+      "defects-added": {
+        "title": "ליקויים חדשים מ{{partner_name}}",
+        "body": "{{count}} ליקויים נוספו לפרויקט."
+      },
+      "survey-opened": {
+        "title": "{{partner_name}} פתח/ה סקר זוגי",
+        "body": "ממתינים לתשובה שלך."
+      },
+      "survey-answered": {
+        "title": "{{partner_name}} השיב/ה לסקר",
+        "body": "אפשר לראות את התוצאה."
+      },
+      "survey-nudge": {
+        "title": "תזכורת לסקר מ{{partner_name}}",
+        "body": "ממתינים לתשובה שלך."
+      },
+      "comment-on-post": {
+        "title": "{{author_name}} הגיב/ה לפוסט שלך",
+        "body": ""
+      },
+      "comment-on-comment": {
+        "title": "{{author_name}} הגיב/ה לתגובה שלך",
+        "body": ""
+      },
+      "payment-due": {
+        "title": "תשלום מתקרב",
+        "body": "תשלום של ₪{{amount_ils}} מתוכנן בקרוב."
+      },
+      "task-due-today": {
+        "title": "משימה להיום",
+        "body": "{{title}}"
+      },
+      "meeting-reminder": {
+        "title": "תזכורת לפגישה",
+        "body": "{{title}}"
+      },
+      "subscription-lapse-warning": {
+        "title": "המנוי יפוג בקרוב",
+        "body": "עוד {{days_until_lapse}} ימים לסיום המנוי."
+      },
+      "milestone-approved": {
+        "title": "פעימה אושרה",
+        "body": "המלווה אישר פעימת מימון. אפשר להמשיך לתשלום."
+      },
+      "milestone-pending-approval": {
+        "title": "פעימה ממתינה לאישורכם",
+        "body": "משפחה הגישה פעימת מימון לאישורכם."
+      },
+      "milestone-blocked": {
+        "title": "פעימה נחסמה",
+        "body": "המלווה חסם פעימת מימון עד לטיפול בליקוי דחוף."
+      },
+      "pro-invite-accepted": {
+        "title": "המלווה הצטרף",
+        "body": "המלווה שהזמנתם הצטרף לפרויקט שלכם."
+      },
+      "stage-changed": {
+        "title": "שלב הפרויקט עודכן",
+        "body": "הפרויקט נמצא עכשיו בשלב {{stage_label_he}}."
+      },
+      "fallback": {
+        "title": "התראה חדשה",
+        "body": ""
+      }
+    }
+  },
+  "time": {
+    "now": "עכשיו",
+    "minute": "לפני דקה",
+    "minutes": "לפני {{count}} דקות",
+    "hour": "לפני שעה",
+    "hours": "לפני {{count}} שעות",
+    "yesterday": "אתמול",
+    "days": "לפני {{count}} ימים"
+  },
+  "documents": {
+    "header_overline": "ארכיון הפרויקט",
+    "screen_title": "מסמכים",
+    "no_active_project": "התחברו לפרויקט כדי להעלות מסמכים",
+    "upload_button": "העלאה",
+    "upload_cta_dashed": "העלאת מסמך",
+    "upload_first_button": "העלאת קובץ ראשון",
+    "empty": {
+      "title": "כאן יישבו המסמכים החשובים שלכם",
+      "body": "היתרים, חוזים, חשבוניות. במקום אחד — שתמצאו אותם כשתצטרכו.",
+      "scan_cta": "סריקת מסמך"
+    },
+    "upload_sheet": {
+      "title": "בחרו מקור",
+      "camera": "צילום",
+      "library": "בחירה מהגלריה",
+      "document": "בחירה מקובץ",
+      "email": "מצורפת מאימייל",
+      "cancel": "ביטול"
+    },
+    "upload": {
+      "progress": "מעלה מסמך…",
+      "success": "המסמך הועלה",
+      "error_generic": "ההעלאה נכשלה. נסו שוב.",
+      "error_permission_denied": "אין הרשאה לגשת למקור הזה. ניתן לאשר בהגדרות המכשיר.",
+      "error_permission_denied_title": "אין הרשאה לגשת",
+      "error_permission_denied_body": "כדי להעלות מהמקור הזה, יש לאשר את ההרשאה בהגדרות המכשיר.",
+      "open_settings": "פתחו הגדרות",
+      "error_unavailable": "המקור אינו זמין במכשיר זה. נסו מקור אחר.",
+      "error_cancelled": "",
+      "camera_default_name": "מסמך-{{date}}"
+    },
+    "row": {
+      "size_kb": "{{value}} KB",
+      "size_mb": "{{value}} MB",
+      "default_category_other": "אחר",
+      "shared_badge": "משותף",
+      "private_badge": "פרטי",
+      "version_badge": "גרסה {{n}}"
+    },
+    "share_toggle": {
+      "a11y_share": "שיתוף המסמך עם המלווה",
+      "a11y_unshare": "הפיכת המסמך לפרטי",
+      "error_toast": "עדכון השיתוף נכשל. נסו שוב."
+    },
+    "visibility_banner": {
+      "text": "מסמך פרטי גלוי רק לכם. המלווה רואה רק מסמכים משותפים ({{shared}} כרגע, {{private}} פרטיים) — אפשר לשנות בכל רגע בהקשה על התגית.",
+      "text_full_access": "למלווה שלכם גישה מלאה — הוא רואה את כל המסמכים בפרויקט, כולל אלה המסומנים כפרטיים. אפשר לצמצם את היקף הגישה בכל רגע במסך ניהול הגישה."
+    },
+    "no_app_config": "תצורת האפליקציה נטענת…",
+    "form": {
+      "title": "מסמך חדש",
+      "subtitle": "שמרו חוזים, הצעות מחיר ואישורים במקום אחד",
+      "name_label": "שם המסמך",
+      "name_placeholder": "לדוגמה: חוזה קבלן אינסטלציה",
+      "upload_cta": "צלמו או צרפו קובץ / תמונה",
+      "replace_cta": "החלפת הקובץ",
+      "private_label": "מסמך פרטי",
+      "private_hint": "גלוי רק לכם — המלווה לא יראה אותו",
+      "more_details": "פרטים נוספים",
+      "category_label": "סוג המסמך",
+      "professional_label": "איש מקצוע",
+      "expense_label": "הוצאה מקושרת",
+      "stage_label": "שלב",
+      "save_button": "שמור מסמך",
+      "cancel_button": "ביטול",
+      "optional_label": "אופציונלי",
+      "expense_picker_empty_helper": "עדיין אין הוצאות בפרויקט",
+      "no_expenses_helper": "עדיין אין הוצאות בפרויקט",
+      "errors": {
+        "name_required": "שם המסמך נדרש",
+        "name_too_long": "שם המסמך ארוך מדי (עד 200 תווים)",
+        "category_required": "בחרו קטגוריה"
+      }
+    },
+    "detail": {
+      "screen_title": "מסמך",
+      "back_label": "חזרה",
+      "versions_section_label": "גרסאות",
+      "version_label": "גרסה {{n}}",
+      "open_version": "פתיחה",
+      "current_badge": "נוכחית",
+      "previous_version_label": "גרסה קודמת",
+      "upload_new_version_button": "העלו גרסה מעודכנת",
+      "open_document_button": "פתיחת המסמך",
+      "shared_with_advisor": "משותף עם המלווה",
+      "share_with_advisor_cta": "שיתוף עם המלווה",
+      "uploaded_by": "הועלתה {{date}} · {{name}}",
+      "loading": "טוען מסמך…",
+      "not_found": "המסמך לא נמצא",
+      "not_found_back_button": "חזרה לרשימה",
+      "version_added_success": "גרסה חדשה הועלתה",
+      "version_added_error": "ההעלאה נכשלה. נסו שוב.",
+      "options_label": "אפשרויות",
+      "menu_share": "שיתוף",
+      "menu_edit": "עריכת פרטים",
+      "menu_delete": "מחיקה",
+      "open_fullscreen_hint": "לחצו לפתיחה במלוא המסך"
+    },
+    "discussion": {
+      "section_title": "שיחה על המסמך",
+      "input_placeholder": "כתבו תגובה…",
+      "send_a11y": "שליחת תגובה",
+      "empty": "עדיין אין הודעות בשיחה. פתחו את השיחה בתגובה הראשונה.",
+      "empty_title": "עדיין אין הודעות",
+      "empty_body": "פתחו את השיחה בהודעה הראשונה.",
+      "error_toast": "שליחת התגובה נכשלה. נסו שוב.",
+      "load_error": "טעינת השיחה נכשלה. משכו לרענון.",
+      "load_error_title": "טעינת השיחה נכשלה",
+      "load_error_body": "בדקו את החיבור לאינטרנט.",
+      "advisor_name": "המלווה",
+      "client_fallback": "הלקוח",
+      "member_fallback": "בן/בת הזוג",
+      "former_member": "משתמש שעזב",
+      "delete": {
+        "action": "לחיצה ארוכה למחיקת התגובה",
+        "confirm_title": "מחיקת תגובה",
+        "confirm_body": "התגובה תוסר מהשיחה.",
+        "confirm_cta": "מחיקה",
+        "success": "התגובה נמחקה",
+        "restored": "התגובה שוחזרה",
+        "error": "המחיקה נכשלה. נסו שוב."
+      }
+    },
+    "search": {
+      "placeholder": "חיפוש בשם, קטגוריה, איש מקצוע או תאריך",
+      "clear_label": "נקה חיפוש",
+      "no_results_title": "לא נמצאו מסמכים",
+      "no_results_helper": "נסו לשנות את הסינון או חפשו במילים אחרות."
+    },
+    "filters": {
+      "all_label": "הכל"
+    },
+    "section": {
+      "count_label_one": "מסמך אחד",
+      "count_label_other": "{{count}} מסמכים"
+    },
+    "viewer": {
+      "close_label": "סגירה",
+      "image_alt": "תצוגת מסמך",
+      "downloaded_toast": "המסמך הורד למכשיר",
+      "download_failed_toast": "ההורדה נכשלה. נסו שוב.",
+      "signed_url_error_toast": "לא ניתן לפתוח את המסמך כעת. נסו שוב.",
+      "row_press_label": "פתחו {{version_label}}",
+      "loading_overlay": "טוען מסמך…",
+      "load_failed": "לא הצלחנו לטעון את המסמך. בדקו את החיבור ונסו שוב."
+    },
+    "share": {
+      "button_label": "שיתוף",
+      "button_a11y": "שיתוף המסמך",
+      "dialog_title": "שתפו את המסמך",
+      "error_toast": "השיתוף נכשל. נסו שוב.",
+      "loading_overlay": "מכין לשיתוף…"
+    },
+    "storage_warning": {
+      "soft_title": "שמת לב?",
+      "soft_body": "נשארו ~{{remaining_mb}}MB. בליווי הדיגיטלי יש 5GB",
+      "hard_title": "הגעתם לקצה האחסון",
+      "hard_body": "50MB / 50MB. שדרגו לליווי הדיגיטלי לקבלת 5GB אחסון לכל החוזים, התוכניות והקבלות.",
+      "upgrade_cta": "שדרוג לליווי דיגיטלי",
+      "dismiss_a11y": "סגור התראה",
+      "manage_storage_cta": "מחיקת קבצים כדי לפנות מקום",
+      "manage_storage_hint_toast": "החליקו על מסמך כדי למחוק",
+      "cap_reached_toast": "הגעתם לקצה ה-50MB. אפשר לשדרג לליווי הדיגיטלי או למחוק קבצים.",
+      "usage_label": "{{used_mb}} MB / {{total_mb}} MB"
+    },
+    "delete": {
+      "confirm_title": "למחוק את המסמך?",
+      "confirm_body": "„{{name}}” יימחק לצמיתות יחד עם כל הגרסאות הקודמות. לא ניתן לבטל את הפעולה.",
+      "confirm_button": "מחיקה",
+      "success_toast": "המסמך נמחק",
+      "error_toast": "מחיקת המסמך נכשלה. נסו שוב.",
+      "error_inline_generic": "מחיקת המסמך נכשלה. נסו שוב.",
+      "row_swipe_action": "מחיקה",
+      "detail_button_a11y": "מחיקת מסמך"
+    },
+    "edit": {
+      "title": "עריכת פרטי המסמך",
+      "subtitle": "שינוי שם, סיווג וקישורים — הקובץ עצמו לא משתנה",
+      "success_toast": "פרטי המסמך עודכנו",
+      "error_toast": "עדכון המסמך נכשל. נסו שוב.",
+      "button_a11y": "עריכת פרטי המסמך"
+    }
+  },
+  "tasks": {
+    "title": "משימות",
+    "subtitle": "שיתוף ותיאום",
+    "combined_title": "משימות וליקויים",
+    "add_button": "הוספת משימה",
+    "completed_on": "הושלמה · {{date}}",
+    "segment": {
+      "tasks": "משימות",
+      "defects": "ליקויים"
+    },
+    "cta": {
+      "new": "משימה חדשה",
+      "new_survey": "+ סקר זוגי",
+      "recommended_checklists": "צ׳קליסטים מומלצים"
+    },
+    "tab": {
+      "open": "פתוחות",
+      "done": "הושלמו"
+    },
+    "completed": {
+      "group_label": "הושלמו השבוע",
+      "empty": {
+        "heading": "אין משימות שהושלמו",
+        "body": "משימות שתסמנו כהושלמו יופיעו כאן למשך שבוע"
+      }
+    },
+    "empty": {
+      "heading": "אין משימות עדיין — מתחילים יחד?",
+      "body": "כל פרויקט מתחיל ממשימה אחת. הוסיפו את הראשונה."
+    },
+    "filter": {
+      "all": "הכל",
+      "self": "שלי",
+      "partner": "שותף",
+      "shared": "שנינו"
+    },
+    "group": {
+      "overdue": "באיחור",
+      "today": "היום",
+      "tomorrow": "מחר",
+      "this_week": "השבוע",
+      "this_month": "החודש",
+      "no_date": "ללא תאריך",
+      "count_label_one": "משימה אחת",
+      "count_label_other": "{{count}} משימות",
+      "surveys": "סקרים זוגיים"
+    },
+    "no_results": {
+      "heading": "אין משימות בסינון הנוכחי",
+      "body": "נסו פילטר אחר או הוסיפו משימה חדשה"
+    },
+    "row": {
+      "checkbox_a11y_mark_complete": "סמן הושלם",
+      "checkbox_a11y_mark_incomplete": "בטל סימון",
+      "completed_a11y_suffix": "סומן כהושלם",
+      "open_a11y_hint": "לחיצה לעריכה",
+      "open_a11y_hint_completed": "לחיצה לצפייה"
+    },
+    "due": {
+      "by": "עד {{date}}",
+      "yesterday": "אתמול",
+      "days_ago": "לפני {{count}} ימים",
+      "today": "היום",
+      "today_with_time": "היום, {{time}}",
+      "tomorrow": "מחר",
+      "tomorrow_with_time": "מחר, {{time}}"
+    }
+  },
+  "trust": {
+    "confirm": {
+      "error": "הפעולה נכשלה. נסו שוב."
+    }
+  },
+  "task": {
+    "form": {
+      "title_create": "משימה חדשה",
+      "title_edit": "עריכת משימה",
+      "cta_update": "שמירה",
+      "titleLabel": "מה צריך לעשות?",
+      "titlePlaceholder": "לאשר את כיוון הברזול במטבח",
+      "descriptionLabel": "הערות",
+      "descriptionPlaceholder": "פרטים שיעזרו לזכור — למה זה חשוב, מה לבדוק, את מי לשאול",
+      "dueDateLabel": "מתי?",
+      "hasTimeLabel": "כולל שעה",
+      "hasTimeHelper": "למשל לפגישה — נציג תזכורת",
+      "timeLabel": "שעה",
+      "pickFromCalendar": "בחרו תאריך מהיומן",
+      "quickDate": {
+        "today": "היום",
+        "tomorrow": "מחר",
+        "this_week": "השבוע",
+        "weekend": "סוף השבוע"
+      },
+      "assignmentLabel": "למי משויך?",
+      "assignment": {
+        "self": "אני",
+        "self_with_name": "{{name}}",
+        "partner": "שותף",
+        "partner_with_name": "{{name}}",
+        "both": "שנינו"
+      },
+      "sharedDecision": {
+        "title": "החלטה משותפת",
+        "subtitle": "שניכם בוחרים מתוך כמה אפשרויות",
+        "explainer": "כל אחד מכם יבחר בנפרד. כשתסכימו — המשימה תיסגר אוטומטית.",
+        "addOption": "הוסיפו אפשרות",
+        "optionPlaceholder": "אפשרות {{n}}"
+      },
+      "cta_create": "צרו משימה",
+      "cta_shared_decision": "פתחו החלטה משותפת",
+      "save_success": "נשמר",
+      "failure_banner": "לא הצלחנו לשמור — ניסו שוב?",
+      "error": {
+        "title_required": "צריך לכתוב מה המשימה — מספיק שורה",
+        "title_too_long": "מקסימום 200 תווים",
+        "description_too_long": "מקסימום 1000 תווים",
+        "assignment_required": "בחרו למי המשימה",
+        "due_at_required_with_time": "בחרו תאריך יעד כשמסמנים שעה"
+      },
+      "professionalLabel": "איש מקצוע",
+      "proPicker": {
+        "placeholder": "בחרו מהרשימה או + הוסיפו חדש",
+        "add_cta": "הוספת איש מקצוע",
+        "empty_helper": "עדיין אין אנשי מקצוע. הוסיפו אחד כדי לשייך אליו משימות."
+      }
+    },
+    "owner": {
+      "self": "שלי",
+      "partner": "שותף",
+      "shared": "שנינו"
+    },
+    "edit": {
+      "not_found": "המשימה לא נמצאה",
+      "update_failed": "השמירה נכשלה. נסו שוב."
+    },
+    "view": {
+      "title": "משימה",
+      "due_label": "יעד",
+      "assignee_label": "שיוך",
+      "reopen_cta": "החזירו לפתוחה",
+      "edit_a11y": "עריכת משימה",
+      "reopen_success": "המשימה הוחזרה לפתוחה",
+      "reopen_error": "ההחזרה נכשלה. נסו שוב.",
+      "professional_label": "איש מקצוע",
+      "back_to_summary_a11y": "חזרה לפרטי המשימה"
+    },
+    "delete": {
+      "confirm_title": "מחיקת משימה",
+      "confirm_body": "האם למחוק את המשימה ‟{{title}}״?",
+      "confirm_cta": "מחיקה",
+      "cancel_cta": "ביטול",
+      "button_a11y": "מחיקת משימה",
+      "error_message": "המחיקה נכשלה. נסו שוב.",
+      "success": "המשימה נמחקה",
+      "restored": "המשימה שוחזרה"
+    }
+  },
+  "survey": {
+    "delete": {
+      "confirm_title": "מחיקת החלטה",
+      "confirm_body": "האם למחוק את ‟{{title}}״? התשובות שנשמרו יוסתרו יחד איתה.",
+      "confirm_cta": "מחיקה",
+      "button_a11y": "מחיקת החלטה",
+      "error_message": "המחיקה נכשלה. נסו שוב.",
+      "success": "ההחלטה נמחקה",
+      "restored": "ההחלטה שוחזרה"
+    },
+    "form": {
+      "title": "סקר זוגי חדש",
+      "intro": {
+        "title": "סקר זוגי — החלטה משותפת",
+        "body": "סקר זוגי הוא הדרך להחליט יחד. שניכם תענו, ותראו את התשובות של שניכם."
+      },
+      "type": {
+        "label": "סוג סקר",
+        "multiple_choice": {
+          "title": "בחירה מרשימה",
+          "desc": "בחירה מ-2 עד 6 אופציות"
+        },
+        "free_text": {
+          "title": "טקסט חופשי",
+          "desc": "כל אחד כותב מה שחושב"
+        },
+        "pro_con": {
+          "title": "בעד / נגד",
+          "desc": "כן או לא, בלי באמצע"
+        }
+      },
+      "question": {
+        "label": "מה השאלה?",
+        "placeholder": {
+          "multiple_choice": "באיזה גוון לקיר נבחר?",
+          "free_text": "מה הדאגה הכי גדולה שלכם בשלב הזה?",
+          "pro_con": "האם נחתום עם הקבלן הזה?"
+        }
+      },
+      "binary": {
+        "preview_label": "תצוגה מקדימה",
+        "pro": "בעד",
+        "con": "נגד",
+        "helper": "התשובות יהיו: ✓ בעד · ✕ נגד"
+      },
+      "options": {
+        "label": "אופציות (2 עד 6)",
+        "placeholder": "טקסט אופציה",
+        "add_cta": "+ הוסף אופציה",
+        "add_image_cta": "+ תמונה",
+        "helper": "אפשר לצרף תמונות מההשראות שלכם, מהגלריה או לצלם עכשיו.",
+        "remove_a11y": "הסירו אופציה",
+        "image_remove_a11y": "הסירו תמונה",
+        "image_source": {
+          "from_inspirations": "מההשראות שלי",
+          "from_device": "מהמכשיר",
+          "cancel": "ביטול"
+        }
+      },
+      "date": {
+        "label": "מתי צריך להחליט?",
+        "placeholder": "בחרו תאריך",
+        "helper": "מומלץ להוסיף תאריך — בלעדיו ההחלטה נדחית"
+      },
+      "cta_send": "שלחו סקר ל{{name}}",
+      "cta_send_solo": "שלחו סקר",
+      "failure_banner": "לא הצלחנו לשלוח את הסקר — ניסו שוב?",
+      "error": {
+        "type_required": "בחרו סוג סקר",
+        "question_required": "שאלה חובה",
+        "question_too_long": "מקסימום 200 תווים",
+        "option_label_required": "נא להזין טקסט אופציה",
+        "option_label_too_long": "מקסימום 80 תווים",
+        "options_too_few": "לפחות 2 אופציות",
+        "options_too_many": "מקסימום 6 אופציות",
+        "options_must_be_empty_for_type": "סוג סקר זה לא תומך באופציות"
+      }
+    },
+    "solo": {
+      "banner": {
+        "title": "צריך להזמין שותף קודם",
+        "body": "סקר זוגי דורש שני אנשים. הזמינו את בן או בת הזוג כדי לשלוח סקרים ולהחליט יחד."
+      },
+      "invite_cta": "+ הזמינו שותף"
+    },
+    "card": {
+      "chip_label": "סקר זוגי",
+      "option_image_a11y": "תמונה לאופציה {{number}}",
+      "open_a11y_hint": "לחיצה לפתיחת הסקר",
+      "status": {
+        "waiting-self": "טרם עניתם",
+        "waiting-partner": "ממתין לתגובת {{name}}",
+        "agreement-mc": "החלטה התקבלה",
+        "disagreement-mc": "חוסר התאמה",
+        "both-answered": "שניכם עניתם",
+        "resolved": "הושלם"
+      },
+      "type_chip": {
+        "free_text": "טקסט חופשי",
+        "pro_con": "בעד / נגד"
+      }
+    },
+    "detail": {
+      "header_title": "סקר זוגי",
+      "loading": "טוען את הסקר...",
+      "not_found": "הסקר לא נמצא. ייתכן שהוא נמחק או שאין לכם הרשאה אליו.",
+      "back_to_tasks_cta": "חזרה למשימות",
+      "status": {
+        "waiting-self": "עכשיו תורכם — ענו על השאלה כדי לראות את התשובה של {{name}}",
+        "waiting-partner": "ממתין לתגובת {{name}}",
+        "agreement-mc": "החלטה התקבלה — בחרתם באותה תשובה",
+        "disagreement-mc": "חוסר התאמה — אתם צריכים לדבר",
+        "both-answered": "שניכם עניתם — צריך להחליט יחד",
+        "resolved": "החלטה התקבלה — הושלם"
+      },
+      "open_conversation_cta": "פתחו שיחה",
+      "resolution": {
+        "intro": "רשמו כאן את ההחלטה שלכם — שני הצדדים יראו את הסיכום.",
+        "placeholder": "ההחלטה שלנו...",
+        "save_cta": "שמרו החלטה",
+        "cancel_cta": "ביטול",
+        "banner_title": "ההחלטה שלכם",
+        "banner_meta": "סוכם על ידי {{name}} ב-{{date}}",
+        "error_save_failed": "שמירת ההחלטה נכשלה. נסו שוב.",
+        "fallback_name": "—"
+      },
+      "nudge": {
+        "prompt": "{{name}} עדיין לא ענה — לשלוח עוד תזכורת?",
+        "cta": "שליחת תזכורת",
+        "cooldown_hint": "תזכורת נשלחה ל-{{name}} — אפשר לנסות שוב מחר.",
+        "error_send_failed": "שליחת התזכורת נכשלה. נסו שוב."
+      },
+      "your_answer_label": "התשובה שלכם",
+      "partner_answer_label": "התשובה של {{name}}",
+      "partner_answer_hidden": "התשובה של {{name}} תיחשף אחרי שתענו",
+      "partner_fallback": "שותף",
+      "input": {
+        "free_text_placeholder": "כתבו את התשובה שלכם...",
+        "pro_label": "בעד",
+        "con_label": "נגד",
+        "pro_placeholder": "מה הסיבה שכן?",
+        "con_placeholder": "מה הסיבה שלא?"
+      },
+      "submit_cta": "שמרו תשובה",
+      "match_indicator": {
+        "agreement": "בחרתם באותה תשובה ✓",
+        "disagreement": "בחרתם אחרת"
+      },
+      "error": {
+        "already_answered": "כבר עניתם על הסקר הזה",
+        "submit_failed": "שמירת התשובה נכשלה. נסו שוב."
+      },
+      "solo_banner": "השותף לפרויקט הוסר. סקרים זוגיים מצריכים שני אנשים."
+    }
+  },
+  "decisions": {
+    "title": "החלטות",
+    "loading": "טוען החלטות...",
+    "error": "לא הצלחנו לטעון את ההחלטות. נסו שוב.",
+    "new_cta": "הוספת החלטה",
+    "footer_note": "החלטה נסגרת רק כשכל המשתתפים הנדרשים בחרו את אותו הדבר. החלטה פרטית גלויה לבני הזוג בלבד.",
+    "empty": {
+      "title": "אין עדיין החלטות",
+      "body": "כאן תנהלו יחד את ההחלטות של הבנייה — מגוון הקיר בסלון ועד בחירת הקבלן.",
+      "cta": "+ פתחו החלטה ראשונה"
+    },
+    "card": {
+      "opened_by": "נפתחה ע\"י {{name}}",
+      "options_count": "{{count}} אפשרויות",
+      "deciders_prefix": "מחליטים",
+      "deciders_both": "שני בני הזוג",
+      "deciders_me": "אני בלבד",
+      "private": "פרטי",
+      "choice": "הבחירה: {{label}}",
+      "open_a11y_hint": "לחיצה לפתיחת ההחלטה",
+      "status": {
+        "waiting-self": "ממתין לך",
+        "waiting-partner": "ממתין ל{{name}}",
+        "agreement-mc": "יש הסכמה",
+        "disagreement-mc": "צריך לדבר",
+        "both-answered": "ממתין להחלטה",
+        "resolved": "הוחלט"
+      },
+      "resolved_with_date": "הוחלט · {{date}}"
+    },
+    "form": {
+      "title": "החלטה חדשה",
+      "question_label": "על מה מחליטים?",
+      "question_placeholder": "לדוגמה: ריצוף לסלון",
+      "options_label": "אפשרויות לבחירה",
+      "option_placeholder": "אפשרות",
+      "add_option_cta": "+ הוסף אפשרות",
+      "remove_option_a11y": "הסירו אפשרות",
+      "add_image_cta": "+ תמונה",
+      "image_remove_a11y": "הסירו תמונה",
+      "image_helper": "אפשר לצרף תמונה לכל אפשרות — מהגלריה או לצלם עכשיו.",
+      "image_permission_denied": "אין הרשאה למצלמה או לגלריה. אפשר לאשר בהגדרות המכשיר.",
+      "image_unavailable": "לא הצלחנו לפתוח את המצלמה. אפשר לבחור תמונה מהגלריה.",
+      "image_preview_a11y": "התמונה שנבחרה לאפשרות {{number}}",
+      "deciders_label": "מי מחליט",
+      "deciders_both": "שני בני הזוג",
+      "deciders_me": "אני בלבד",
+      "deciders_solo_hint": "כדי לבחור יחד, הזמינו קודם את בן/בת הזוג.",
+      "private_label": "החלטה פרטית",
+      "private_hint": "גלויה רק לכם — המלווה לא יראה אותה.",
+      "cta": "פתחו החלטה",
+      "failure_banner": "לא הצלחנו לפתוח את ההחלטה — לנסות שוב?",
+      "error": {
+        "question_required": "צריך לכתוב על מה מחליטים",
+        "question_too_long": "מקסימום 200 תווים",
+        "option_required": "נא להזין אפשרות",
+        "option_too_long": "מקסימום 80 תווים",
+        "options_too_few": "צריך לפחות 2 אפשרויות",
+        "options_too_many": "מקסימום 6 אפשרויות"
+      }
+    },
+    "detail": {
+      "solo": {
+        "pick_prompt": "בחרו את ההחלטה שלכם",
+        "confirm_cta": "קבעו החלטה",
+        "resolved_banner": "הוחלט · {{date}}",
+        "failure": "שמירת ההחלטה נכשלה. נסו שוב.",
+        "option_image_a11y": "תמונה של {{label}}"
+      }
+    }
+  },
+  "community": {
+    "header_overline": "בונים יחד",
+    "screen_title": "קהילה",
+    "add_button": "פוסט חדש",
+    "loading": "טוען את הקהילה…",
+    "error": "אירעה שגיאה בטעינת הקהילה",
+    "empty": {
+      "title": "הקהילה עוד שקטה כאן",
+      "body": "שתפו שאלה, המלצה או חוויה — וזוגות אחרים שבונים בית יראו ויגיבו.",
+      "cta": "כתבו את הפוסט הראשון"
+    },
+    "no_results": "אין פוסטים שתואמים את הסינון",
+    "filter": {
+      "all_regions": "כל האזורים",
+      "all_stages": "כל השלבים",
+      "saved": "שמורים"
+    },
+    "post_type": {
+      "question": "שאלה",
+      "professional_rec": "המלצה על איש מקצוע",
+      "experience": "שיתוף חוויה",
+      "warning": "אזהרה"
+    },
+    "card": {
+      "by_author": "מאת {{name}}",
+      "anonymous": "משתמש",
+      "open_post": "פתחו את הפוסט: {{title}}",
+      "likes": "{{count}} לייקים",
+      "comments": "{{count}} תגובות",
+      "saves": "{{count}} שמירות"
+    },
+    "detail": {
+      "title": "פוסט",
+      "not_found": "הפוסט לא נמצא או הוסר",
+      "region_stage": "{{region}} · {{stage}}"
+    },
+    "comments": {
+      "title": "תגובות",
+      "empty": "אין עדיין תגובות. היו הראשונים להגיב.",
+      "placeholder": "כתבו תגובה…",
+      "send": "שליחה",
+      "reply": "השב",
+      "replying_to": "בתשובה לתגובה",
+      "cancel_reply": "ביטול",
+      "you": "אתם",
+      "author": "משתמש",
+      "send_failed": "שליחת התגובה נכשלה. נסו שוב."
+    },
+    "form": {
+      "create_title": "פוסט חדש",
+      "edit_title": "עריכת פוסט",
+      "type_label": "סוג הפוסט",
+      "title_label": "כותרת",
+      "title_placeholder": "על מה תרצו לכתוב?",
+      "title_error": "יש להזין כותרת (עד 140 תווים)",
+      "content_label": "תוכן",
+      "content_placeholder": "פרטו כאן (לא חובה)…",
+      "region_label": "אזור",
+      "stage_label": "שלב",
+      "image_label": "תמונה",
+      "add_image": "הוספת תמונה",
+      "remove_image": "הסרת תמונה",
+      "content_or_image_error": "יש להוסיף תוכן או תמונה",
+      "submit_create": "פרסום",
+      "submit_edit": "שמירת שינויים",
+      "creating": "מפרסם…",
+      "saving": "שומר…",
+      "save_error": "הפרסום נכשל. נסו שוב.",
+      "submit_hint": "כדי לפרסם צריך כותרת, ותוכן או תמונה"
+    },
+    "flag": {
+      "button": "דיווח",
+      "sheet_title": "דיווח על הפוסט",
+      "sheet_body": "בחרו סיבה. הפוסט יוסתר מהפיד שלכם ויישלח לבדיקה.",
+      "spam": "ספאם",
+      "off_topic": "לא רלוונטי",
+      "harmful": "תוכן פוגעני",
+      "cancel": "ביטול",
+      "done_toast": "הדיווח התקבל. הפוסט הוסתר מהפיד שלכם."
+    },
+    "actions": {
+      "edit": "עריכה",
+      "delete": "מחיקה"
+    },
+    "delete": {
+      "title": "מחיקת הפוסט",
+      "body": "הפוסט וכל התגובות עליו יימחקו לצמיתות. האם להמשיך?",
+      "confirm": "מחיקה"
+    },
+    "edit": {
+      "window_closed": "חלון העריכה (שעה אחת) הסתיים. לא ניתן לערוך את הפוסט."
+    }
+  },
+  "chat": {
+    "fab_label": "שאלו את יועץ הבנייה",
+    "header_title": "יועץ הבנייה",
+    "header_subtitle": "שאלו כל דבר על התקציב, התשלומים וההחלטות שלכם",
+    "menu": {
+      "more_a11y": "אפשרויות",
+      "new_conversation": "שיחה חדשה",
+      "delete_conversation": "מחיקת השיחה"
+    },
+    "clear": {
+      "button_a11y": "מחיקת השיחה",
+      "confirm_title": "למחוק את השיחה?",
+      "confirm_body": "כל ההודעות בשיחה יימחקו לצמיתות. לא ניתן לבטל את הפעולה.",
+      "confirm_cta": "מחיקה",
+      "error": "מחיקת השיחה נכשלה. נסו שוב."
+    },
+    "message_delete": {
+      "action": "לחיצה ארוכה למחיקת ההודעה",
+      "confirm_title": "מחיקת הודעה",
+      "confirm_body": "ההודעה תוסר מהיסטוריית השיחה. תשובות שכבר התקבלו לא ישתנו.",
+      "confirm_cta": "מחיקה",
+      "success": "ההודעה נמחקה",
+      "restored": "ההודעה שוחזרה",
+      "error": "המחיקה נכשלה. נסו שוב."
+    },
+    "input_placeholder": "כתבו שאלה...",
+    "send": "שליחה",
+    "attach": "צרפו קובץ",
+    "voice": "הכתבה קולית",
+    "listening": "מקשיב…",
+    "thinking": "יועץ הבנייה חושב…",
+    "greeting": "היי! אני מכיר את כל נתוני הפרויקט שלכם — תקציב, תשלומים, החלטות וליקויים. במה אפשר לעזור?",
+    "quick_questions_title": "שאלות מהירות",
+    "empty_title": "אני כאן לכל שאלה",
+    "empty_subtitle": "תקציב, אנשי מקצוע, היתרים, לוחות זמנים — שאלו אותי מה שתרצו.",
+    "starter_prompts_a11y": "שאלות מהירות",
+    "starter_prompts": {
+      "payments_week": "מה התשלומים שלי השבוע?",
+      "budget_left": "כמה נשאר לי בתקציב?",
+      "open_decisions": "אילו החלטות פתוחות מחכות לי?",
+      "open_defects": "מה הליקויים הפתוחים ומי אחראי?",
+      "spent_frame": "כמה הוצאתי על השלד?"
+    },
+    "disclaimer": "שווה לוודא עם איש מקצוע",
+    "save_as_task": "שמרו כמשימה",
+    "saved": "נשמר",
+    "free_warning_one": "נשארה הודעה אחת לפי החבילה החינמית",
+    "free_warning_other": "נשארו {{count}} הודעות לפי החבילה החינמית",
+    "free_cap_title": "הגעתם למכסת ההודעות החודשית",
+    "free_cap_upgrade": "השדרוג לליווי הדיגיטלי מאפשר שיחה ללא הגבלה",
+    "upgrade_cta": "שדרוג לליווי דיגיטלי",
+    "error_generic": "משהו השתבש. נסו שוב בעוד רגע.",
+    "error_rate_limited": "יש לנו עומס מהמערכת, נסו שוב בעוד דקה",
+    "attachment_processing": "מעבד קובץ…",
+    "attachment_image": "תמונה",
+    "attachment_pdf": "מסמך",
+    "remove_attachment": "הסירו קובץ",
+    "cancel": "ביטול",
+    "mic_permission_title": "צריך גישה למיקרופון",
+    "mic_permission_body": "כדי להשתמש בהכתבה קולית, צריך לאפשר גישה למיקרופון בהגדרות.",
+    "open_settings": "פתחו הגדרות",
+    "origin_badge_label": "נוצר משיחה עם יועץ הבנייה",
+    "origin_badge_short": "מיועץ הבנייה"
+  },
+  "success": {
+    "expense": {
+      "eyebrow": "נשמר בתקציב",
+      "title": "ההוצאה נוספה",
+      "body": "ההוצאה נשמרה בתקציב הפרויקט והתעדכנה אצל שני בני הזוג בזמן אמת.",
+      "body_solo": "ההוצאה נשמרה בתקציב הפרויקט והמספרים התעדכנו בזמן אמת.",
+      "remaining_label": "נותר בתקציב",
+      "primary": "חזרה לתקציב",
+      "secondary": "הוספת הוצאה נוספת"
+    },
+    "stage": {
+      "eyebrow": "שלב {{current}} מתוך {{total}} הושלם",
+      "title": "השלב הושלם!",
+      "body": "כל הכבוד — עברתם עוד אבן דרך משמעותית בדרך הביתה. עדכנו את לוח הזמנים והתקציב בהתאם.",
+      "progress_label": "התקדמות הפרויקט",
+      "next_hint": "השלב הבא",
+      "primary": "מעבר לשלב הבא",
+      "secondary": "סקירת מה שהושלם"
+    },
+    "community": {
+      "eyebrow": "פורסם בקהילה",
+      "title": "הפוסט שלך פורסם",
+      "body": "חברי הקהילה כבר יכולים לראות את הפוסט, להגיב ולעזור. נעדכן אותך על כל תגובה חדשה.",
+      "primary": "צפייה בפוסט",
+      "secondary": "חזרה לקהילה"
+    }
+  },
+  "pro": {
+    "clients": {
+      "title": "הלקוחות שלי",
+      "empty_heading": "הלקוח הראשון שלכם מתחיל כאן",
+      "empty_body": "הזמינו משפחה ללוות, או שתפו את הקישור המקצועי שלכם — הלקוח הראשון תמיד חינם.",
+      "empty_cta": "הזמינו את הלקוח הראשון שלכם",
+      "invite_cta": "הזמנת לקוח",
+      "add_cta": "הוספת לקוח",
+      "projects_title": "הפרויקטים שלי",
+      "projects_count_a11y": "{{count}} אתרים",
+      "scope_scoped": "גישה מוגבלת",
+      "scope_full": "גישה מלאה",
+      "pill": {
+        "pending_approval": "ממתין לאישורכם",
+        "over_budget": "חריגה מהתקציב",
+        "waiting_external": "ממתין לבנק",
+        "ok": "מעודכן",
+        "unclaimed": "טרם הצטרפו"
+      },
+      "card_a11y": "{{name}}, {{subtitle}}, {{pill}}"
+    },
+    "supervision": {
+      "filter_count": "מציג {{shown}} מתוך {{total}} אתרים",
+      "empty_filter": "אין אתרים התואמים את הסינון",
+      "empty_filter_body": "אף אתר לא תואם את הסינון שנבחר. נקו את הסינון כדי לראות את כל האתרים.",
+      "empty_filter_cta": "ניקוי הסינון",
+      "stat": {
+        "active_sites": "אתרים פעילים",
+        "awaiting_signoff": "פעימות לאישור",
+        "urgent_defects": "ליקויים דחופים",
+        "filter_a11y": "סינון לפי {{label}}",
+        "filter_all_a11y": "{{label}} — הקישו להצגת כל האתרים",
+        "filter_all_active_a11y": "{{label}}, מוצגים כל האתרים",
+        "filter_active_a11y": "{{label}}, מסונן — הקישו לניקוי הסינון"
+      },
+      "card": {
+        "next_visit_none": "טרם נקבע ביקור",
+        "defects_zero": "אין ליקויים פתוחים",
+        "defects_one": "ליקוי פתוח אחד",
+        "defects_other": "{{count}} ליקויים פתוחים",
+        "milestones_zero": "אין פעימות לאישור",
+        "milestones_one": "פעימה אחת לאישור",
+        "milestones_other": "{{count}} פעימות לאישור",
+        "pill_ok": "מעודכן",
+        "pill_awaiting_signoff": "ממתין לאישורכם",
+        "pill_urgent_one": "ליקוי דחוף אחד",
+        "pill_urgent_other": "{{count}} ליקויים דחופים",
+        "a11y": "אתר {{name}}, {{stage}}, {{status}}"
+      }
+    },
+    "site": {
+      "title": "תיק אתר",
+      "loading": "טוען…",
+      "error": "לא ניתן לטעון את הפרויקט",
+      "not_available": "האתר אינו זמין עוד",
+      "section": {
+        "milestones": "פעימות מימון",
+        "defects": "ליקויים",
+        "reports": "דוחות פיקוח",
+        "audit": "תיק פיקוח"
+      },
+      "milestones_empty": "אין פעימות רשומות בפרויקט הזה",
+      "defects_empty": "אין ליקויים פתוחים בפרויקט הזה",
+      "reports_placeholder": "דוחות הפיקוח יופיעו כאן לאחר הביקור הראשון",
+      "audit_placeholder": "תיק הפיקוח יתעד כל פעולה לאחר הביקור הראשון",
+      "milestone_seq": "פעימה {{n}}",
+      "defect_status": {
+        "open": "פתוח",
+        "in_repair": "בתיקון",
+        "closed": "סגור",
+        "verified_closed": "תוקן ונבדק"
+      },
+      "defect_verify_cta": "אישור תיקון",
+      "defect_verify_title": "לאשר שהליקוי תוקן?",
+      "defect_verify_body": "אשרו שביצעתם בדיקה חוזרת בשטח וש\"{{title}}\" תוקן. הפעולה סופית ואינה ניתנת לביטול.",
+      "defect_verified_toast": "הליקוי סומן כתוקן ונבדק",
+      "defect_urgency": {
+        "low": "נמוך",
+        "medium": "בינוני",
+        "urgent": "דחוף"
+      },
+      "defect_a11y": "ליקוי: {{title}}, {{status}}, דחיפות {{urgency}}"
+    },
+    "visit": {
+      "capture_title": "דוח פיקוח",
+      "error": "לא ניתן לטעון את הביקור",
+      "not_available": "הביקור אינו זמין עוד",
+      "no_findings": "ביקורת ללא ליקויים",
+      "report_summary": "{{total}} ממצאים · {{urgent}} דחופים",
+      "findings_empty_title": "מוכן לתיעוד ממצאים",
+      "findings_empty_body": "הוסיפו ממצא ראשון — תמונות, מיקום, חומרה והנדרש לתיקון.",
+      "row_a11y": "דוח פיקוח, {{status}}",
+      "status": {
+        "draft": "טיוטה",
+        "issued": "הונפק",
+        "cancelled": "בוטל"
+      },
+      "issue": {
+        "pending": "הדו״ח ממתין לשליחה — יישלח אוטומטית עם חזרת החיבור.",
+        "failed": "שליחת הדו״ח נכשלה. הטיוטה נשמרה — נסו שוב.",
+        "cta": "הנפקת דוח",
+        "confirm_title": "להנפיק את דוח הפיקוח?",
+        "confirm_body": "הדו״ח יישלח לזוג ולקבלן וינעל לצפייה בלבד. הממצאים ייכנסו לרשימת הליקויים של הזוג.",
+        "confirm_body_none": "לא נרשמו ממצאים. הביקור יירשם כ״ביקורת ללא ליקויים״ ויישלח לזוג."
+      },
+      "start": {
+        "cta": "פתיחת ביקור חדש",
+        "title": "בחרו שלב בנייה",
+        "body": "הביקור יתועד תחת השלב שתבחרו.",
+        "option_a11y": "בחירת שלב {{stage}}",
+        "upgrade_required": "פתיחת ביקור לאתר נוסף דורשת מנוי הבונה PRO.",
+        "error": "לא ניתן לפתוח ביקור. נסו שוב."
+      },
+      "delete": {
+        "cta": "מחיקת הביקור",
+        "confirm_title": "למחוק את הביקור?",
+        "confirm_body": "הביקור והממצאים שנרשמו בו יימחקו לצמיתות. פעולה זו מיועדת לטיוטה שנפתחה בטעות — למשל אצל לקוח שגוי.",
+        "confirm_cta": "מחיקה"
+      }
+    },
+    "finding": {
+      "title_new": "ממצא חדש",
+      "title_edit": "עריכת ממצא",
+      "add_cta": "הוספת ממצא",
+      "add_photo": "הוספת תמונה",
+      "photo_helper": "עד 8 תמונות · הקשה על תמונה מוסיפה סימון",
+      "remove_photo": "הסרת תמונה",
+      "remove": "הסרת ממצא",
+      "correction_label": "הנדרש לתיקון",
+      "correction_placeholder": "תארו את הליקוי ואת מה שנדרש לתיקון",
+      "severity_label": "חומרה",
+      "severity": {
+        "urgent": "דחוף",
+        "medium": "בינוני",
+        "low": "נמוך"
+      },
+      "location_label": "מיקום",
+      "location_placeholder": "בחרו מיקום",
+      "trade_label": "אחראי",
+      "trade_placeholder": "בחרו בעל מקצוע",
+      "dictate": "הכתבה קולית",
+      "dictate_denied": "יש לאשר גישה למיקרופון כדי להכתיב.",
+      "save": "שמירת ממצא",
+      "row_a11y": "ממצא בחומרת {{severity}}: {{text}}",
+      "citation_label": "אסמכתא תקנית",
+      "citation_placeholder": "למשל: ת\"י 1752.1 (איטום גגות)",
+      "cost_label": "אומדן עלות תיקון (₪)",
+      "cost_placeholder": "0",
+      "cost_helper": "אומדן בלבד — לא הצעת מחיר. מופיע בדוח לצד הממצא."
+    },
+    "report": {
+      "title": "דוח פיקוח",
+      "discussion_title": "שיחה על הדוח",
+      "findings_title": "ממצאים",
+      "view_pdf": "צפייה בדוח (PDF)",
+      "pdf_error": "לא ניתן לפתוח את הדוח. נסו שוב.",
+      "from_visit_cta": "צפייה בדוח הפיקוח",
+      "cancel": {
+        "cta": "ביטול הדוח",
+        "confirm_title": "לבטל את הדוח?",
+        "confirm_body": "הדוח יבוטל והליקויים שנוצרו ממנו יוסרו מרשימת הליקויים של המשפחה. הביטול נרשם בתיק הפיקוח ואינו ניתן לשחזור.",
+        "confirm_cta": "ביטול הדוח",
+        "blocked": "אי אפשר לבטל — ליקוי מהדוח כבר אומת כתוקן או מעוגן בחסימת תשלום."
+      }
+    },
+    "audit": {
+      "actor_fallback": "המפקח",
+      "export_cta": "ייצוא תיק הפיקוח",
+      "export_dialog": "תיק פיקוח",
+      "export_error": "לא ניתן לייצא את התיק. נסו שוב.",
+      "event": {
+        "visit_issued": "הונפק דוח פיקוח",
+        "defect_flagged": "נרשם ליקוי",
+        "defect_verified": "ליקוי תוקן ונבדק",
+        "payment_approved": "תשלום אושר ושוחרר",
+        "payment_blocked": "תשלום נחסם עד לתיקון",
+        "payment_block_lifted": "חסימת תשלום הוסרה",
+        "visit_report_cancelled": "דוח ביקור בוטל",
+        "visit_drafted": "נפתחה טיוטת ביקור",
+        "expense_recorded": "נרשמה הוצאה",
+        "client_task_created": "נוספה משימה ללקוח",
+        "client_decision_created": "נוספה החלטה ללקוח"
+      }
+    },
+    "stats": {
+      "clients": "לקוחות",
+      "pending": "ממתינים לאישור",
+      "over_budget": "בחריגה"
+    },
+    "hero": {
+      "pro_chip": "הבונה PRO",
+      "subtitle": "{{active}} פרויקטים פעילים · {{pending}} פעולות ממתינות",
+      "subtitle_named": "{{name}} · {{active}} פרויקטים פעילים · {{pending}} פעולות ממתינות",
+      "active_projects_one": "פרויקט פעיל אחד",
+      "active_projects_other": "{{count}} פרויקטים פעילים",
+      "pending_actions_one": "פעולה ממתינה אחת",
+      "pending_actions_other": "{{count}} פעולות ממתינות"
+    },
+    "weekly": {
+      "title": "סיכום שבועי",
+      "range": "{{from}}–{{to}}",
+      "milestones": "פעימות לאישור",
+      "site_visits": "ביקורי אתר",
+      "payments": "תשלומים לתשלום",
+      "time_saved": "כ־4 שעות של איסוף מסמכים ותיעוד נחסכו לך השבוע"
+    },
+    "pending": {
+      "section_title": "פעולות ממתינות",
+      "badge_a11y_one": "פעולה אחת ממתינה",
+      "badge_a11y_other": "{{count}} פעולות ממתינות",
+      "card_a11y": "{{family}}, {{title}}, {{amount}}, {{status}}",
+      "milestone": {
+        "title": "אישור פעימה {{n}}",
+        "cta": "מעבר לאישור"
+      },
+      "payment": {
+        "title": "תשלום {{n}}",
+        "cta": "מעבר לתשלום"
+      }
+    },
+    "upgrade": {
+      "banner_title_one": "לקוח אחד במצב צפייה בלבד",
+      "banner_title_other": "{{count}} לקוחות במצב צפייה בלבד",
+      "banner_body": "הלקוח הראשון תמיד חינם. אצל שאר הלקוחות אפשר לצפות בהכול, אך אישור פעימות והפקת דוח לבנק נפתחים עם מנוי הבונה פרו.",
+      "cta": "שדרוג להבונה פרו",
+      "blocked_title": "נדרש מנוי הבונה פרו",
+      "blocked_body": "הלקוח הזה מעבר ללקוח הראשון החינמי. שדרגו להבונה פרו כדי לאשר פעימות ולהפיק דוחות עבורו."
+    },
+    "client": {
+      "unavailable": "הגישה לפרויקט הזה כבר לא זמינה",
+      "tabs": {
+        "overview": "סקירה",
+        "defects": "ליקויים",
+        "reports": "דוחות",
+        "audit": "תיק"
+      },
+      "pending_title_one": "פעימה אחת ממתינה לאישורכם",
+      "pending_title_other": "{{count}} פעימות ממתינות לאישורכם",
+      "pending_body": "בדקו את האסמכתאות ואשרו כדי להפיק דוח לבנק.",
+      "pending_cta": "למעבר לאבני הדרך",
+      "approve_cta": "אשר פעימה {{n}}",
+      "approve_upgrade_cta": "שדרגו כדי לאשר",
+      "bank_report_cta": "דוח פעימה לבנק",
+      "stat_documents": "מסמכים משותפים",
+      "stat_documents_count_one": "קובץ אחד",
+      "stat_documents_count_other": "{{count}} קבצים",
+      "budget_utilized": "ניצול תקציב",
+      "budget_hidden": "התקציב אינו משותף איתכם בפרויקט הזה.",
+      "payments_title": "פעימות מימון",
+      "payments_empty": "אין עדיין פעימות בפרויקט הזה.",
+      "documents_title": "מסמכים משותפים",
+      "documents_empty": "אין עדיין מסמכים משותפים בפרויקט הזה.",
+      "tasks_private": "המשימות נשארות פרטיות למשפחה ואינן מוצגות כאן.",
+      "budget": {
+        "in_budget": "בטווח התקציב",
+        "over_budget": "חריגה מהתקציב"
+      },
+      "stats": {
+        "documents": "מסמכים משותפים",
+        "documents_count_one": "קובץ אחד",
+        "documents_count_other": "{{count}} קבצים",
+        "expenses": "הוצאות אחרונות",
+        "expenses_count_one": "אחת החודש",
+        "expenses_count_other": "{{count}} החודש",
+        "defects": "ליקויים פתוחים",
+        "defects_count_one": "פתוח אחד",
+        "defects_count_other": "{{count}} פתוחים",
+        "reports": "דוחות פיקוח",
+        "reports_count_one": "דוח אחד",
+        "reports_count_other": "{{count}} דוחות",
+        "decisions": "החלטות משותפות",
+        "decisions_count_one": "החלטה אחת",
+        "decisions_count_two": "שתי החלטות",
+        "decisions_count_other": "{{count}} החלטות"
+      },
+      "timeline": {
+        "title": "יומן פרויקט",
+        "today": "היום",
+        "actor_unknown": "בני המשפחה",
+        "document": {
+          "title": "{{title}} · גרסה {{v}} הועלתה",
+          "subtitle_none": "הועלה ע\"י {{actor}}",
+          "subtitle_one": "הועלה ע\"י {{actor}} · תגובה אחת בשיחה",
+          "subtitle_other": "הועלה ע\"י {{actor}} · {{count}} תגובות בשיחה"
+        },
+        "milestone_sent": {
+          "title": "פעימה {{n}} נשלחה לאישורך",
+          "subtitle": "בקשת משיכת מימון ע\"י {{actor}} · {{amount}}"
+        },
+        "milestone_approved": {
+          "title": "אישרת את פעימה {{n}}",
+          "subtitle": "הדוח הופק אוטומטית ונשלח לשמאי הבנק"
+        },
+        "defect": {
+          "title": "ליקוי דווח: {{title}}",
+          "subtitle": "דווח ע\"י {{actor}}"
+        },
+        "expense": {
+          "title": "הוצאה נרשמה: {{title}}",
+          "subtitle": "{{actor}} · {{amount}}"
+        }
+      },
+      "trust_strip": "כל אירוע נרשם אוטומטית עם חותמת זמן — מי אישר, מי בחר ומה דווח. תיק התיעוד שלכם לכל אורך הפרויקט.",
+      "list": {
+        "documents_title": "מסמכים משותפים",
+        "documents_empty": "אין עדיין מסמכים משותפים בפרויקט הזה.",
+        "expenses_title": "הוצאות",
+        "expenses_empty": "אין עדיין הוצאות משותפות בפרויקט הזה.",
+        "defects_title": "ליקויים פתוחים",
+        "defects_empty": "אין ליקויים פתוחים בפרויקט הזה.",
+        "decisions_title": "החלטות משותפות",
+        "decisions_empty": "אין עדיין החלטות משותפות בפרויקט הזה."
+      },
+      "decision": {
+        "screen_title": "החלטה משותפת",
+        "loading": "ההחלטה נטענת…",
+        "not_found": "ההחלטה הזאת אינה זמינה לצפייה",
+        "not_found_back_button": "חזרה לרשימה",
+        "status_open": "פתוחה",
+        "status_resolved": "הוכרעה",
+        "opened_at": "נפתחה ב־{{date}}",
+        "resolved_at": "הוכרעה ב־{{date}}",
+        "options_title": "האפשרויות",
+        "options_empty": "אין אפשרויות משותפות להחלטה הזאת.",
+        "anonymous_note": "התשובות מוצגות ללא ציון מי מבני הזוג ענה.",
+        "response_count_one": "תשובה אחת",
+        "response_count_two": "שתי תשובות",
+        "response_count_other": "{{count}} תשובות",
+        "responses_empty": "אין עדיין תשובות להחלטה הזאת.",
+        "other_responses_title": "תשובות נוספות",
+        "responses_title": "התשובות",
+        "pro_label": "בעד: {{value}}",
+        "con_label": "נגד: {{value}}",
+        "resolution_title": "ההחלטה שהתקבלה",
+        "resolution_missing": "ההחלטה נסגרה ללא נימוק כתוב."
+      },
+      "fab": {
+        "defect": "ליקוי חדש",
+        "document": "העלאת מסמך"
+      },
+      "quick_actions": {
+        "section_title": "פעולות מהירות",
+        "milestones": "פעימות",
+        "visit": "ביקור חדש",
+        "tile_open_a11y": "{{label}}, {{count}} ממתינים",
+        "add_defect": "ליקוי חדש",
+        "add_expense": "הוצאה חדשה",
+        "add_task": "משימה חדשה",
+        "add_decision": "החלטה חדשה"
+      },
+      "add": {
+        "defect_heading": "ליקוי חדש ללקוח",
+        "defect_placeholder": "מה הליקוי?",
+        "urgency_label": "דחיפות",
+        "urgency_low": "נמוכה",
+        "urgency_medium": "בינונית",
+        "urgency_urgent": "דחוף",
+        "expense_heading": "הוצאה חדשה ללקוח",
+        "amount_placeholder": "סכום בשקלים",
+        "expense_placeholder": "על מה ההוצאה?",
+        "category_label": "קטגוריה",
+        "task_heading": "משימה ללקוח",
+        "task_placeholder": "מה צריך לעשות?",
+        "due_placeholder": "תאריך יעד (רשות)",
+        "due_clear": "ניקוי תאריך היעד",
+        "decision_heading": "החלטה ללקוח",
+        "decision_placeholder": "במה צריך להכריע?",
+        "options_label": "אפשרויות (2 עד 6)",
+        "option_placeholder": "אפשרות {{n}}",
+        "option_add": "הוספת אפשרות",
+        "option_remove": "הסרת אפשרות {{n}}",
+        "notes_placeholder": "פרטים נוספים (רשות)",
+        "shared_hint": "זה ייכנס למרחב של הלקוחות והשם שלכם יופיע לידו.",
+        "money_hint": "זה משנה את תמונת התקציב של הלקוחות.",
+        "success_defect": "הליקוי נרשם אצל הלקוחות.",
+        "success_expense": "ההוצאה נרשמה אצל הלקוחות.",
+        "success_task": "המשימה נוספה לרשימה של הלקוחות.",
+        "success_decision": "ההחלטה נוספה למרחב של הלקוחות.",
+        "error": "לא הצלחנו לשמור. נסו שוב בעוד רגע.",
+        "error_scope": "רישום הוצאה פתוח רק למי שקיבל גישה מלאה מהלקוחות.",
+        "error_no_access": "הגישה שלכם לאתר הזה כבר לא פעילה.",
+        "category_missing": "לא הצלחנו לטעון את הקטגוריות. נסו שוב בעוד רגע."
+      },
+      "authored_tasks": {
+        "title": "מה הוספתם ללקוח",
+        "hint": "אלה רק המשימות שאתם הוספתם. שאר הרשימה של המשפחה פרטית.",
+        "empty": "עדיין לא הוספתם משימות ללקוח.",
+        "done": "בוצע"
+      }
+    },
+    "switcher": {
+      "title": "החשבון שלי",
+      "to_pro": "מעבר לאזור המקצועי",
+      "to_family": "מעבר לפרויקט שלי",
+      "sheet_title": "מעבר לאתר",
+      "open_a11y": "{{name}} — מעבר לאתר אחר",
+      "row_a11y": "{{name}}, {{state}}",
+      "row_current_a11y": "{{name}}, האתר הנוכחי",
+      "row_waiting_one": "פריט אחד ממתין לכם",
+      "row_waiting_other": "{{count}} פריטים ממתינים לכם"
+    },
+    "home": {
+      "hero_title": "הבונה PRO",
+      "hero_chip": "PRO",
+      "hero_subtitle": "שלום, {{name}} · מפקח בנייה",
+      "hero_subtitle_no_name": "מרחב הפיקוח שלכם · מפקח בנייה",
+      "hero_bell_a11y": "התראות",
+      "account_a11y": "החשבון שלי",
+      "how_title": "איך זה עובד",
+      "how_step_1": "תיעוד ביקור והנפקת דו״ח פיקוח",
+      "how_step_2": "שחרור או חסימת תשלום לקבלן",
+      "how_step_3": "תיק פיקוח חתום שנשמר",
+      "demo_title": "רוצים לראות איך זה עובד?",
+      "demo_card_title": "אתר לדוגמה · משפחת דמו",
+      "demo_card_subtitle": "סיור מודרך באזור הפיקוח — ללא נתונים אמיתיים",
+      "demo_card_a11y": "מעבר לאתר הדוגמה",
+      "invite_cta": "הזמינו לקוח — חינם",
+      "share_cta": "שתפו קישור מקצועי",
+      "add_first_cta": "הוספת הלקוח הראשון — חינם"
+    },
+    "addClient": {
+      "title": "הוספת לקוח",
+      "body": "איך מתחברים ללקוח הזה?",
+      "invite_label": "להזמין משפחה עם קוד שלנו",
+      "invite_sub": "מפיקים קוד, המשפחה מקלידה אותו והפרויקט נפתח אצלה",
+      "invite_a11y": "להזמין משפחה עם קוד שלנו — הפקת קוד הצטרפות",
+      "new_label": "לפתוח אתר ללקוח שעדיין לא באפליקציה",
+      "new_sub": "עובדים כרגיל; המשפחה תצטרף מאוחר יותר עם קוד",
+      "new_a11y": "לפתוח אתר ללקוח שעדיין לא באפליקציה",
+      "code_label": "להזין קוד שקיבלתי ממשפחה",
+      "code_sub": "המשפחה כבר פתחה פרויקט ושלחה לכם קוד הצטרפות",
+      "code_a11y": "להזין קוד שקיבלתי ממשפחה"
+    },
+    "account": {
+      "title": "החשבון שלי",
+      "section_profile": "פרטים אישיים",
+      "section_preferences": "העדפות",
+      "language_label": "שפה",
+      "notifications_label": "התראות מופעלות",
+      "notifications_description": "עדכונים על ליקויים, פעימות ותשלומים",
+      "logout_label": "התנתקות",
+      "logout_confirm_title": "להתנתק מהחשבון?",
+      "logout_confirm_body": "תצטרכו להתחבר מחדש בפעם הבאה.",
+      "logout_confirm_button": "התנתקות",
+      "logout_cancel_button": "ביטול"
+    },
+    "demo": {
+      "title": "משפחת דמו",
+      "banner": "מצב הדגמה",
+      "banner_body": "זהו אתר לדוגמה. הנתונים אינם אמיתיים ואינם נשמרים.",
+      "tabs": {
+        "overview": "סקירה",
+        "payments": "תשלומים",
+        "reports": "דוחות וליקויים",
+        "documents": "מסמכים"
+      },
+      "overview": {
+        "site_name": "בית משפחת דמו · רמת השרון",
+        "stage": "שלב נוכחי: שלד",
+        "stage_chip": "שלד",
+        "stat_open_defects": "ליקויים פתוחים",
+        "stat_awaiting": "ממתין לאישור",
+        "stat_reports": "דוחות שהונפקו"
+      },
+      "report": {
+        "section_title": "דו״ח הפיקוח האחרון",
+        "issued_label": "הונפק · נעול",
+        "date": "לפני 3 ימים",
+        "stage": "שלב שלד",
+        "summary": "3 ממצאים · הדו״ח נמסר לזוג ולקבלן",
+        "finding_1": "סדק בקיר הממ״ד",
+        "finding_1_severity": "דחוף",
+        "finding_2": "בידוד חסר בגג",
+        "finding_2_severity": "בינוני",
+        "finding_3": "גימור לקוי במשקוף הדלת",
+        "finding_3_severity": "נמוך"
+      },
+      "milestone": {
+        "section_title": "אישור פעימה",
+        "stage": "יציקת שלד · קומה א׳",
+        "amount_label": "תשלום לקבלן",
+        "checklist_1": "השלב הושלם",
+        "checklist_2": "נרשמו הערות פיקוח",
+        "checklist_3": "צורפה אסמכתא משותפת",
+        "approve_cta": "אשרו ושחררו תשלום",
+        "block_cta": "חסמו תשלום",
+        "demo_note": "לתצוגה בלבד"
+      },
+      "documents": {
+        "section_title": "מסמכים משותפים",
+        "doc_1": "היתר בנייה",
+        "doc_2": "דו״ח פיקוח · שלב שלד",
+        "doc_3": "תוכנית קונסטרוקציה"
+      },
+      "expenses": {
+        "exp_1": "ריצוף קומה א׳ · 42,000 ₪",
+        "exp_2": "חיפוי אבן בחזית · 90,000 ₪"
+      },
+      "audit": {
+        "section_title": "תיק הפיקוח",
+        "immutable_note": "רישום קבוע — לא ניתן לעריכה",
+        "entry_1_actor": "דנה, המפקחת",
+        "entry_1_desc": "הנפקת דו״ח פיקוח · שלב שלד",
+        "entry_1_time": "לפני 3 ימים, 14:30",
+        "entry_2_actor": "דנה, המפקחת",
+        "entry_2_desc": "חסימת תשלום · ליקוי דחוף מקושר",
+        "entry_2_time": "לפני 3 ימים, 14:45",
+        "entry_3_actor": "דנה, המפקחת",
+        "entry_3_desc": "אישור תיקון ליקוי · סדק בממ״ד",
+        "entry_3_time": "אתמול, 09:10"
+      },
+      "cta": "הזמינו לקוח אמיתי — חינם"
+    },
+    "catalog": {
+      "open_button": "בחירה מקטלוג ליקויים",
+      "open_hint": "ממצא מהקטלוג מגיע עם אסמכתא תקנית ואומדן עלות",
+      "linked": "הממצא מקושר לקטלוג — אפשר לערוך הכל",
+      "sheet_title": "קטלוג ליקויים",
+      "search_placeholder": "חיפוש לפי שם, תיאור או תקן",
+      "all_categories": "הכל",
+      "empty": "לא נמצאו ליקויים מתאימים",
+      "cost_estimate": "אומדן: {{range}}",
+      "cost_unit": {
+        "sqm": "למ\"ר",
+        "meter": "למטר"
+      },
+      "categories": {
+        "waterproofing": "איטום ורטיבות",
+        "plumbing": "אינסטלציה ותברואה",
+        "electrical": "חשמל ותקשורת",
+        "flooring": "ריצוף וחיפוי",
+        "plaster_paint": "טיח וצבע",
+        "windows_aluminum": "חלונות ואלומיניום",
+        "doors_carpentry": "דלתות ונגרות",
+        "shell_concrete": "שלד ובטון",
+        "railings_stairs": "מעקות ומדרגות",
+        "gypsum": "עבודות גבס",
+        "site_development": "פיתוח וחוץ",
+        "safety_general": "בטיחות וכללי"
+      }
+    },
+    "signature": {
+      "cta": "החתמת לקוח באתר (רשות)",
+      "signed_by": "נחתם: {{name}} · שינוי",
+      "sheet_title": "אישור קבלת הדוח",
+      "sheet_body": "חתימת הלקוח מצורפת לדוח המופק ומתעדת את קבלתו באתר.",
+      "name_label": "שם החותמים",
+      "name_placeholder": "שם מלא",
+      "pad_label": "חתימה",
+      "remove": "הסרת החתימה",
+      "save": "שמירת חתימה"
+    },
+    "branding": {
+      "row_label": "הדוח הממותג שלי",
+      "title": "מיתוג הדוח",
+      "subtitle": "הפרטים כאן מופיעים על כל דוח פיקוח שמופק — הלוגו, שם העסק, ההסמכות ומגבלות הדוח.",
+      "logo_label": "לוגו",
+      "logo_cta": "העלאת לוגו",
+      "business_name_label": "שם העסק",
+      "business_name_placeholder": "למשל: ישראל ישראלי — פיקוח בנייה",
+      "credentials_label": "הסמכות וניסיון",
+      "credentials_helper": "מופיע מתחת לשם העסק בראש הדוח.",
+      "credentials_placeholder": "למשל: הנדסאי בניין מוסמך · 15 שנות ניסיון",
+      "limitations_label": "מגבלות הדוח",
+      "limitations_helper": "סעיף משפטי קבוע שמודפס בסוף כל דוח. אפשר לערוך.",
+      "limitations_default": "הדוח משקף את מצב הנכס במועד הביקור בלבד. הבדיקה חזותית ואינה כוללת פתיחת קירות, בדיקות הרס או בדיקות מעבדה. אומדני העלויות הם הערכה בלבד ואינם הצעת מחיר. אין בדוח זה תחליף לבדיקת מהנדס קונסטרוקציה מקום שנדרשת.",
+      "saved": "פרטי המיתוג נשמרו"
+    },
+    "annotate": {
+      "title": "סימון על התמונה",
+      "open_a11y": "פתיחת סימון על התמונה",
+      "color_a11y": "בחירת צבע סימון",
+      "undo": "ביטול קו אחרון"
+    },
+    "newClient": {
+      "cta": "לקוח חדש — עדיין לא באפליקציה",
+      "title": "לקוח חדש",
+      "subtitle": "פותחים אתר ללקוח שעדיין לא הצטרף — מבקרים, מתעדים ומפיקים דוחות כרגיל. כשהמשפחה מצטרפת עם קוד ההצטרפות, האתר עובר אליה עם כל ההיסטוריה.",
+      "name_label": "שם הלקוח או האתר",
+      "name_placeholder": "למשל: משפחת כהן — מודיעין",
+      "region_label": "אזור",
+      "region_placeholder": "בחרו אזור",
+      "create": "פתיחת אתר",
+      "upgrade_required": "נדרש מנוי הבונה פרו כדי להוסיף לקוח נוסף.",
+      "claim_title": "קוד הצטרפות למשפחה",
+      "claim_body": "כשהמשפחה מזינה את הקוד, האתר הזה עובר אליה — כולל הדוחות, הליקויים וההיסטוריה.",
+      "claim_banner_title": "המשפחה עדיין לא הצטרפה",
+      "claim_banner_cta": "יצירת קוד הצטרפות שמעביר להם את האתר",
+      "delete_cta": "מחיקת האתר (נפתח בטעות)",
+      "delete_confirm_title": "למחוק את האתר?",
+      "delete_confirm_body": "האתר, הביקורים והדוחות שבו יימחקו לצמיתות. אפשרי רק כל עוד המשפחה לא הצטרפה.",
+      "delete_confirm_cta": "מחיקת האתר"
+    },
+    "nextVisit": {
+      "title": "הביקור הבא",
+      "set": "קביעה",
+      "change": "שינוי",
+      "empty": "טרם נקבע ביקור הבא — המשפחה רואה את המועד ברגע שקובעים.",
+      "note_placeholder": "מה בודקים בביקור? (רשות)",
+      "clear": "ביטול הביקור"
+    },
+    "defect": {
+      "verify": {
+        "title": "אימות תיקון",
+        "cta": "אימות תיקון",
+        "intro": "אימות התיקון של \"{{title}}\" נועד לתעד מה נבדק. הוסיפו תמונות של המצב לאחר התיקון והערה קצרה.",
+        "note_label": "הערת אימות",
+        "note_placeholder": "מה נבדק ומה נמצא תקין…",
+        "add_photo": "הוספת תמונה",
+        "photo_helper": "עד 4 תמונות של המצב לאחר התיקון",
+        "remove_photo": "הסרת התמונה",
+        "photos_scoped_seat": "הרשאת הצפייה הנוכחית שלכם אינה כוללת העלאת תמונות. ניתן לאמת עם הערה בלבד.",
+        "terminal_warning": "לאחר האימות הליקוי נסגר סופית ולא ניתן לערוך אותו או את ההערה.",
+        "error": "האימות נכשל. נסו שוב.",
+        "upload_error": "העלאת התמונות נכשלה, והאימות לא בוצע. נסו שוב.",
+        "unavailable": "לא ניתן לאמת את הליקוי הזה.",
+        "confirm_title": "לאמת שהתיקון בוצע?",
+        "confirm_body": "אישור מצהיר שבדקתם את \"{{title}}\" באתר ומצאתם שהתיקון בוצע. הליקוי ייסגר סופית, ההצהרה נרשמת בתיק הפיקוח, ולא ניתן לבטל אותה.",
+        "confirm_cta": "אישור האימות",
+        "success": "התיקון אומת והליקוי נסגר",
+        "note_too_long": "ההערה ארוכה מדי. קצרו אותה ל־2000 תווים.",
+        "evidence_required": "הוסיפו תמונה או הערה כדי שהמשפחה תדע מה נבדק.",
+        "upgrade_required": "אימות ליקוי אצל לקוח נוסף דורש מנוי הבונה פרו.",
+        "error_generic": "האימות נכשל. נסו שוב.",
+        "error_upload_failed": "העלאת התמונות נכשלה, והאימות לא בוצע. נסו שוב.",
+        "error_not_active_advisor": "ההרשאה שלכם לאתר הזה אינה פעילה יותר.",
+        "error_already_verified": "הליקוי כבר אומת. ההערה והתמונות לא נשמרו.",
+        "error_deleted": "הליקוי נמחק ולא ניתן לאמת אותו.",
+        "error_pro_upgrade_required": "אימות ליקוי אצל לקוח נוסף דורש מנוי הבונה פרו.",
+        "photo_permission_denied": "אין הרשאה למצלמה או לגלריה. אפשר לשנות זאת בהגדרות.",
+        "photo_unavailable": "לא ניתן לצלם או לבחור תמונה כרגע. נסו מקור אחר."
+      }
+    },
+    "dashboard": {
+      "title": "המשרד שלי",
+      "tab_label": "המשרד",
+      "open_a11y": "המשרד שלי",
+      "open_waiting_a11y_one": "המשרד שלי, אתר אחד ממתין לכם",
+      "open_waiting_a11y_other": "המשרד שלי, {{count}} אתרים ממתינים לכם",
+      "summary_title": "ריכוז היום",
+      "summary": {
+        "visits": "ביקורים היום",
+        "waiting": "ממתין לכם",
+        "unscheduled": "ללא ביקור מתוכנן"
+      },
+      "today_title": "היום",
+      "agenda_overdue": "מועד שעבר",
+      "desk_title": "ממתין לכם",
+      "desk_unavailable": "לא הצלחנו לטעון את הרשימה כרגע. נסו שוב בעוד רגע.",
+      "sites_title": "האתרים שלי",
+      "sites_empty": "עדיין אין אתרים במשרד. הלקוח הראשון מתחיל כאן.",
+      "cleared_title": "שום דבר לא ממתין לכם",
+      "cleared_body": "כל הדוחות הונפקו, אין פעימה לאישור ואין ליקוי שמחכה לאימות.",
+      "desk": {
+        "milestone": {
+          "title": "פעימה ממתינה לאישורכם",
+          "body": "מוקפאים עד להחלטתכם"
+        },
+        "draft": {
+          "title": "דוח ביקור לא הונפק",
+          "body_one": "ביקור {{stage}} נשאר טיוטה מיום אחד. עד להנפקה המשפחה לא רואה את הממצאים.",
+          "body_other": "ביקור {{stage}} נשאר טיוטה כבר {{days}} ימים. עד להנפקה המשפחה לא רואה את הממצאים."
+        },
+        "verify": {
+          "title": "ליקוי סומן כתוקן ומחכה לאימות",
+          "body_one": "{{defect}} · סומן תוקן לפני יום",
+          "body_other": "{{defect}} · סומן תוקן לפני {{days}} ימים"
+        },
+        "urgent": {
+          "title_one": "ליקוי דחוף פתוח יום",
+          "title_other": "ליקוי דחוף פתוח {{days}} ימים"
+        }
+      }
+    },
+    "tasks": {
+      "title": "המשימות שלי",
+      "title_in_site": "המשימות שלי באתר הזה",
+      "add_cta": "הוספת משימה",
+      "scope_global": "כללי",
+      "scope_client": "לאתר מסוים",
+      "empty": "אין משימות פתוחות.",
+      "private_hint": "רק אתם רואים את המשימות האלה.",
+      "unavailable": "לא הצלחנו לטעון את המשימות כרגע. נסו שוב בעוד רגע.",
+      "title_placeholder": "מה צריך לעשות?",
+      "notes_placeholder": "פרטים נוספים (רשות)",
+      "due_placeholder": "תאריך יעד (רשות)",
+      "due_clear": "ניקוי תאריך היעד",
+      "overdue": "באיחור",
+      "completed_toggle": "הושלמו ({{count}})",
+      "completed_more": "ועוד {{count}} משימות שהושלמו.",
+      "tick_a11y": "סימון \"{{title}}\" כבוצעה",
+      "untick_a11y": "ביטול הסימון של \"{{title}}\"",
+      "delete_a11y": "מחיקת \"{{title}}\"",
+      "create_success": "המשימה נשמרה.",
+      "create_error": "לא הצלחנו לשמור את המשימה. נסו שוב בעוד רגע.",
+      "delete_success": "המשימה נמחקה.",
+      "delete_error": "לא הצלחנו למחוק את המשימה. נסו שוב בעוד רגע.",
+      "delete_restored": "המשימה שוחזרה."
+    },
+    "journal": {
+      "title": "יומן עבודה",
+      "entry_body": "כל מה שתיעדתם, בכל האתרים",
+      "open_a11y": "פתיחת יומן העבודה",
+      "empty": "אין רישומים בטווח הזה.",
+      "unavailable": "לא הצלחנו לטעון את היומן כרגע. נסו שוב בעוד רגע.",
+      "range": {
+        "month": "החודש",
+        "quarter": "3 חודשים אחרונים",
+        "all": "הכל"
+      },
+      "export_cta": "ייצוא היומן",
+      "export_dialog": "יומן עבודה",
+      "export_error": "לא הצלחנו לייצא את היומן. נסו שוב בעוד רגע.",
+      "export_empty": "אין מה לייצא בטווח הזה.",
+      "capped": "מוצגים {{shown}} מתוך {{total}} רישומים בטווח הזה.",
+      "capped_cta": "טעינת רישומים נוספים"
+    }
+  },
+  "professional_access": {
+    "title": "ניהול הגישה",
+    "manage_cta": "ניהול גישה",
+    "no_advisor": "אין מלווה מחובר לפרויקט הזה.",
+    "scoped_title": "גישה מוגבלת",
+    "scoped_title_named": "הגישה של {{name}} מוגבלת",
+    "scoped_explain": "המלווה רואה רק מה ששיתפתם: מסמכים ששותפו, הוצאות וליקויים שמשויכים אליו, ופעימות הממתינות לאישורו.",
+    "full_title": "גישה מלאה",
+    "full_title_named": "ל{{name}} יש גישה מלאה",
+    "full_explain": "המלווה רואה את כל פעילות הפרויקט.",
+    "switch_to_full_cta": "שיתוף מלא עם המלווה",
+    "switch_to_scoped_cta": "הגבלה לשיתופים בלבד",
+    "revoke_cta": "הסרת גישת המלווה",
+    "confirm_full": {
+      "title": "לשתף את כל הפרויקט?",
+      "body": "המלווה יקבל גישה לכל פעילות הפרויקט הזה בלבד — לא לחשבון שלכם. אפשר להסיר את הגישה בכל רגע.",
+      "confirm": "שיתוף מלא"
+    },
+    "confirm_revoke": {
+      "title": "להסיר את גישת המלווה?",
+      "body": "המלווה יאבד את הגישה לפרויקט. תמיד אפשר להזמין מחדש.",
+      "confirm": "הסרת גישה"
+    },
+    "full_success": "המלווה מקבל עכשיו גישה מלאה לפרויקט",
+    "scoped_success": "המלווה מוגבל עכשיו לשיתופים בלבד",
+    "revoke_success": "גישת המלווה הוסרה",
+    "error": "משהו השתבש. נסו שוב.",
+    "next_visit": "הביקור הבא: {{date}}"
+  },
+  "proInvite": {
+    "presence": {
+      "none_title": "הוסיפו מלווה מקצועי",
+      "none_body": "הזמינו את המלווה או היועץ שלכם לצפות בפרויקט וללוות אתכם.",
+      "none_cta": "הזמנת מלווה",
+      "pending_title": "ההזמנה נשלחה",
+      "pending_body": "ממתינים שהמלווה יצטרף לפרויקט.",
+      "pending_cta": "שליחה מחדש",
+      "connected_title": "המלווה מחובר",
+      "connected_body": "המלווה שלכם צופה בפרויקט במסגרת ההרשאות שהגדרתם."
+    },
+    "family": {
+      "title": "הזמנת מלווה",
+      "body": "שלחו קישור הזמנה למלווה המקצועי שלכם. גם אם עדיין אין לו חשבון — הוא יוכל להצטרף ישירות.",
+      "scope_disclosure": "המלווה יקבל גישה לפרויקט הזה בלבד, במסגרת ההרשאות שתגדירו, וניתן לבטל אותה בכל עת.",
+      "share_whatsapp": "שליחה בוואטסאפ",
+      "share_other": "שיתוף בדרך אחרת",
+      "share_message": "הזמנתי אתכם ללוות את הפרויקט שלנו ב-הבונה. הצטרפו כאן: {{link}}",
+      "sent_toast": "ההזמנה מוכנה לשיתוף",
+      "error": "יצירת ההזמנה נכשלה. נסו שוב."
+    },
+    "client": {
+      "title": "הזמנת לקוח",
+      "body": "שלחו למשפחה קישור הצטרפות. ההצטרפות ללא עלות עבורם — כחלק מהליווי שלכם.",
+      "share_message": "הזמנתי אתכם להצטרף לפרויקט שלכם ב-הבונה, כחלק מהליווי שלי. הצטרפו כאן: {{link}}",
+      "share_whatsapp": "שליחה בוואטסאפ",
+      "share_other": "שיתוף בדרך אחרת"
+    },
+    "landing": {
+      "title": "הזמנה להבונה",
+      "pitch_title": "הוזמנתם ללוות פרויקט ב-הבונה",
+      "pitch_title_family": "הוזמנתם לפרויקט שלכם ב-הבונה",
+      "pitch_body": "{{inviter}} הזמין אתכם לפרויקט \"{{project}}\". התחברו כדי להיכנס ישירות — בלי התקנה מסובכת ובלי שיחת מכירה.",
+      "pitch_body_family": "{{inviter}} הכין עבורכם את הפרויקט ב-הבונה. התחברו כדי להתחיל.",
+      "scope_disclosure": "הגישה שלכם מוגבלת לפרויקט הזה בלבד, במסגרת ההרשאות שהמשפחה הגדירה.",
+      "fee_free": "ההצטרפות ללא עלות — כחלק מהליווי המקצועי שלכם.",
+      "accept_cta": "כניסה לפרויקט",
+      "verify_cta": "התחברות והצטרפות",
+      "expired_title": "ההזמנה פגה",
+      "expired_body": "בקשו מהמשפחה הזמנה חדשה.",
+      "claimed_title": "ההזמנה כבר מומשה",
+      "claimed_body": "כבר הצטרפתם לפרויקט הזה. התחברו כדי להיכנס.",
+      "invalid_title": "הקישור אינו תקין",
+      "invalid_body": "בקשו מהמשפחה הזמנה חדשה."
+    },
+    "accept_error": {
+      "not_found": "ההזמנה לא נמצאה. בקשו הזמנה חדשה.",
+      "already_claimed": "ההזמנה כבר מומשה.",
+      "expired": "ההזמנה פגה. בקשו הזמנה חדשה.",
+      "own_project": "אי אפשר ללוות פרויקט שאתם חלק מהמשפחה שלו.",
+      "generic": "ההצטרפות נכשלה. נסו שוב."
+    }
+  },
+  "milestone": {
+    "detail": {
+      "title": "פעימת מימון",
+      "not_found": "אבן הדרך לא נמצאה"
+    },
+    "status": {
+      "pending_approval": "ממתין לאישור",
+      "blocked": "תשלום ממתין לתיקון",
+      "approved": "מאושר",
+      "sent_to_lender": "נשלח לבנק"
+    },
+    "evidence": {
+      "title": "אסמכתאות",
+      "empty": "אין עדיין אסמכתאות משותפות לשלב הזה",
+      "kind_document": "מסמך"
+    },
+    "approval_hint": "אפשר לאשר את הפעימה בכל עת. צירוף אסמכתאות והערות הוא רשות — ומחזק את הדוח לבנק.",
+    "notes": {
+      "title": "הערות המלווה",
+      "placeholder": "כתבו הערות שילוו את הדוח לבנק",
+      "save_cta": "שמירת הערות",
+      "saved": "ההערות נשמרו",
+      "save_failed": "שמירת ההערות נכשלה"
+    },
+    "approve": {
+      "cta": "אישור אבן הדרך",
+      "confirm_title": "לאשר את אבן הדרך?",
+      "confirm_body": "לאחר האישור אפשר יהיה להפיק דוח ולשלוח אותו לבנק.",
+      "confirm_cta": "אישור",
+      "success": "אבן הדרך אושרה",
+      "failed": "האישור נכשל"
+    },
+    "report": {
+      "generate_cta": "הפקת דוח ושליחה",
+      "regenerate_cta": "הפקה מחדש ושליחה",
+      "share_title": "דוח פעימה לבנק",
+      "generated": "הדוח הופק",
+      "failed": "הפקת הדוח נכשלה"
+    },
+    "sent": {
+      "cta": "סימון כנשלח לבנק",
+      "confirm_title": "לסמן כנשלח לבנק?",
+      "confirm_body": "פעולה זו מעדכנת את הסטטוס למשפחה ולשמאי.",
+      "confirm_cta": "סימון כנשלח",
+      "success": "אבן הדרך סומנה כנשלחה לבנק",
+      "failed": "העדכון נכשל",
+      "done_note": "הדוח נשלח לבנק"
+    },
+    "family": {
+      "waiting_body": "אבן הדרך ממתינה לאישור המלווה. לאחר האישור הדוח יישלח לבנק.",
+      "approved_body": "המלווה אישר את אבן הדרך. הדוח בדרך לבנק.",
+      "sent_body": "הדוח נשלח לבנק."
+    },
+    "schedule": {
+      "section_label": "פעימות מימון",
+      "waiting": "ממתין לאישור המלווה · יישלח לבנק לאחר האישור",
+      "fallback_stage": "פעימה"
+    },
+    "pro": {
+      "pending_pill_one": "ממתינה לאישור",
+      "pending_pill_other": "{{count}} ממתינות לאישור"
+    },
+    "signoff": {
+      "checklist_title": "תנאי אישור",
+      "check": {
+        "stage_complete": "השלב הושלם",
+        "notes": "נרשמו הערות פיקוח",
+        "evidence": "צורפה אסמכתא משותפת"
+      },
+      "signer_fallback": "המפקח",
+      "signature": "בחתימת {{name}} · אישור סופי",
+      "approve_title": "אישור פעימה ושחרור תשלום",
+      "approve_body": "התשלום בסך {{amount}} ישוחרר לקבלן והזוג יעודכן. הפעולה תירשם בתיק הפיקוח.",
+      "approve_confirm": "חתום ואשר",
+      "block_cta": "חסימת תשלום",
+      "block_title": "חסימת תשלום עד לתיקון",
+      "block_body": "התשלום לא ישוחרר עד שהליקויים המקושרים יתוקנו וייבדקו. הזוג והקבלן יעודכנו. הפעולה תירשם בתיק הפיקוח.",
+      "block_confirm": "חתום וחסום",
+      "link_label": "קשרו לפחות ליקוי דחוף אחד",
+      "link_none": "אין ליקויים דחופים פתוחים לקשירה",
+      "block_success": "התשלום נחסם עד לתיקון",
+      "block_failed": "לא ניתן לחסום את התשלום. נסו שוב."
+    },
+    "block": {
+      "title": "התשלום ממתין לתיקון",
+      "explain": "המפקח חסם את שחרור התשלום עד לתיקון הליקויים הבאים. החסימה תוסר אוטומטית כשכולם יתוקנו וייבדקו."
+    }
+  },
+  "payments": {
+    "hero": {
+      "title": "פעימות המשכנתא",
+      "subtitle_one": "משכנתא לבנייה · {{total}} · פעימה אחת",
+      "subtitle_other": "משכנתא לבנייה · {{total}} · {{count}} פעימות",
+      "released_note": "שוחררו עד כה"
+    },
+    "timeline": {
+      "pulse": "פעימה {{n}}",
+      "sub_pending": "ממתין לאישור המלווה",
+      "sub_approved": "אושר · הדוח בדרך לבנק",
+      "sub_sent": "נשלח לבנק"
+    },
+    "future_link": "תשלומים עתידיים",
+    "empty": {
+      "title": "אין עדיין פעימות משכנתא",
+      "body": "הפעימות יופיעו כאן כשהמלווה יגדיר אותן."
+    },
+    "error": {
+      "title": "לא הצלחנו לטעון את הפעימות",
+      "retry_cta": "נסו שוב"
+    }
+  },
+  "pairingCode": {
+    "display": {
+      "family_title": "חברו את המלווה שלכם",
+      "family_body": "הראו למלווה המקצועי את הקוד. הוא יזין אותו באפליקציה כדי להתחבר לפרויקט.",
+      "family_scope": "המלווה יקבל גישה לפרויקט הזה בלבד, במסגרת ההרשאות שתגדירו, וניתן לבטל בכל עת.",
+      "client_title": "חברו משפחה חדשה",
+      "client_body": "הראו למשפחה את הקוד. הם יזינו אותו באפליקציה כדי להצטרף — ללא עלות, כחלק מהליווי שלכם.",
+      "expires_in": "הקוד יפוג בעוד {{time}}",
+      "expired": "הקוד פג — הפיקו קוד חדש",
+      "regenerate": "קוד חדש",
+      "error": "יצירת הקוד נכשלה. נסו שוב."
+    },
+    "entry": {
+      "title": "הזנת קוד חיבור",
+      "subtitle": "הזינו את הקוד בן 6 הספרות שמופיע על המסך של הצד השני.",
+      "submit": "התחברות",
+      "error": {
+        "not_found": "הקוד לא נמצא או שפג תוקפו. בקשו קוד חדש.",
+        "already_claimed": "הקוד כבר נוצל.",
+        "expired": "הקוד פג. בקשו קוד חדש.",
+        "own_project": "אי אפשר ללוות פרויקט שאתם חלק מהמשפחה שלו.",
+        "rate_limited": "יותר מדי ניסיונות. המתינו רגע ונסו שוב.",
+        "generic": "החיבור נכשל. נסו שוב."
+      }
+    },
+    "pro_home": {
+      "enter_code_cta": "יש לי קוד ממשפחה"
+    }
+  },
+  "attribution": {
+    "by_pro": "נוסף על ידי המפקח",
+    "by_pro_named": "נוסף על ידי {{name}}",
+    "pro_short": "המפקח"
+  }
+}

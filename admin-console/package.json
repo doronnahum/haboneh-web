@@ -1,0 +1,16 @@
+{
+  "name": "haboneh-admin-console",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Server-rendered back office for HaBoneh (Supabase service role). Deployed on Render.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.1",
+    "express": "^4.21.2"
+  }
+}

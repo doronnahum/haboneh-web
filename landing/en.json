@@ -1,0 +1,3430 @@
+{
+  "share": {
+    "toggle": {
+      "title": "Share with your advisor",
+      "description_shared": "Your advisor can see this item. You can make it private anytime.",
+      "description_private": "Private — only you can see it. Turn on to share with your advisor."
+    }
+  },
+  "app_name": "HaBoneh",
+  "common": {
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "loading": "Loading...",
+    "error_generic": "Unexpected error. Try again.",
+    "inline_error_title": "Something went wrong",
+    "inline_error_body": "We couldn't load this. Your data is safe.",
+    "dismiss": "Dismiss",
+    "optional": "Optional",
+    "clear": "Clear selection",
+    "retry": "Try again",
+    "undo": "Undo",
+    "notifications_coming_soon": "Notifications coming soon",
+    "notifications_bell_a11y": "Notifications",
+    "user_avatar_a11y": "Profile"
+  },
+  "main_tabs": {
+    "home": "Home",
+    "budget": "Budget",
+    "expenses": "Expenses",
+    "tasks": "Tasks",
+    "documents": "Documents",
+    "community": "Community"
+  },
+  "expense": {
+    "form": {
+      "title_create": "New expense",
+      "title_edit": "Edit expense",
+      "cta_create": "Create expense",
+      "submit_hint": "Add an amount and a description to continue",
+      "discard": {
+        "title": "Leave without saving?",
+        "message": "What you entered won't be saved.",
+        "discard": "Leave without saving",
+        "keep": "Keep editing"
+      },
+      "more_details": "Add more details",
+      "amount_placeholder": "0",
+      "amountCaption": "Expense amount",
+      "amountSectionLabel": "Amount",
+      "receiptLabel": "Receipt / invoice",
+      "receiptCta": "Photograph or attach a receipt",
+      "documentLabel": "Link to document (contract / quote)",
+      "documentPlaceholder": "No link",
+      "spreadLabel": "Spread",
+      "spreadSingle": "One payment",
+      "spreadInstallments": "Installments",
+      "spreadInfo": "Each payment counts toward \"actual spend\" only when it comes due — until then it appears in the upcoming-payments schedule.",
+      "attachLabel": "Attachments",
+      "attachCta": "Add a receipt or contract",
+      "attachHint": "Up to 10MB · PDF, JPG, PNG",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Down-payment to contractor",
+      "categoryLabel": "Category",
+      "dateLabel": "Date",
+      "dateToday": "Today",
+      "dateYesterday": "Yesterday",
+      "dateTomorrow": "Tomorrow",
+      "professionalLabel": "Professional",
+      "professionalPlaceholder": "Pick from list or add new",
+      "proPicker": {
+        "add_cta": "+ Add new",
+        "empty_helper": "No professionals yet. Add your first one.",
+        "role_subtext_fallback": "—"
+      },
+      "stageLabel": "Project stage",
+      "paymentMethodLabel": "Payment method",
+      "partialToggleTitle": "Partial payment",
+      "partialToggleBody": "Split the amount into installments over time",
+      "partial": {
+        "countLabel": "Number of payments",
+        "frequencyLabel": "Frequency",
+        "frequencyMonthly": "Monthly",
+        "frequencyQuarterly": "Quarterly",
+        "frequencyCustom": "Custom",
+        "cadenceMonthly": "Monthly",
+        "cadenceCustom": "Custom dates",
+        "rowLabelPlaceholder": "Payment label",
+        "rowAmountA11y": "Edit amount for payment {{i}}",
+        "customSumMismatch": "{{amount}} left to spread across the payments",
+        "firstDateLabel": "First payment date",
+        "customDatesLabel": "Custom payment dates",
+        "installmentRow": "Payment {{i}}",
+        "previewHeading": "Preview",
+        "previewTotal": "Total",
+        "mismatchSoftWarn": "The amount doesn't divide evenly — the remainder is spread across the first few payments.",
+        "stepper": {
+          "decrementA11y": "Decrease payment count",
+          "incrementA11y": "Increase payment count",
+          "valueA11y_one": "{{count}} payment",
+          "valueA11y_other": "{{count}} payments"
+        }
+      },
+      "sourceLabel": "Payment source",
+      "sourceHelper": "Helps you track funding source utilization",
+      "notesLabel": "Notes",
+      "notesPlaceholder": "Additional details, reminders, or clarifications…",
+      "save_error": "Save failed, please try again.",
+      "error": {
+        "amount_required": "Amount is required",
+        "amount_positive": "Amount must be positive",
+        "amount_too_large": "Amount exceeds the allowed range",
+        "description_required": "Description is required",
+        "description_too_long": "Description is too long",
+        "category_required": "Category is required",
+        "date_too_far_future": "Date is too far in the future",
+        "partial": {
+          "count_required": "Choose a number of payments",
+          "frequency_required": "Choose a frequency",
+          "first_date_required": "Choose a first payment date",
+          "custom_dates_required": "Choose custom payment dates",
+          "custom_amounts_required": "Enter an amount for each payment",
+          "custom_sum_mismatch": "The payments must add up to the total amount"
+        }
+      }
+    },
+    "proCreate": {
+      "sheet": {
+        "title": "New professional",
+        "subtitle": "Will be added to the list and selectable directly."
+      },
+      "field": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Full name"
+        },
+        "role": {
+          "label": "Role"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "050-0000000"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "@"
+        },
+        "area": {
+          "label": "Area",
+          "placeholder": "Center"
+        }
+      },
+      "cta": {
+        "save": "Save and continue"
+      },
+      "save_error": "Save failed. Try again.",
+      "error": {
+        "name_required": "Name is required",
+        "name_too_long": "Name is too long",
+        "role_required": "Pick a role",
+        "email_invalid": "Invalid email address",
+        "area_too_long": "Area name is too long"
+      }
+    },
+    "edit": {
+      "cta_save": "Save",
+      "partial_locked_banner": "Partial payment — amount, date and installment settings are locked in edit mode",
+      "not_found": "Expense not found"
+    },
+    "extraction": {
+      "pill_label_pro": "Auto-extract",
+      "action_sheet_title": "Receipt source",
+      "action_sheet_camera": "Take photo",
+      "action_sheet_library": "From library",
+      "action_sheet_document": "PDF file",
+      "action_sheet_cancel": "Cancel",
+      "permission_denied": "Allow access to capture or pick a file",
+      "uploading": "Uploading receipt...",
+      "extracting": "Extracting fields...",
+      "error_capture": "Capture failed. Try again.",
+      "error_upload": "Upload failed. Try again.",
+      "error_extract": "Extraction failed. You can continue manually.",
+      "accept_field_a11y": "Accept {{field}} field",
+      "reject_field_a11y": "Reject {{field}} field",
+      "upgrade_banner": {
+        "title": "Auto-extract from receipts",
+        "body": "Available with Digital Guidance",
+        "upgrade_cta": "Upgrade",
+        "continue_manual_cta": "Continue manually",
+        "upgrade_cta_a11y": "Upgrade to Digital Guidance for auto-extract",
+        "continue_manual_a11y": "Continue with manual expense entry"
+      }
+    }
+  },
+  "budget": {
+    "header": {
+      "eyebrow": "Money management",
+      "title": "Budget"
+    },
+    "action_bar": {
+      "new_expense_cta": "Add expense",
+      "list_view": "List",
+      "summary_cta": "Summaries",
+      "future_payments_cta": "Future payments"
+    },
+    "section": {
+      "count_label_one": "{{count}} expense",
+      "count_label_other": "{{count}} expenses"
+    },
+    "row": {
+      "partial_badge": "Partial",
+      "edit_action": "Edit",
+      "delete_action": "Delete"
+    },
+    "filter": {
+      "clear_label": "Clear filter",
+      "bar_button": "Filter",
+      "menu_title": "Filter expenses",
+      "value_all": "All",
+      "clear_all": "Clear all",
+      "category": {
+        "chip_label": "Category",
+        "sheet_title": "Filter by category"
+      },
+      "stage": {
+        "chip_label": "Stage",
+        "sheet_title": "Filter by stage"
+      },
+      "professional": {
+        "chip_label": "Professional",
+        "sheet_title": "Filter by professional"
+      },
+      "payment_method": {
+        "chip_label": "Payment method",
+        "sheet_title": "Filter by payment method"
+      },
+      "date": {
+        "chip_label": "Date",
+        "sheet_title": "Filter by date",
+        "from_label": "From",
+        "to_label": "To",
+        "apply_cta": "Apply",
+        "clear_cta": "Clear",
+        "error": {
+          "range_invalid": "Start date is after end date"
+        }
+      },
+      "source": {
+        "chip_label": "Funding source",
+        "sheet_title": "Filter by funding source"
+      }
+    },
+    "empty": {
+      "title": "No expenses logged yet",
+      "body": "Let's start with the first one ↑",
+      "cta": "+ New expense",
+      "no_matches": {
+        "title": "No expenses match the filters",
+        "clear_filters_cta": "Clear filters"
+      }
+    },
+    "delete": {
+      "confirm_title": "Delete expense",
+      "confirm_body": "Delete the expense “{{description}}”?",
+      "confirm_cta": "Delete",
+      "cancel_cta": "Cancel"
+    },
+    "summary": {
+      "hero": {
+        "title": "Where is your money going",
+        "subtitle": "Your home's budget cuts in {{regionLabel}}",
+        "subtitle_no_region": "Your home's budget cuts"
+      },
+      "cut": {
+        "category": "Category",
+        "stage": "Stage",
+        "professional": "Professional",
+        "source": "Funding source"
+      },
+      "cut_unit": {
+        "category": "categories",
+        "stage": "stages",
+        "professional": "professionals",
+        "source": "funding sources"
+      },
+      "top": {
+        "remaining_label": "You have left",
+        "total_label": "of {{total}}",
+        "paid_dot": "Paid",
+        "planned_dot": "Planned",
+        "remaining_dot": "Remaining",
+        "remaining_a11y": "You have {{amount}} left"
+      },
+      "center": {
+        "total_label": "Total",
+        "unit_label": "items"
+      },
+      "breakdown": {
+        "title": "Full breakdown",
+        "row_hint": "Tap to view expenses in this group"
+      },
+      "uncategorised": {
+        "category": "Uncategorised",
+        "stage": "No stage",
+        "professional": "No professional",
+        "source": "No source"
+      },
+      "other_bucket_label": "Other",
+      "cut_select_label": "By {{cut}}",
+      "cut_select_a11y": "Choose breakdown — currently by {{cut}}",
+      "cut_sheet_title": "How to slice the budget?",
+      "empty": {
+        "title": "Insights coming soon",
+        "body": "Meaningful insights need at least {{needed}} expenses — you have {{current}} so far.",
+        "cta": "+ Add expense"
+      },
+      "error": {
+        "title": "We couldn't load the summary",
+        "retry_cta": "Try again"
+      }
+    },
+    "future_payments": {
+      "hero": {
+        "title": "Future payments",
+        "subtitle": "You have {{count}} open payments",
+        "subtitle_zero": "No open payments",
+        "subtitle_one": "You have one open payment left",
+        "subtitle_other": "You have {{count}} open payments left"
+      },
+      "horizon": {
+        "this_week": "This week",
+        "this_month": "This month",
+        "this_quarter": "This quarter",
+        "further": "Further out"
+      },
+      "section_count_label_one": "{{count}} payment",
+      "section_count_label_other": "{{count}} payments",
+      "row": {
+        "mark_complete": "Mark as paid",
+        "postpone": "Postpone",
+        "completed_badge": "✓ Completed",
+        "sequence_label": "{{n}}/{{total}}"
+      },
+      "empty": {
+        "title": "No scheduled payments",
+        "body": "When you mark an expense as partial payment, the installments will appear here",
+        "cta": "+ New expense"
+      },
+      "completed": {
+        "section_label": "Completed ({{count}})",
+        "toggle_a11y_hint": "Tap to expand or collapse the completed payments list"
+      },
+      "postpone": {
+        "title": "Postpone payment date",
+        "date_label": "New date",
+        "save_cta": "Save",
+        "error": {
+          "must_be_future": "The new date must be in the future"
+        }
+      },
+      "error": {
+        "title": "We couldn't load the payments",
+        "retry_cta": "Try again"
+      },
+      "out_of_order": {
+        "message": "You marked payment {{n}} before {{skipped}}",
+        "dismiss_a11y": "Dismiss the notification",
+        "conjunction_two": "and",
+        "conjunction_many": ", "
+      },
+      "confirm_complete": {
+        "title": "Mark this payment as paid?",
+        "body": "The payment will move to the completed list and update your budget.",
+        "confirm_cta": "Mark as paid"
+      },
+      "complete_failed": "Marking the payment failed. Try again.",
+      "mark_paid": {
+        "success": "You marked the payment to {{payee}} as done",
+        "success_no_payee": "You marked the payment as done",
+        "undo_restored": "Mark-paid undone — the payment is back in your upcoming list"
+      }
+    },
+    "export": {
+      "bar": {
+        "cta": "Export report",
+        "upgrade_cta": "Upgrade to Digital Guidance",
+        "grant_badge": "One-time export",
+        "a11y": {
+          "cta": "Export budget report",
+          "cta_locked": "Export available with Digital Guidance",
+          "upgrade": "Upgrade to Digital Guidance to unlock export"
+        }
+      },
+      "sheet": {
+        "title": "Choose export format",
+        "subtitle": "The report will include the current cut and full breakdown",
+        "a11y": {
+          "title": "Choose budget export format"
+        },
+        "format": {
+          "xlsx": {
+            "title": "Excel (.xlsx)",
+            "body": "Organized sheet — good for editing and calculations",
+            "a11y": "Export to Excel"
+          },
+          "pdf": {
+            "title": "PDF",
+            "body": "Designed report — good for printing and sharing",
+            "a11y": "Export to PDF"
+          }
+        }
+      },
+      "progress": {
+        "preparing": "Preparing report…"
+      },
+      "success": {
+        "share_title": "My budget report"
+      },
+      "error": {
+        "generic": "Export failed. Try again.",
+        "no_data": "No expenses to export",
+        "unauthorized": "Authorization expired. Sign in again.",
+        "forbidden": "Not authorized to export"
+      }
+    },
+    "hero": {
+      "title": "Live budget",
+      "total": "Total budget",
+      "spent": "Spent",
+      "card_caption": "of {{total}} · {{remaining}} remaining",
+      "remaining": "Remaining"
+    },
+    "category": {
+      "section_title": "By category",
+      "edit": "Edit budget",
+      "done": "Done",
+      "all_expenses": "All expenses",
+      "amounts": "Spent {{spent}} of {{planned}}",
+      "amounts_unplanned": "Spent {{spent}} · no planned budget",
+      "status": {
+        "in_budget": "Within budget",
+        "not_started": "Not started",
+        "over": "Over · {{amount}}"
+      },
+      "empty": "You haven't set category budgets yet. Set a budget to track spending against a target.",
+      "set_budgets_cta": "Set a budget",
+      "amount_placeholder": "Budget",
+      "delete_a11y": "Delete the {{name}} budget"
+    },
+    "expenses": {
+      "title": "All expenses",
+      "status": {
+        "paid": "Paid",
+        "pending": "Pending"
+      }
+    }
+  },
+  "appConfig": {
+    "fallback": {
+      "banner": "Loaded basic config. Tap to retry sync."
+    }
+  },
+  "errorBoundary": {
+    "fallback": {
+      "title": "Something went wrong",
+      "body": "Try reloading. If this keeps happening, our team has been notified.",
+      "retry": "Try again"
+    }
+  },
+  "home": {
+    "header_overline": "Your project",
+    "app_name_fallback": "Your home",
+    "welcome": "Welcome to HaBoneh",
+    "signed_in_as": "Signed in as {{phone}}",
+    "sign_out": "Sign out",
+    "tier_free": "Free",
+    "tier_pro": "Digital Guidance",
+    "upgrade_cta": "Upgrade to Digital Guidance",
+    "manage_subscription": "Manage subscription",
+    "project_label": "My project: {{name}}",
+    "profile_row_label": "Profile",
+    "pro_banner": {
+      "title": "Digital Guidance",
+      "subtitle": "Automatic receipt scanning, unlimited advice and smart comparisons"
+    },
+    "activation": {
+      "eyebrow": "{{done}} of {{total}} done",
+      "title": "Let's get started",
+      "subhead": "Your first three steps",
+      "steps": {
+        "set_budget": "Set your project budget",
+        "add_expense": "Log your first expense",
+        "ask_builder": "Ask the Building Advisor a question",
+        "invite_partner": "Invite your partner"
+      },
+      "step_subtitles": {
+        "set_budget": "So we can start tracking your spending",
+        "add_expense": "Every shekel counts — start with the first",
+        "ask_builder": "The smart assistant that knows your project"
+      }
+    },
+    "status_card": {
+      "remaining_label": "You have remaining in budget",
+      "spent_of_budget": "Spent {{spent}} of {{budget}}",
+      "stage_counter": "Stage {{current}} of {{total}}",
+      "tri": {
+        "paid": "Paid",
+        "planned": "Planned",
+        "remaining": "Remaining"
+      },
+      "expand_label": "Stage details",
+      "expand_aria": "Stage details — opens the Stage screen",
+      "error_label": "Could not load project details",
+      "over": {
+        "indicator_label": "Over budget",
+        "primary_label": "Over by {{amount}}",
+        "bar_indicator": "Over",
+        "reassurance": "Not blocking you — but worth checking the forecast for the coming months."
+      },
+      "empty": {
+        "meta_label": "Budget",
+        "body": "First things first — what budget do you have for this home?",
+        "cta": "Enter budget"
+      }
+    },
+    "actions_feed": {
+      "section_title": "Required actions",
+      "see_all_inline": "All",
+      "see_all_overflow": "See all ({{count}} actions)",
+      "empty": "No urgent actions — great job! 🎉",
+      "error": "We couldn't load required actions",
+      "from_partner": "from {{name}}",
+      "urgency": {
+        "critical": "Critical",
+        "opportunity": "Opportunity",
+        "insight": "Insight"
+      },
+      "handled": {
+        "mark_label": "Mark as done",
+        "unmark_label": "Unmark",
+        "pill": "Done"
+      },
+      "task_overdue": {
+        "title": "Overdue task",
+        "body": "{{title}}",
+        "cta": "Open"
+      },
+      "payment_due": {
+        "title": "Payment due soon — {{amount}}",
+        "body": "In {{days}} days. Copy the account details or mark as paid.",
+        "body_pro": "{{amount}} to {{name}}, in {{days}} days.",
+        "cta": "Payment details"
+      },
+      "payment_upcoming": {
+        "title": "Upcoming payment — {{amount}}",
+        "body": "In {{days}} days. Worth making sure the budget is ready.",
+        "body_pro": "{{amount}} to {{name}}, in {{days}} days.",
+        "cta": "Payment details"
+      },
+      "payment_overdue": {
+        "title": "Overdue payment — {{amount}}",
+        "body": "{{days}} days overdue. Best handled soon.",
+        "body_pro": "{{amount}} to {{name}}, {{days}} days overdue.",
+        "cta": "Payment details"
+      },
+      "defect_urgent": {
+        "title": "Urgent defect — {{title}}",
+        "body": "Marked urgent and awaiting attention.",
+        "cta": "Open"
+      },
+      "defect_open": {
+        "title": "Open defect",
+        "body": "{{title}}",
+        "cta": "Open"
+      },
+      "survey_waiting": {
+        "title": "A couple survey is waiting for you",
+        "body": "{{title}}",
+        "cta": "Answer the survey"
+      },
+      "checklist_suggestion": {
+        "eyebrow": "Meanwhile — you can start with",
+        "title": "Recommended checklists for your stage",
+        "see_all_cta": "See all"
+      }
+    },
+    "tools": {
+      "section_title": "Tools",
+      "stage_recommended_badge": "Recommended for your stage",
+      "tile_a11y": "{{tool}} — open"
+    },
+    "pro_attention": {
+      "strip_a11y_label": "Professionals needing your attention",
+      "card_a11y": "{{name}} — {{indicator}}",
+      "kinds": {
+        "payment_due": "Payment due in {{days}} days",
+        "payment_overdue": "Payment overdue",
+        "overdue_task": "Task overdue",
+        "open_defect": "Open defect"
+      },
+      "roles": {
+        "architect": "Architect"
+      },
+      "empty_dev_label": "No professionals require your attention right now."
+    },
+    "hero": {
+      "greeting_morning": "Good morning",
+      "greeting_afternoon": "Good afternoon",
+      "greeting_evening": "Good evening",
+      "spent_label": "Used from budget",
+      "out_of": "of {{amount}}",
+      "in_range": "Within budget",
+      "over_budget": "Over budget",
+      "set_budget_cta": "Set a budget",
+      "stage_chip_a11y": "Current stage: {{stage}} — change stage"
+    },
+    "stage_picker": {
+      "title": "Which stage are you in?",
+      "subtitle": "The stage decides which tasks, content and alerts you see",
+      "current_pill": "Current",
+      "row_a11y": "Select stage {{stage}}",
+      "notify_note": "We'll let {{name}} (your Accompanist) know about the change",
+      "notify_note_partner": "We'll let your partner know about the change",
+      "notify_fallback_name": "your Accompanist",
+      "error_generic": "We couldn't update the stage. Please try again."
+    },
+    "quick_actions": {
+      "section_title": "Quick actions",
+      "payments": "Payments",
+      "docs": "Documents",
+      "decisions": "Decisions",
+      "defects": "Defects",
+      "expenses": "Expenses",
+      "budget": "Budget",
+      "tasks": "Tasks",
+      "tile_open_a11y": "{{label}} — {{count}} open",
+      "my_pros": "My professionals"
+    },
+    "milestone_banner": {
+      "title": "Drawdown {{n}} awaiting approval",
+      "subtitle": "Sent to the bank after your Accompanist approves"
+    },
+    "activity": {
+      "section_title": "Recent activity",
+      "see_all": "See all",
+      "empty": "No activity in the project yet",
+      "expense": "Expense recorded: {{desc}} — {{amount}}",
+      "document": "{{name}} uploaded to documents",
+      "milestone_sent": "Draw {{n}} sent for lender approval",
+      "milestone_approved": "Draw {{n}} approved",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "tomorrow": "Tomorrow"
+    }
+  },
+  "stage": {
+    "why_now_eyebrow": "Why this matters now",
+    "content_unavailable_title": "Stage content unavailable right now",
+    "content_unavailable_body": "We'll try to load it again next time you open the app.",
+    "no_active_project": "Loading project details…",
+    "past_pill_label": "Completed stage — for review",
+    "future_pill_label": "Future stage — preview ahead",
+    "tabs": {
+      "checklists": "Checklists",
+      "guides": "Guides",
+      "pros": "Pros",
+      "costs": "Costs",
+      "items_count_one": "{{count}} item",
+      "items_count_other": "{{count}} items"
+    },
+    "checklists": {
+      "section_title": "Available checklists",
+      "section_sub": "Curated checklists you can adopt as tasks",
+      "tasks_count_one": "{{count}} task",
+      "tasks_count_other": "{{count}} tasks",
+      "adopt_cta": "Adopt",
+      "empty_title": "No checklists for this stage yet",
+      "empty_body": "We'll keep adding them in future updates. Meanwhile, you'll be able to create tasks manually once the Tasks screen ships.",
+      "adopt_error_title": "Couldn't adopt checklist",
+      "adopt_error_body": "Something went wrong while creating the tasks. Try again in a moment."
+    },
+    "guides": {
+      "section_title": "Guides & articles",
+      "section_sub": "Short and to the point · written for builders like you",
+      "reading_time": "{{count}} min read",
+      "empty_title": "No guides for this stage yet",
+      "empty_body": "New content will be added in future updates.",
+      "not_found_title": "Guide not found",
+      "not_found_body": "This guide is no longer available. Go back to the list and pick another.",
+      "back_to_stage": "Back to stage",
+      "reading_view_a11y_label": "Guide reading screen"
+    },
+    "pros": {
+      "section_title": "Who you'll want with you at this stage",
+      "section_sub": "Recommended professionals for this stage",
+      "empty_title": "No recommendations for this stage yet",
+      "empty_body": "We'll add recommendations in future updates.",
+      "search_cta": "Search",
+      "navigate_coming_soon_title": "Professionals screen coming soon",
+      "navigate_coming_soon_body": "The Professionals screen ships in Epic 9. For now you can browse the recommended types for the stage."
+    },
+    "benchmarks": {
+      "section_title": "How much does it typically cost",
+      "section_sub": "Market ranges · for estimation only · doesn't auto-update your budget",
+      "source_note": "Based on data manually entered by HaBoneh editors",
+      "empty_title": "No data for your stage yet",
+      "empty_body_no_data": "Cost ranges for this stage in your region haven't been added yet. We'll add them in future updates.",
+      "empty_body_quality_unset": "To see tailored ranges, set your build quality in the project profile.",
+      "quality_unset": "Build quality not set"
+    },
+    "advance": {
+      "cta_label": "Finish this stage — move to {{stage}}",
+      "caption": "Opens a confirm dialog — you can still come back",
+      "confirm_title": "Advance to {{stage}}?",
+      "confirm_body": "The {{stage}} stage will be marked complete. You can still review it any time.",
+      "confirm_button": "Yes, advance",
+      "error_generic": "Something went wrong advancing the stage. Check your connection and try again.",
+      "error_already_final": "You're already at the final stage of the project.",
+      "success_toast": "Congrats — you've moved to {{stage}}"
+    },
+    "milestone": {
+      "eyebrow": "Project complete",
+      "title": "You've arrived home",
+      "body": "You've completed all six stages. Your home — and the journey behind it — are documented and saved here. You can always come back to review."
+    }
+  },
+  "professional_screen": {
+    "placeholder_heading": "Professional"
+  },
+  "professional": {
+    "create": {
+      "title": "New professional",
+      "cta": {
+        "save": "Save professional",
+        "saving": "Creating…"
+      },
+      "save_error": "Save failed. Please try again.",
+      "field": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Naama Cohen"
+        },
+        "role": {
+          "label": "Role",
+          "placeholder": "Pick a role"
+        },
+        "businessName": {
+          "label": "Business name",
+          "placeholder": "Bayit Bakrayot · Architecture & design"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "050-1234567"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "naama@example.com"
+        },
+        "area": {
+          "label": "Activity area",
+          "placeholder": "Center"
+        },
+        "contractAmount": {
+          "label": "Total contract amount",
+          "helper": "If you've signed a contract, enter the total amount. We'll show how much you've paid against it as the project progresses.",
+          "placeholder": "0"
+        },
+        "notes": {
+          "label": "Notes",
+          "placeholder": "Where you found them, what stood out, what to check"
+        }
+      },
+      "error": {
+        "name_required": "Name is required",
+        "name_too_long": "Name is too long",
+        "role_required": "Pick a role",
+        "business_name_too_long": "Business name is too long",
+        "phone_invalid": "Invalid phone number",
+        "email_invalid": "Invalid email address",
+        "area_too_long": "Area is too long",
+        "contract_invalid": "Invalid contract amount",
+        "notes_too_long": "Notes are too long",
+        "avatar_post_create_failed": "Professional created, but the photo wasn't saved. You can add a photo from the edit screen."
+      }
+    },
+    "edit": {
+      "title": "Edit professional",
+      "cta": {
+        "save": "Save changes",
+        "saving": "Saving…"
+      },
+      "not_found": "Professional not found",
+      "save_error": "Save failed. Please try again.",
+      "error": {
+        "save_failed": "Save failed. Please try again.",
+        "not_authorized": "Not authorized to edit — you may have left the project.",
+        "not_found": "Professional no longer exists. Refresh the list.",
+        "avatar_upload_failed": "Photo upload failed. Try again or pick a different photo.",
+        "avatar_too_large": "Photo is too large. Maximum size is 5 MB.",
+        "avatar_path_too_long": "Avatar path exceeds the limit."
+      }
+    },
+    "avatar": {
+      "upload_sheet": {
+        "title": "Profile photo",
+        "camera": "Take a photo",
+        "library": "From library",
+        "cancel": "Cancel"
+      },
+      "action": {
+        "change_label": "Change photo"
+      },
+      "error": {
+        "camera_permission_denied": "Camera permission required to take a profile photo. Allow access in Settings > Apps > HaBoneh.",
+        "library_permission_denied": "Photo library permission required to pick a profile photo. Allow access in Settings > Apps > HaBoneh.",
+        "unavailable": "Camera not available. Try picking from the library."
+      }
+    },
+    "detail": {
+      "edit_cta": "Edit",
+      "not_found": "Professional not found"
+    },
+    "financial": {
+      "title": "Financial status",
+      "contractPrefix": "Contract",
+      "paidLabel": "Paid",
+      "remainingLabel": "Remaining",
+      "percentPaid": "{{percent}}% of the contract paid",
+      "paidToDateLabel": "Paid to date",
+      "addContractCta": "Add contract amount"
+    },
+    "delete": {
+      "cta": "Delete professional",
+      "confirm": {
+        "title": "Delete {{name}}?",
+        "body_with_expenses": "{{name}} has {{count}} linked expenses — they'll be kept, just unlinked. Continue?",
+        "body_no_links": "Deleting removes {{name}} from the list. Any linked expenses or documents are kept — just without the link. Continue?",
+        "cta": "Delete"
+      },
+      "error": "Delete failed. Please try again."
+    },
+    "menu": {
+      "more_a11y": "More options",
+      "edit": "Edit details",
+      "share": "Share contact",
+      "delete": "Delete",
+      "cancel": "Cancel"
+    },
+    "share": {
+      "label": {
+        "role": "Role",
+        "phone": "Phone",
+        "email": "Email"
+      }
+    },
+    "actions": {
+      "call": "Call",
+      "message": "Message",
+      "contract": "Contract",
+      "uploadContract": "Upload contract",
+      "messageSheetTitle": "Send a message",
+      "messageSms": "SMS",
+      "messageWhatsapp": "WhatsApp",
+      "messageCancel": "Cancel",
+      "whatsappUnavailable": "WhatsApp isn't installed on this device"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "tasks": "Tasks",
+      "payments": "Payments",
+      "files": "Files"
+    },
+    "main_tabs": {
+      "home": "Home",
+      "budget": "Budget",
+      "tasks": "Tasks",
+      "documents": "Documents",
+      "community": "Community"
+    },
+    "dashboard": {
+      "tasks": {
+        "header": "{{count}} tasks with {{name}}",
+        "newCta": "New task",
+        "emptyHeading": "No tasks yet",
+        "emptyBody": "Tasks you link to {{name}} appear here — follow-ups, approvals, and decisions.",
+        "emptyCta": "Create the first task"
+      },
+      "payments": {
+        "header": "{{count}} payments to {{name}}",
+        "newCta": "New payment",
+        "emptyHeading": "No payments yet",
+        "emptyBody": "Every payment you make to {{name}} shows up here — deposits, milestones, and balances.",
+        "emptyCta": "Add the first payment"
+      },
+      "files": {
+        "header": "{{count}} files from {{name}}",
+        "newCta": "Upload file",
+        "emptyHeading": "No files yet",
+        "emptyBody": "Contracts, plans, sketches — anything you upload is linked to {{name}} automatically.",
+        "emptyCta": "Upload the first file"
+      }
+    },
+    "contact": {
+      "phoneLabel": "Phone",
+      "emailLabel": "Email"
+    },
+    "overview": {
+      "nextPaymentLabel": "Next payment"
+    }
+  },
+  "actions_screen": {
+    "placeholder_heading": "Required actions"
+  },
+  "defects_screen": {
+    "placeholder_heading": "Defects"
+  },
+  "defects": {
+    "screen_title": "Defects",
+    "add_button": "Add defect",
+    "summary": {
+      "open": "{{count}} open",
+      "in_repair": "{{count}} in repair",
+      "closed": "{{count}} closed",
+      "open_label": "open",
+      "in_repair_label": "in repair",
+      "closed_label": "closed"
+    },
+    "status": {
+      "open": "Open",
+      "in_repair": "In repair",
+      "closed": "Closed",
+      "verified_closed": "Verified fixed"
+    },
+    "urgency": {
+      "low": "Low",
+      "medium": "Medium",
+      "urgent": "Urgent"
+    },
+    "row": {
+      "no_professional": "No professional"
+    },
+    "empty": {
+      "title": "No defects. Great!",
+      "body": "Start logging issues you find on site — a photo, the location, and who's responsible.",
+      "cta": "First defect"
+    },
+    "loading": "Loading defects…",
+    "error": "We couldn't load the defects. Please try again.",
+    "export": {
+      "button": "Export PDF",
+      "preparing": "Preparing PDF…",
+      "dialog_title": "Defects report",
+      "fault": "PDF export failed. Please try again.",
+      "banner_title": "PDF export for your contractor is a Digital Guidance feature",
+      "banner_body": "A filtered list per professional, in Hebrew, ready for WhatsApp.",
+      "upgrade_cta": "Upgrade"
+    },
+    "detail": {
+      "title": "Defect",
+      "not_found": "Defect not found.",
+      "status_label": "Status",
+      "notes_label": "Notes",
+      "options_label": "Options",
+      "menu_edit": "Edit",
+      "menu_delete": "Delete",
+      "report_fields_label": "From the report",
+      "citation": "Citation: {{citation}}",
+      "repair_cost": "Repair cost estimate: {{amount}}",
+      "verified_evidence_label": "Repair verification"
+    },
+    "delete": {
+      "confirm_title": "Delete defect",
+      "confirm_body": "Delete the defect “{{title}}”?",
+      "confirm_cta": "Delete",
+      "button_a11y": "Delete defect",
+      "error_message": "Deletion failed. Try again.",
+      "success": "Defect deleted",
+      "restored": "Defect restored"
+    },
+    "comments": {
+      "title": "Comments",
+      "empty": "No comments yet.",
+      "placeholder": "Add a comment…",
+      "send": "Send",
+      "you": "You",
+      "partner": "Partner",
+      "delete": {
+        "action": "Long-press to delete this reply",
+        "confirm_title": "Delete reply",
+        "confirm_body": "The reply will be removed from the discussion.",
+        "confirm_cta": "Delete",
+        "success": "Reply deleted",
+        "restored": "Reply restored",
+        "error": "Deletion failed. Try again."
+      }
+    },
+    "form": {
+      "title_create": "New defect",
+      "title_edit": "Edit defect",
+      "add_photo": "Add photo",
+      "photo_helper": "Up to 8 photos from the camera or gallery. This shot is worth thousands in a dispute with a contractor.",
+      "remove_photo": "Remove photo",
+      "title_label": "What's the defect?",
+      "title_placeholder": "Crack in the living-room wall",
+      "title_error": "Add a short title — one line is enough",
+      "location_label": "Where is it?",
+      "location_placeholder": "Choose a location",
+      "status_label": "Status",
+      "professional_label": "Who's responsible to fix it?",
+      "professional_placeholder": "Pick from the list or + Add new",
+      "professional_add": "+ Add new",
+      "professional_helper": "They don't get an automatic notification — this is your own record.",
+      "urgent_title": "Urgent — needs immediate attention",
+      "urgent_helper": "Flagged with a red bell in the list",
+      "notes_label": "Notes",
+      "notes_placeholder": "More details — what you tried, when it appeared, what the contractor said",
+      "submit": "Create defect",
+      "creating": "Creating…",
+      "save": "Save",
+      "saving": "Saving…",
+      "created_toast": "Defect added",
+      "save_error": "Save failed — your details are kept, you can try again"
+    }
+  },
+  "inspirations": {
+    "screen_title": "Inspirations",
+    "upload_button": "+ Add inspiration",
+    "upload_first_button": "+ Add your first inspiration",
+    "no_active_project": "Join a project to add inspirations",
+    "empty": {
+      "title": "No inspirations yet",
+      "body": "Every image you love — from your gallery, your camera, or a link — is saved here and helps you decide together."
+    },
+    "card": {
+      "source_manual_label": "Saved manually",
+      "source_community_label": "From the community",
+      "a11y_label_with_description": "Inspiration: {{description}}",
+      "a11y_label_no_description": "Inspiration ({{source}})",
+      "long_press_a11y": "Delete: long press",
+      "favorite_on_a11y": "Remove from favorites",
+      "favorite_off_a11y": "Add to favorites",
+      "room_badge_a11y": "Room: {{room}}"
+    },
+    "rooms": {
+      "livingRoom": "Living room",
+      "bedroom": "Bedroom",
+      "bathroom": "Bathroom",
+      "kitchen": "Kitchen",
+      "entrance": "Entrance",
+      "yard": "Yard",
+      "general": "General"
+    },
+    "styles": {
+      "modern": "Modern",
+      "rustic": "Rustic",
+      "scandinavian": "Scandinavian",
+      "industrial": "Industrial",
+      "minimalist": "Minimalist",
+      "warm": "Warm",
+      "boho": "Boho",
+      "classic": "Classic"
+    },
+    "viewer": {
+      "close_label": "Close",
+      "community_source_note": "From a community post",
+      "open_original_post_a11y": "Open original post",
+      "delete_button_a11y": "Delete inspiration"
+    },
+    "delete": {
+      "confirm_title": "Delete this inspiration?",
+      "confirm_body_with_description": "“{{description}}” will be permanently deleted. This cannot be undone.",
+      "confirm_body_no_description": "The inspiration will be permanently deleted. This cannot be undone.",
+      "confirm_button": "Delete",
+      "success_toast": "Inspiration deleted",
+      "error_toast": "Inspiration deletion failed. Try again.",
+      "error_inline_generic": "Inspiration deletion failed. Try again."
+    },
+    "upload_sheet": {
+      "title": "Choose a source",
+      "camera": "Camera",
+      "library": "Pick from library",
+      "cancel": "Cancel"
+    },
+    "upload": {
+      "progress": "Saving inspiration…",
+      "success": "Inspiration saved",
+      "error_generic": "Save failed. Please try again.",
+      "error_permission_denied": "Permission denied. You can enable it in device settings.",
+      "error_permission_denied_title": "Permission needed",
+      "error_permission_denied_body": "To upload from this source, allow access in device settings.",
+      "open_settings": "Open Settings",
+      "error_unavailable": "This source is unavailable on this device. Try another source.",
+      "error_cancelled": "",
+      "image_default_name": "inspiration-{{date}}"
+    },
+    "form": {
+      "title": "New inspiration",
+      "subtitle": "Add a note — or skip and save.",
+      "photo_section_label": "Photo",
+      "photo_empty_title": "Add an image that caught your eye",
+      "photo_empty_subtitle": "A room, a corner, a material or a shade you liked",
+      "source_link": "Link",
+      "source_gallery": "Gallery",
+      "source_camera": "Camera",
+      "recent_gallery_label": "Recent in gallery",
+      "replace_button": "Replace",
+      "badge_from_gallery": "From gallery",
+      "badge_from_camera": "From camera",
+      "badge_from_link": "From link",
+      "link_input_placeholder": "pinterest.com/pin/8841…",
+      "link_fetch_button": "Fetch",
+      "link_fetching": "Fetching the image from the link…",
+      "link_error_generic": "We couldn't fetch an image from that link. Check the URL and try again.",
+      "link_error_no_image": "No image found at that link. Try a direct image URL.",
+      "link_error_invalid_url": "That URL isn't valid. Paste a full link.",
+      "photo_required_error": "An inspiration starts with an image — add one to continue",
+      "description_label": "What caught your eye?",
+      "description_placeholder": "The recessed lighting, the light wood tone, the clean line of the cabinet…",
+      "description_optional_helper": "Optional",
+      "description_counter": "{{count}}/120",
+      "optional_label": "Optional",
+      "room_section_label": "Room",
+      "styles_section_label": "Style",
+      "save_to_board_label": "Save to board",
+      "save_button": "Save inspiration",
+      "save_error": "Saving failed. Please try again.",
+      "cancel_button": "Cancel",
+      "errors": {
+        "description_too_long": "Description is too long (up to 120 characters)",
+        "invalid_room": "Invalid room",
+        "invalid_style": "Invalid style"
+      }
+    },
+    "boards": {
+      "all_label": "All inspirations",
+      "new_board": "+ New board",
+      "create_title": "New board",
+      "create_confirm": "Create",
+      "name_placeholder": "Board name (e.g. The house in Haifa)",
+      "saved_count": "{{count}} saved",
+      "none_label": "No board",
+      "create_error": "Couldn't create the board. Please try again."
+    },
+    "list": {
+      "subtitle_saved": "{{count}} saved",
+      "search_placeholder": "Search inspirations",
+      "search_a11y": "Search",
+      "search_clear_a11y": "Clear search",
+      "add_a11y": "Add inspiration",
+      "category_all": "All",
+      "no_matches": "No inspirations match this filter",
+      "no_matches_hint": "Try a different board, room, or search"
+    },
+    "picker": {
+      "sheet_title": "Image for option",
+      "from_my_inspirations": "From my inspirations",
+      "upload_new": "Upload new",
+      "cancel": "Cancel",
+      "grid_modal_title": "Choose an inspiration",
+      "grid_modal_close_a11y": "Close picker",
+      "empty_cta_label": "+ Add your first inspiration",
+      "no_active_project": "Join a project to add an image"
+    }
+  },
+  "auth": {
+    "phone": {
+      "title": "Sign in",
+      "subtitle": "We'll send you a verification code via SMS",
+      "input_label": "Phone number",
+      "input_placeholder": "050-123-4567",
+      "send_code": "Send code",
+      "dev_numbers_label": "Dev numbers:"
+    },
+    "otp": {
+      "title": "Enter verification code",
+      "subtitle": "We sent a 6-digit code to {{phone}}",
+      "verify": "Verify",
+      "resend": "Resend",
+      "resend_cooldown": "Resend available in {{seconds}} seconds"
+    },
+    "errors": {
+      "invalid_phone": "Invalid phone number. Enter a 10-digit number starting with 05.",
+      "unregistered_dev_number": "This number is not registered for development. Use one of the three available numbers.",
+      "invalid_otp": "The code is incorrect or has expired. Check the digits or request a new code.",
+      "expired_otp": "The code has expired. Request a new one.",
+      "send_failed": "Failed to send the code. Try again.",
+      "verify_failed": "Failed to verify the code. Try again.",
+      "rate_limited": "Wait a few seconds before requesting again.",
+      "support_prompt_3_failures": "Still stuck? Contact support",
+      "support_link_label": "support@haboneh.app",
+      "support_subject": "I can't sign in to the app"
+    }
+  },
+  "onboarding": {
+    "choose": {
+      "title": "Let's get started",
+      "subtitle": "Who are you?",
+      "family_title": "Couple or family",
+      "family_desc": "Building or renovating your own home",
+      "pro_title": "Professional",
+      "pro_desc": "Guiding clients through building & renovation",
+      "have_code_cta": "Already got a code from a professional?"
+    },
+    "pro_intro": {
+      "title": "The Pro Portal",
+      "subtitle": "Manage your clients, approve financing draws and guide the build — all in one place.",
+      "benefit_clients": "All your clients in one place",
+      "benefit_approve": "Approve draws and payments in a tap",
+      "benefit_free": "Your first client is free",
+      "start_free_cta": "Get started — first client free",
+      "have_code_cta": "I have an invite code"
+    },
+    "pro_code": {
+      "title": "Invite code",
+      "subtitle": "Paste the code or link you got from the family.",
+      "placeholder": "Invite code or link",
+      "error_required": "Please enter an invite code"
+    },
+    "pro_setup": {
+      "title": "Tell us about yourself",
+      "subtitle": "The name you enter will show to the families you accompany.",
+      "name_label": "Full name",
+      "name_placeholder": "Dana",
+      "continue": "Continue",
+      "error": "Saving your details failed. Please try again."
+    },
+    "name": {
+      "title": "Welcome",
+      "subtitle": "What should we call you?",
+      "placeholder": "Dana",
+      "next": "Continue",
+      "error_required": "Enter a name to continue"
+    },
+    "project": {
+      "title": "Project details",
+      "subtitle": "Which region is the build in, and which stage are you at?",
+      "build_type_label": "Project type",
+      "build_type": {
+        "construction": "New construction",
+        "renovation": "Renovation"
+      },
+      "region_label": "Region",
+      "region_placeholder": "Choose region",
+      "stage_label": "Current stage",
+      "stage_placeholder": "Choose stage",
+      "next": "Continue",
+      "error_selection_required": "Choose a region and a stage to continue"
+    },
+    "review": {
+      "title": "Review and create",
+      "name_row": "Name: {{name}}",
+      "build_type_row": "Project type: {{buildType}}",
+      "region_row": "Region: {{region}}",
+      "stage_row": "Stage: {{stage}}",
+      "create_project": "Create project",
+      "create_failed": "Failed to create project. Try again.",
+      "create_failed_single_family": "You already have an active project. You can manage only one build project at a time.",
+      "implicit_consent": "By tapping Continue I declare I am 18 or older and agree to the <terms>Terms of Use</terms>"
+    },
+    "error": {
+      "no_config": "Config is still loading. Try again in a moment."
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "placeholder_tag": "Draft — placeholder content",
+    "placeholder_body": "The full Terms of Use will be published before the app's public launch. Until then, use of this app is subject to the conventional terms for consumer applications and to applicable Israeli law, including the Privacy Protection Law and Amendment 13. If you have questions, please email our support address."
+  },
+  "profile": {
+    "title": "My profile",
+    "account": {
+      "section_title": "Account",
+      "edit_row_label": "Edit profile",
+      "name_fallback": "My account",
+      "header_a11y": "Profile of {{name}}, phone {{phone}}",
+      "avatar_a11y": "Profile photo of {{name}}",
+      "edit": {
+        "first_name_label": "First name",
+        "first_name_empty": "—",
+        "edit_action": "Edit",
+        "edit_first_name": "Edit first name",
+        "save": "Save",
+        "cancel": "Cancel",
+        "name_length_error": "Name must be 1–40 characters.",
+        "phone_label": "Phone number",
+        "phone_empty": "—",
+        "phone_helper": "Changing the number requires re-verifying via SMS.",
+        "phone_screen_title": "Change phone number",
+        "phone_step1_intro": "Enter the new number. We'll text a verification code.",
+        "phone_step2_intro": "Enter the code we sent to {{phone}}.",
+        "phone_taken": "That number is already in use. Use a different one.",
+        "send_code": "Send code",
+        "verify_and_save": "Verify and save",
+        "change_number": "Change number"
+      }
+    },
+    "settings": {
+      "section_title": "Settings",
+      "row_label": "App settings",
+      "language": {
+        "section_title": "Language",
+        "row_label": "Interface language",
+        "helper": "Switching the language will reload the app so the new reading direction takes effect.",
+        "he": "Hebrew",
+        "en": "English",
+        "confirm_title": "Switch to {{name}}?",
+        "confirm_body": "The app will reload to apply the new reading direction and UI language.",
+        "confirm_button": "Switch and reload",
+        "cancel_button": "Cancel"
+      },
+      "notifications": {
+        "section_title": "Notifications",
+        "row_label": "Manage notifications",
+        "coming_soon": "Notification preferences will ship together with push support (Epic 13).",
+        "master_label": "Notifications on",
+        "master_description": "Turning this off mutes every notification.",
+        "categories": {
+          "task_reminders": {
+            "label": "Task reminders",
+            "description": "To-dos, payments and meetings."
+          },
+          "community_comments": {
+            "label": "Community comments",
+            "description": "Replies to posts and threads you're part of."
+          },
+          "invites_partners": {
+            "label": "Invites & partners",
+            "description": "Your partner's activity, invites and surveys."
+          },
+          "haboneh": {
+            "label": "From HaBoneh",
+            "description": "Subscription updates and system messages."
+          }
+        }
+      }
+    },
+    "exports": {
+      "section_title": "Exports",
+      "row_label": "Export data",
+      "options": {
+        "budget_xlsx": "Budget (Excel)",
+        "budget_pdf": "Budget (PDF)",
+        "documents_zip": "All documents (ZIP)",
+        "full_backup": "Export everything"
+      },
+      "one_time_badge": "One-time export",
+      "one_time_helper": "Your Digital Guidance subscription has lapsed. You have one export left before further exports require a fresh subscription.",
+      "upgrade_title": "Exports require Digital Guidance",
+      "upgrade_body": "Upgrade to Digital Guidance to export your data in any format.",
+      "upgrade_cta": "See plans",
+      "coming_soon_title": "Coming soon",
+      "coming_soon_body": "Documents zip and full backup will ship with the next Edge Function update.",
+      "error_title": "Export failed",
+      "error_body": "Something went wrong. Try again in a moment."
+    },
+    "help": {
+      "section_title": "Help & support",
+      "row_label": "Help & support",
+      "intro": "Answers to common questions and direct ways to reach us.",
+      "cards": {
+        "faq": "FAQ",
+        "email": "Contact us by email",
+        "whatsapp": "Contact us on WhatsApp",
+        "changelog": "What's new"
+      },
+      "contact": {
+        "email_address": "support@haboneh.app",
+        "email_subject": "Question from HaBoneh",
+        "whatsapp_number": "972000000000"
+      },
+      "faq_content": "# Frequently asked\n\n## How do I invite my partner?\n\nFrom Profile, go to Invite partner. Inviting requires an active Pro subscription. The link is valid for 7 days.\n\n## What happens when my subscription expires?\n\nYou keep read + write access to all your data, plus a one-time full export. Partner sharing is preserved.\n\n## How do I delete my project?\n\nFrom Profile → Danger zone. The action is irreversible.\n\n## Who sees my expenses?\n\nOnly you and your invited partner. The data is encrypted at rest and RLS blocks unauthorised access.",
+      "changelog_content": "# What's new\n\n## Version 1.0 (Sprint 0)\n\nThe first MVP build: phone-OTP sign-in, project creation, partner invites, expenses, documents, tasks, couple surveys, and professionals.\n\n## What's next?\n\nWe're working on what you ask for — drop us a line from this page."
+    },
+    "legal": {
+      "section_title": "Legal documents",
+      "row_label": "Legal documents",
+      "entries": {
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "licences": "Third-party licences"
+      },
+      "terms_content": "# Terms of Service\n\nInitial draft — requires legal review before public launch.\n\n## Data we collect\n\nHaBoneh stores the data you enter: first name, phone number, project details, expenses, documents, tasks, and AI-chat messages. Storage is on Supabase EU.\n\n## Cross-border transfer\n\nThird-party services we use (Supabase, RevenueCat, Sentry, Google Gemini AI) operate outside Israel. By continuing to use the app you consent to cross-border data transfer for service delivery.\n\n## Privacy Protection Amendment 13\n\nWe comply with Amendment 13. You have rights of access, correction, and deletion. Contact us at support@haboneh.app.\n\n## Retention\n\nProject data is retained while the account is active. After account deletion — 30 days until full removal. System logs without PII — up to 12 months.\n\n## Cancellation under Consumer Protection 51\n\nYou can cancel your subscription anytime from Profile → Subscription inside the app. Written confirmation arrives within 24 hours. No need to contact Apple/Google.\n\n## AI advisory disclaimer\n\nThe AI chat is general guidance, not professional advice. For construction, legal, regulatory, financial, or medical decisions consult a licensed professional.\n\n## Two-seat data sharing\n\nWhen you invite a partner, they see all project data. Both seat holders have equal read + write rights.",
+      "privacy_content": "# Privacy Policy\n\nInitial draft — requires legal review before public launch.\n\n## What we collect\n\nFirst name, phone number (verification only), the project data you enter, narrow analytics events (PostHog), and crash reports (Sentry) — neither contains PII.\n\n## How we use it\n\nTo deliver the app, sync between the two partners, debug, and improve. Never sold to third parties for advertising.\n\n## Cookies + identifiers\n\nNo cookies. An anonymous device identifier for analytics only.\n\n## Your rights\n\n- Access: see all your data inside the app.\n- Correct: edit inline.\n- Delete: Profile → Danger zone → Delete account, or write to us.\n\n## Contact\n\nsupport@haboneh.app",
+      "licences_content": "# Third-party licences\n\nThe app uses open-source components we're grateful for. Among them:\n\n- React Native (MIT)\n- Expo SDK (MIT)\n- Supabase JS (MIT)\n- TanStack Query (MIT)\n- React Hook Form (MIT)\n- Zod (MIT)\n- react-native-ui-lib (MIT)\n- libphonenumber-js (Apache 2.0)\n\nFull list available in the project's package.json."
+    },
+    "delete_account": {
+      "section_title": "Delete account",
+      "row_label": "Delete my account",
+      "title": "Delete account",
+      "confirm1_title": "Are you sure?",
+      "consequences": "Every project you created will be deleted. You'll be removed from any projects you joined as a partner. This action cannot be undone.",
+      "retention_note": "The deletion will be completed by the system within 30 days (per data-retention requirements).",
+      "continue": "Continue to deletion",
+      "cancel": "Cancel",
+      "phone_intro": "Type the full phone number ({{phone}}) to confirm the deletion.",
+      "phone_mismatch": "The number doesn't match the one on file. Check and try again.",
+      "final_confirm": "Confirm deletion",
+      "success_title": "Deletion requested",
+      "success_body": "The system will complete the deletion within 30 days. If you change your mind — contact us within 14 days at support@haboneh.app."
+    },
+    "sign_out": {
+      "section_title": "Sign out",
+      "row_label": "Sign out of this account",
+      "confirm_title": "Sign out?",
+      "confirm_body": "You'll need to re-enter your phone number to come back.",
+      "confirm_button": "Sign out",
+      "cancel_button": "Cancel"
+    },
+    "placeholder": {
+      "coming_soon": "Coming in the next update."
+    },
+    "my_project": {
+      "section_title": "My project",
+      "row_label": "Project details",
+      "no_project": "No active project"
+    },
+    "professionals": {
+      "row_label": "Professionals",
+      "screen_title": "Professionals",
+      "add_cta": "+ Add",
+      "add_a11y": "Add a professional",
+      "section_title": "Professionals on the project",
+      "advisor": {
+        "title": "Project Accompanist",
+        "scope_full": "Full project access",
+        "scope_scoped": "Custom access",
+        "role_scope": "Project advisor · {{scope}}",
+        "connected_chip": "Connected",
+        "connected_caption": "Sees what you shared · approves drawdowns",
+        "connected_caption_full": "Sees the whole project · approves drawdowns",
+        "none_body": "No Accompanist yet — invite an architect or inspector who'll see exactly what you see.",
+        "none_cta": "Invite",
+        "pending_body": "Invitation sent — waiting for the Accompanist to join the project.",
+        "pending_cta": "Track invite"
+      },
+      "row": {
+        "role_business_separator": "·"
+      },
+      "empty": {
+        "title": "No professionals yet",
+        "body": "Start with the architect, contractor, or anyone already working with you — they'll sync with expenses, tasks, and documents.",
+        "cta": "Add your first professional"
+      }
+    },
+    "subscription": {
+      "section_title": "Subscription",
+      "row_label": "Subscription & plan",
+      "manage_row": "Manage subscription",
+      "restore_row": "Restore purchases",
+      "cancel_row": "Cancel subscription",
+      "cancel_confirm_title": "Cancel subscription",
+      "cancel_confirm_body": "Your subscription stays active until the end of the current billing period. We'll record your request and send written confirmation within 24 hours.",
+      "cancel_confirm_button": "Continue to cancel",
+      "cancel_keep_button": "Keep subscription",
+      "cancel_success": "Cancellation request received. Written confirmation will be sent within 24 hours.",
+      "free_helper": "You don't have an active subscription. Upgrade from any in-app screen to unlock Digital Guidance features.",
+      "upgrade_cta": "Upgrade to Digital Companion",
+      "field": {
+        "plan": "Plan",
+        "status": "Status",
+        "renews_on": "Renews on",
+        "expires_on": "Expires on",
+        "billing_source": "Billing source"
+      },
+      "plan": {
+        "free": "Free",
+        "founding_member": "Founding Member",
+        "standard_pro": "Digital Guidance"
+      },
+      "status": {
+        "active": "Active",
+        "cancelled": "Cancelled",
+        "lapsed": "Lapsed"
+      },
+      "billing": {
+        "apple": "Apple Pay",
+        "google": "Google Pay",
+        "stripe": "Stripe",
+        "unknown": "—",
+        "none": "—"
+      }
+    },
+    "groups": {
+      "account_settings": "Account & settings",
+      "help_info": "Help & info"
+    },
+    "danger_zone_section": "Danger zone",
+    "delete_project_row": "Delete project",
+    "remove_partner_row": "Remove {{name}}",
+    "remove_partner_row_no_name": "Remove partner",
+    "leave_project_row": "Leave project",
+    "project": {
+      "title": "Project details",
+      "no_project": "No project to show. Complete onboarding to begin.",
+      "update_failed": "Save failed. Try again.",
+      "fields": {
+        "name": "Project name",
+        "region": "Region",
+        "plot_size": "Plot size",
+        "house_size": "House size",
+        "floors": "Floors",
+        "basement": "Basement",
+        "basement_yes_no_label": "Has basement?",
+        "build_quality": "Build quality",
+        "total_budget": "Total budget",
+        "land_cost": "Land cost",
+        "build_start_date": "Build start date",
+        "projected_handover_date": "Projected handover date",
+        "plot_gush": "Block (Gush)",
+        "plot_helka": "Parcel (Helka)"
+      },
+      "yes_no": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "build_quality": {
+        "budget": "Budget",
+        "mid": "Standard",
+        "premium": "Premium",
+        "none": "—"
+      },
+      "placeholder": {
+        "empty": "—"
+      },
+      "units": {
+        "sqm": "{{value}} sqm"
+      },
+      "error": {
+        "handover_before_start": "Handover date must be on or after the build start date",
+        "invalid_number": "Invalid value",
+        "budget_zero": "The budget must be greater than 0"
+      }
+    }
+  },
+  "invitation": {
+    "pending_pill": "Pending invitation",
+    "title": "You've been invited to a project",
+    "subtitle": "{{inviterFirstName}} has invited you to join the project\n«{{projectName}}»\nas a partner.",
+    "fallback_inviter": "A partner",
+    "cta_accept": "Accept and join",
+    "cta_reject": "Decline",
+    "expires_in_days": "The invitation expires in {{count}} days",
+    "expires_in_hours": "The invitation expires in {{count}} hours",
+    "error_retry": "Something went wrong — try again",
+    "expired_title": "This invitation has expired",
+    "expired_subtitle": "Ask the sender to send a fresh link.",
+    "expired_copy_link_cta": "Copy fresh link",
+    "expired_copy_link_template": "Join my project on HaBoneh: https://haboneh.app/inv/<NEW_TOKEN>",
+    "expired_copy_link_confirm": "Link copied. Ask the sender to create a fresh invite.",
+    "phone_mismatch_title": "This invitation was sent to a different number",
+    "phone_mismatch_subtitle": "This invitation was sent to a different phone number. Sign in with the number that received the invite.",
+    "phone_mismatch_relogin_cta": "Sign in with the right number",
+    "phone_mismatch_close_cta": "Close",
+    "token_invalid_title": "This invitation isn't valid",
+    "token_invalid_subtitle": "The link you opened isn't valid or has expired.",
+    "token_invalid_cta": "Back to sign-in",
+    "already_handled_title": "This invitation has already been handled",
+    "already_handled_subtitle": "This invitation is no longer pending.",
+    "already_handled_cta": "Continue"
+  },
+  "partner": {
+    "invite": {
+      "row_label": "Invite partner",
+      "title": "Invite partner",
+      "hero_title": "Invite your partner to the project",
+      "hero_body": "We'll send an SMS link they can use to join the project on their device.",
+      "phone_label": "Partner's phone number",
+      "phone_placeholder": "050-123-4567",
+      "cta": "Send invite",
+      "cta_pro": "Send invite (Pro)",
+      "error_not_pro": "Partner invites require a Pro subscription",
+      "error_invalid_phone": "Invalid phone number",
+      "error_rate_limited": "You can send another invite in {{minutes}} minutes",
+      "error_not_creator": "Only the project creator can send invites",
+      "error_network": "No connection — try again",
+      "success_title": "Invite sent!",
+      "success_body": "We sent a link to {{phone}}. Ask your partner to open the SMS.",
+      "cancel_invite_cta": "Cancel invite"
+    }
+  },
+  "paywall": {
+    "fm_counter": {
+      "subtitle": "₪149 first year — founding-member price, one-time",
+      "body": "{{count}} of 100 spots remaining",
+      "accessibility_label": "{{count}} of 100 founding member spots remaining"
+    },
+    "disclosure": {
+      "body": "₪149 first year · auto-renews at ₪499/year. Cancel anytime from within the app (Israel Consumer Protection Law, amendment 51).",
+      "terms_link": "Terms of Use"
+    },
+    "ownership": {
+      "body": "Your data stays yours. Even if your subscription ends, your access is kept and you can export everything.",
+      "accessibility_label": "Data ownership"
+    },
+    "pro_note": {
+      "body": "The subscription covers all of your clients. Your first client is always free.",
+      "accessibility_label": "About the Pro subscription"
+    }
+  },
+  "destructive": {
+    "cancel": "Cancel",
+    "delete_project_title": "Delete project",
+    "delete_project_body": "Deleting the project will erase all data. This action cannot be undone.",
+    "delete_project_confirm": "Delete",
+    "remove_partner_title": "Remove partner",
+    "remove_partner_body": "{{name}} will be removed and lose access to the project. Your access stays.",
+    "remove_partner_body_no_name": "The partner will be removed and lose access to the project. Your access stays.",
+    "remove_partner_confirm": "Remove",
+    "leave_project_title": "Leave project",
+    "leave_project_body": "Leaving the project will revoke your access. You can join another project later.",
+    "leave_project_confirm": "Leave",
+    "generic_error": "The action failed. Please try again."
+  },
+  "notifications": {
+    "cancellation_confirmation": {
+      "title": "Subscription cancellation confirmed",
+      "body": "Your subscription cancellation request has been received. Your subscription stays active until the end of the current billing period."
+    },
+    "renewal_reminder": {
+      "title": "Subscription renewal reminder",
+      "body": "Your subscription renews on {{renewal_date}} at ₪{{renewal_price_ils}}. You can cancel anytime from the app."
+    },
+    "permission": {
+      "title": "Want to stay in the loop?",
+      "body": "To get updates from your partner, meeting reminders and more, we'll need permission to send notifications",
+      "confirm": "Enable notifications",
+      "later": "Maybe later",
+      "android_channel_name": "Notifications"
+    },
+    "screen": {
+      "title": "Notifications",
+      "empty": "No new notifications",
+      "mark_all_read": "Mark all as read",
+      "mark_unread": "Mark as unread",
+      "delete": "Delete"
+    },
+    "zones": {
+      "required": "Required actions",
+      "activation": "Getting started"
+    },
+    "dismiss": "Dismiss",
+    "deep_link": {
+      "unavailable": "This notification is no longer available"
+    },
+    "groups": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "week": "This week",
+      "month": "This month",
+      "earlier": "Earlier"
+    },
+    "items": {
+      "partner-invite-accepted": {
+        "title": "{{partner_name}} joined the project",
+        "body": "You're full partners now."
+      },
+      "defects-added": {
+        "title": "New defects from {{partner_name}}",
+        "body": "{{count}} defects were added to the project."
+      },
+      "survey-opened": {
+        "title": "{{partner_name}} opened a couple survey",
+        "body": "Waiting for your answer."
+      },
+      "survey-answered": {
+        "title": "{{partner_name}} answered the survey",
+        "body": "You can see the result."
+      },
+      "survey-nudge": {
+        "title": "Survey reminder from {{partner_name}}",
+        "body": "Waiting for your answer."
+      },
+      "comment-on-post": {
+        "title": "{{author_name}} commented on your post",
+        "body": ""
+      },
+      "comment-on-comment": {
+        "title": "{{author_name}} replied to your comment",
+        "body": ""
+      },
+      "payment-due": {
+        "title": "Payment coming up",
+        "body": "A payment of ₪{{amount_ils}} is scheduled soon."
+      },
+      "task-due-today": {
+        "title": "Task due today",
+        "body": "{{title}}"
+      },
+      "meeting-reminder": {
+        "title": "Meeting reminder",
+        "body": "{{title}}"
+      },
+      "subscription-lapse-warning": {
+        "title": "Your subscription is ending soon",
+        "body": "{{days_until_lapse}} days until it lapses."
+      },
+      "milestone-approved": {
+        "title": "Draw approved",
+        "body": "Your accompanist approved a financing draw. You can proceed to payment."
+      },
+      "milestone-pending-approval": {
+        "title": "Draw awaiting your approval",
+        "body": "A family submitted a financing draw for your approval."
+      },
+      "milestone-blocked": {
+        "title": "Draw blocked",
+        "body": "Your accompanist blocked a financing draw until an urgent defect is resolved."
+      },
+      "pro-invite-accepted": {
+        "title": "Your accompanist joined",
+        "body": "The accompanist you invited joined your project."
+      },
+      "stage-changed": {
+        "title": "Project stage updated",
+        "body": "The project is now in the {{stage_label_en}} stage."
+      },
+      "fallback": {
+        "title": "New notification",
+        "body": ""
+      }
+    }
+  },
+  "time": {
+    "now": "Just now",
+    "minute": "1 min ago",
+    "minutes": "{{count}} min ago",
+    "hour": "1 hr ago",
+    "hours": "{{count}} hr ago",
+    "yesterday": "Yesterday",
+    "days": "{{count}} days ago"
+  },
+  "documents": {
+    "header_overline": "Project archive",
+    "screen_title": "Documents",
+    "no_active_project": "Connect a project to upload documents",
+    "upload_button": "Upload",
+    "upload_cta_dashed": "Upload document",
+    "upload_first_button": "Upload your first file",
+    "empty": {
+      "title": "Your important documents live here",
+      "body": "Permits, contracts, invoices. In one place — so you can find them when you need them.",
+      "scan_cta": "Scan document"
+    },
+    "upload_sheet": {
+      "title": "Choose source",
+      "camera": "Camera",
+      "library": "Photo library",
+      "document": "Document picker",
+      "email": "Email attachment",
+      "cancel": "Cancel"
+    },
+    "upload": {
+      "progress": "Uploading…",
+      "success": "Document uploaded",
+      "error_generic": "Upload failed. Please try again.",
+      "error_permission_denied": "Permission denied. Enable access in device settings.",
+      "error_permission_denied_title": "Permission needed",
+      "error_permission_denied_body": "To upload from this source, allow access in device settings.",
+      "open_settings": "Open Settings",
+      "error_unavailable": "This source is unavailable on this device. Try another source.",
+      "error_cancelled": "",
+      "camera_default_name": "Document-{{date}}"
+    },
+    "row": {
+      "size_kb": "{{value}} KB",
+      "size_mb": "{{value}} MB",
+      "default_category_other": "Other",
+      "shared_badge": "Shared",
+      "private_badge": "Private",
+      "version_badge": "v{{n}}"
+    },
+    "share_toggle": {
+      "a11y_share": "Share document with advisor",
+      "a11y_unshare": "Make document private",
+      "error_toast": "Couldn't update sharing. Try again."
+    },
+    "visibility_banner": {
+      "text": "A private document is visible only to you. Your advisor sees shared documents only ({{shared}} now, {{private}} private) — tap the tag to change it anytime.",
+      "text_full_access": "Your advisor has full access — they see every document in this project, including ones marked private. You can narrow their access anytime from the access management screen."
+    },
+    "no_app_config": "Loading app configuration…",
+    "form": {
+      "title": "New document",
+      "subtitle": "Keep contracts, quotes and approvals in one place",
+      "name_label": "Document name",
+      "name_placeholder": "e.g. Plumbing contractor contract",
+      "upload_cta": "Photograph or attach a file / photo",
+      "replace_cta": "Replace file",
+      "private_label": "Private document",
+      "private_hint": "Visible only to you — the advisor won't see it",
+      "more_details": "More details",
+      "category_label": "Document type",
+      "professional_label": "Professional",
+      "expense_label": "Linked expense",
+      "stage_label": "Stage",
+      "save_button": "Save document",
+      "cancel_button": "Cancel",
+      "optional_label": "Optional",
+      "expense_picker_empty_helper": "No expenses in this project yet",
+      "no_expenses_helper": "No expenses in this project yet",
+      "errors": {
+        "name_required": "Document name is required",
+        "name_too_long": "Document name is too long (max 200 chars)",
+        "category_required": "Choose a category"
+      }
+    },
+    "detail": {
+      "screen_title": "Document",
+      "back_label": "Back",
+      "versions_section_label": "Versions",
+      "version_label": "Version {{n}}",
+      "open_version": "Open",
+      "current_badge": "Current",
+      "previous_version_label": "Previous version",
+      "upload_new_version_button": "Upload updated version",
+      "open_document_button": "Open document",
+      "shared_with_advisor": "Shared with the lender",
+      "share_with_advisor_cta": "Share with the lender",
+      "uploaded_by": "Uploaded {{date}} · {{name}}",
+      "loading": "Loading document…",
+      "not_found": "Document not found",
+      "not_found_back_button": "Back to list",
+      "version_added_success": "New version uploaded",
+      "version_added_error": "Upload failed. Please try again.",
+      "options_label": "Options",
+      "menu_share": "Share",
+      "menu_edit": "Edit details",
+      "menu_delete": "Delete",
+      "open_fullscreen_hint": "Tap to open full screen"
+    },
+    "discussion": {
+      "section_title": "Document discussion",
+      "input_placeholder": "Write a reply…",
+      "send_a11y": "Send reply",
+      "empty": "No messages yet. Start the conversation with the first reply.",
+      "empty_title": "No messages yet",
+      "empty_body": "Start the conversation with the first message.",
+      "error_toast": "Couldn't send your reply. Please try again.",
+      "load_error": "Couldn't load the discussion. Pull to refresh.",
+      "load_error_title": "Couldn't load the discussion",
+      "load_error_body": "Check your internet connection.",
+      "advisor_name": "The lender",
+      "client_fallback": "Client",
+      "member_fallback": "Partner",
+      "former_member": "Former member",
+      "delete": {
+        "action": "Long-press to delete this reply",
+        "confirm_title": "Delete reply",
+        "confirm_body": "The reply will be removed from the discussion.",
+        "confirm_cta": "Delete",
+        "success": "Reply deleted",
+        "restored": "Reply restored",
+        "error": "Deletion failed. Try again."
+      }
+    },
+    "search": {
+      "placeholder": "Search by name, category, professional, or date",
+      "clear_label": "Clear search",
+      "no_results_title": "No documents found",
+      "no_results_helper": "Try changing the filter or searching with different words."
+    },
+    "filters": {
+      "all_label": "All"
+    },
+    "section": {
+      "count_label_one": "{{count}} document",
+      "count_label_other": "{{count}} documents"
+    },
+    "viewer": {
+      "close_label": "Close",
+      "image_alt": "Document preview",
+      "downloaded_toast": "Document downloaded to device",
+      "download_failed_toast": "Download failed. Try again.",
+      "signed_url_error_toast": "Unable to open the document right now. Try again.",
+      "row_press_label": "Open {{version_label}}",
+      "loading_overlay": "Loading document…",
+      "load_failed": "We couldn't load the document. Check your connection and try again."
+    },
+    "share": {
+      "button_label": "Share",
+      "button_a11y": "Share document",
+      "dialog_title": "Share the document",
+      "error_toast": "Share failed. Try again.",
+      "loading_overlay": "Preparing to share…"
+    },
+    "storage_warning": {
+      "soft_title": "Heads-up",
+      "soft_body": "~{{remaining_mb}}MB left. Digital Guidance has 5GB.",
+      "hard_title": "You've reached your storage limit",
+      "hard_body": "50MB / 50MB. Upgrade to Digital Guidance for 5GB of storage for all contracts, plans, and receipts.",
+      "upgrade_cta": "Upgrade to Digital Guidance",
+      "dismiss_a11y": "Dismiss notice",
+      "manage_storage_cta": "Delete files to free space",
+      "manage_storage_hint_toast": "Swipe a document to delete",
+      "cap_reached_toast": "You've reached 50MB. Upgrade to Digital Guidance or delete files.",
+      "usage_label": "{{used_mb}} MB / {{total_mb}} MB"
+    },
+    "delete": {
+      "confirm_title": "Delete this document?",
+      "confirm_body": "“{{name}}” will be permanently deleted along with all prior versions. This cannot be undone.",
+      "confirm_button": "Delete",
+      "success_toast": "Document deleted",
+      "error_toast": "Document deletion failed. Try again.",
+      "error_inline_generic": "Document deletion failed. Try again.",
+      "row_swipe_action": "Delete",
+      "detail_button_a11y": "Delete document"
+    },
+    "edit": {
+      "title": "Edit document details",
+      "subtitle": "Change name, category and links — the file itself is unchanged",
+      "success_toast": "Document details updated",
+      "error_toast": "Document update failed. Try again.",
+      "button_a11y": "Edit document details"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Shared & coordinated",
+    "combined_title": "Tasks & Defects",
+    "add_button": "Add task",
+    "completed_on": "Completed · {{date}}",
+    "segment": {
+      "tasks": "Tasks",
+      "defects": "Defects"
+    },
+    "cta": {
+      "new": "New task",
+      "new_survey": "+ Couple survey",
+      "recommended_checklists": "Recommended checklists"
+    },
+    "tab": {
+      "open": "Open",
+      "done": "Done"
+    },
+    "completed": {
+      "group_label": "Completed this week",
+      "empty": {
+        "heading": "No completed tasks yet",
+        "body": "Tasks you mark complete will appear here for one week"
+      }
+    },
+    "empty": {
+      "heading": "No tasks yet — shall we start together?",
+      "body": "Every project starts with a single task. Add the first one."
+    },
+    "filter": {
+      "all": "All",
+      "self": "Mine",
+      "partner": "Partner",
+      "shared": "Shared"
+    },
+    "group": {
+      "overdue": "Overdue",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "this_week": "This week",
+      "this_month": "This month",
+      "no_date": "No date",
+      "count_label_one": "{{count}} task",
+      "count_label_other": "{{count}} tasks",
+      "surveys": "Couple surveys"
+    },
+    "no_results": {
+      "heading": "No tasks in this filter",
+      "body": "Try a different filter or add a new task"
+    },
+    "row": {
+      "checkbox_a11y_mark_complete": "Mark complete",
+      "checkbox_a11y_mark_incomplete": "Mark incomplete",
+      "completed_a11y_suffix": "marked complete",
+      "open_a11y_hint": "Tap to edit",
+      "open_a11y_hint_completed": "Tap to view"
+    },
+    "due": {
+      "by": "Due {{date}}",
+      "yesterday": "Yesterday",
+      "days_ago": "{{count}} days ago",
+      "today": "Today",
+      "today_with_time": "Today, {{time}}",
+      "tomorrow": "Tomorrow",
+      "tomorrow_with_time": "Tomorrow, {{time}}"
+    }
+  },
+  "trust": {
+    "confirm": {
+      "error": "That didn't work. Try again."
+    }
+  },
+  "task": {
+    "form": {
+      "title_create": "New task",
+      "title_edit": "Edit task",
+      "cta_update": "Save",
+      "titleLabel": "What needs doing?",
+      "titlePlaceholder": "Confirm the rebar layout in the kitchen",
+      "descriptionLabel": "Notes",
+      "descriptionPlaceholder": "Details that help you remember — why it matters, what to check, who to ask",
+      "dueDateLabel": "When?",
+      "hasTimeLabel": "Include time",
+      "hasTimeHelper": "For example a meeting — we'll remind you",
+      "timeLabel": "Time",
+      "pickFromCalendar": "Pick a date from the calendar",
+      "quickDate": {
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "this_week": "This week",
+        "weekend": "Weekend"
+      },
+      "assignmentLabel": "Who's it for?",
+      "assignment": {
+        "self": "Me",
+        "self_with_name": "{{name}}",
+        "partner": "Partner",
+        "partner_with_name": "{{name}}",
+        "both": "Both"
+      },
+      "sharedDecision": {
+        "title": "Shared decision",
+        "subtitle": "You both choose from a few options",
+        "explainer": "Each of you picks separately. When you agree — the task closes automatically.",
+        "addOption": "Add option",
+        "optionPlaceholder": "Option {{n}}"
+      },
+      "cta_create": "Create task",
+      "cta_shared_decision": "Open shared decision",
+      "save_success": "Saved",
+      "failure_banner": "Couldn't save — try again?",
+      "error": {
+        "title_required": "Write what the task is — one line is enough",
+        "title_too_long": "Maximum 200 characters",
+        "description_too_long": "Maximum 1000 characters",
+        "assignment_required": "Choose an assignment",
+        "due_at_required_with_time": "Pick a due date when including a time"
+      },
+      "professionalLabel": "Professional",
+      "proPicker": {
+        "placeholder": "Pick from the list or + Add new",
+        "add_cta": "Add a professional",
+        "empty_helper": "No professionals yet. Add one to link tasks to them."
+      }
+    },
+    "owner": {
+      "self": "Mine",
+      "partner": "Partner",
+      "shared": "Shared"
+    },
+    "edit": {
+      "not_found": "Task not found",
+      "update_failed": "Save failed. Try again."
+    },
+    "view": {
+      "title": "Task",
+      "due_label": "Due",
+      "assignee_label": "Assigned to",
+      "reopen_cta": "Reopen task",
+      "edit_a11y": "Edit task",
+      "reopen_success": "Task reopened",
+      "reopen_error": "Reopening failed. Try again.",
+      "professional_label": "Professional",
+      "back_to_summary_a11y": "Back to task details"
+    },
+    "delete": {
+      "confirm_title": "Delete task",
+      "confirm_body": "Delete task “{{title}}”?",
+      "confirm_cta": "Delete",
+      "cancel_cta": "Cancel",
+      "button_a11y": "Delete task",
+      "error_message": "Delete failed. Try again.",
+      "success": "Task deleted",
+      "restored": "Task restored"
+    }
+  },
+  "survey": {
+    "delete": {
+      "confirm_title": "Delete decision",
+      "confirm_body": "Delete “{{title}}”? Saved answers will be hidden along with it.",
+      "confirm_cta": "Delete",
+      "button_a11y": "Delete decision",
+      "error_message": "Deletion failed. Try again.",
+      "success": "Decision deleted",
+      "restored": "Decision restored"
+    },
+    "form": {
+      "title": "New couple survey",
+      "intro": {
+        "title": "Couple survey — shared decision",
+        "body": "A couple survey is how you decide together. You'll both answer, and you'll both see each other's answers."
+      },
+      "type": {
+        "label": "Survey type",
+        "multiple_choice": {
+          "title": "Multiple choice",
+          "desc": "Pick from 2 to 6 options"
+        },
+        "free_text": {
+          "title": "Free text",
+          "desc": "Each of you writes their thoughts"
+        },
+        "pro_con": {
+          "title": "Pro / con",
+          "desc": "Yes or no, no middle ground"
+        }
+      },
+      "question": {
+        "label": "What's the question?",
+        "placeholder": {
+          "multiple_choice": "What shade should we pick for the wall?",
+          "free_text": "What's your biggest concern at this stage?",
+          "pro_con": "Should we sign with this contractor?"
+        }
+      },
+      "binary": {
+        "preview_label": "Preview",
+        "pro": "Pro",
+        "con": "Con",
+        "helper": "Answers will be: ✓ Pro · ✕ Con"
+      },
+      "options": {
+        "label": "Options (2 to 6)",
+        "placeholder": "Option text",
+        "add_cta": "+ Add option",
+        "add_image_cta": "+ Image",
+        "helper": "You can attach images from your saved inspirations, your library, or shoot a new one.",
+        "remove_a11y": "Remove option",
+        "image_remove_a11y": "Remove image",
+        "image_source": {
+          "from_inspirations": "From my inspirations",
+          "from_device": "From device",
+          "cancel": "Cancel"
+        }
+      },
+      "date": {
+        "label": "When do we need to decide?",
+        "placeholder": "Choose a date",
+        "helper": "Adding a date helps — without one, the decision drifts"
+      },
+      "cta_send": "Send survey to {{name}}",
+      "cta_send_solo": "Send survey",
+      "failure_banner": "We couldn't send the survey — try again?",
+      "error": {
+        "type_required": "Pick a survey type",
+        "question_required": "Question is required",
+        "question_too_long": "Maximum 200 characters",
+        "option_label_required": "Please enter option text",
+        "option_label_too_long": "Maximum 80 characters",
+        "options_too_few": "At least 2 options",
+        "options_too_many": "Maximum 6 options",
+        "options_must_be_empty_for_type": "This survey type doesn't support options"
+      }
+    },
+    "solo": {
+      "banner": {
+        "title": "Invite a partner first",
+        "body": "A couple survey needs two people. Invite your partner so you can send surveys and decide together."
+      },
+      "invite_cta": "+ Invite partner"
+    },
+    "card": {
+      "chip_label": "Couple survey",
+      "option_image_a11y": "Image for option {{number}}",
+      "open_a11y_hint": "Tap to open the survey",
+      "status": {
+        "waiting-self": "Not answered yet",
+        "waiting-partner": "Waiting for {{name}}",
+        "agreement-mc": "Decision agreed",
+        "disagreement-mc": "Mismatch",
+        "both-answered": "You both answered",
+        "resolved": "Done"
+      },
+      "type_chip": {
+        "free_text": "Free text",
+        "pro_con": "Pro / con"
+      }
+    },
+    "detail": {
+      "header_title": "Couple survey",
+      "loading": "Loading the survey...",
+      "not_found": "Survey not found. It may have been deleted or you may not have access.",
+      "back_to_tasks_cta": "Back to tasks",
+      "status": {
+        "waiting-self": "Your turn — answer the question to see {{name}}'s answer",
+        "waiting-partner": "Waiting for {{name}}'s answer",
+        "agreement-mc": "Decision agreed — you picked the same answer",
+        "disagreement-mc": "Mismatch — time to talk",
+        "both-answered": "You both answered — time to decide together",
+        "resolved": "Decision saved — done"
+      },
+      "open_conversation_cta": "Open a conversation",
+      "resolution": {
+        "intro": "Write your decision here — both of you will see the summary.",
+        "placeholder": "Our decision...",
+        "save_cta": "Save decision",
+        "cancel_cta": "Cancel",
+        "banner_title": "Your decision",
+        "banner_meta": "Decided by {{name}} on {{date}}",
+        "error_save_failed": "Saving the decision failed. Try again.",
+        "fallback_name": "—"
+      },
+      "nudge": {
+        "prompt": "{{name}} hasn't answered yet — send another reminder?",
+        "cta": "Send reminder",
+        "cooldown_hint": "Reminder sent to {{name}} — you can try again tomorrow.",
+        "error_send_failed": "Sending the reminder failed. Try again."
+      },
+      "your_answer_label": "Your answer",
+      "partner_answer_label": "{{name}}'s answer",
+      "partner_answer_hidden": "{{name}}'s answer will appear when they reply",
+      "partner_fallback": "Partner",
+      "input": {
+        "free_text_placeholder": "Write your answer...",
+        "pro_label": "Pro",
+        "con_label": "Con",
+        "pro_placeholder": "What's the reason to go ahead?",
+        "con_placeholder": "What's the reason against?"
+      },
+      "submit_cta": "Save answer",
+      "match_indicator": {
+        "agreement": "You picked the same answer ✓",
+        "disagreement": "You picked differently"
+      },
+      "error": {
+        "already_answered": "You've already answered this survey",
+        "submit_failed": "Saving your answer failed. Try again."
+      },
+      "solo_banner": "Your project partner was removed. Couple surveys require two people."
+    }
+  },
+  "decisions": {
+    "title": "Decisions",
+    "loading": "Loading decisions...",
+    "error": "We couldn't load your decisions. Try again.",
+    "new_cta": "Add decision",
+    "footer_note": "A decision is settled only once every required participant picks the same thing. A private decision is visible to the couple only.",
+    "empty": {
+      "title": "No decisions yet",
+      "body": "This is where you make the build's decisions together — from the living-room wall color to picking a contractor.",
+      "cta": "+ Open your first decision"
+    },
+    "card": {
+      "opened_by": "Opened by {{name}}",
+      "options_count": "{{count}} options",
+      "deciders_prefix": "Deciders",
+      "deciders_both": "Both partners",
+      "deciders_me": "Just me",
+      "private": "Private",
+      "choice": "Choice: {{label}}",
+      "open_a11y_hint": "Tap to open the decision",
+      "status": {
+        "waiting-self": "Waiting for you",
+        "waiting-partner": "Waiting for {{name}}",
+        "agreement-mc": "You agree",
+        "disagreement-mc": "Needs a talk",
+        "both-answered": "Waiting to decide",
+        "resolved": "Decided"
+      },
+      "resolved_with_date": "Decided · {{date}}"
+    },
+    "form": {
+      "title": "New decision",
+      "question_label": "What are you deciding on?",
+      "question_placeholder": "e.g. Living-room flooring",
+      "options_label": "Options to choose from",
+      "option_placeholder": "Option",
+      "add_option_cta": "+ Add option",
+      "remove_option_a11y": "Remove option",
+      "add_image_cta": "+ Image",
+      "image_remove_a11y": "Remove image",
+      "image_helper": "You can attach a photo to any option — from your gallery or a new shot.",
+      "image_permission_denied": "No camera or photo-library access. You can allow it in device settings.",
+      "image_unavailable": "We couldn't open the camera. You can pick a photo from your gallery instead.",
+      "image_preview_a11y": "The photo chosen for option {{number}}",
+      "deciders_label": "Who decides",
+      "deciders_both": "Both partners",
+      "deciders_me": "Just me",
+      "deciders_solo_hint": "To decide together, invite your partner first.",
+      "private_label": "Private decision",
+      "private_hint": "Visible only to you — the advisor won't see it.",
+      "cta": "Open decision",
+      "failure_banner": "We couldn't open the decision — try again?",
+      "error": {
+        "question_required": "Tell us what you're deciding on",
+        "question_too_long": "200 characters max",
+        "option_required": "Please enter an option",
+        "option_too_long": "80 characters max",
+        "options_too_few": "At least 2 options needed",
+        "options_too_many": "6 options max"
+      }
+    },
+    "detail": {
+      "solo": {
+        "pick_prompt": "Pick your decision",
+        "confirm_cta": "Set decision",
+        "resolved_banner": "Decided · {{date}}",
+        "failure": "Saving the decision failed. Try again.",
+        "option_image_a11y": "Photo of {{label}}"
+      }
+    }
+  },
+  "community": {
+    "header_overline": "Building together",
+    "screen_title": "Community",
+    "add_button": "New post",
+    "loading": "Loading the community…",
+    "error": "Something went wrong loading the community",
+    "empty": {
+      "title": "The community is quiet here",
+      "body": "Share a question, recommendation, or experience — other couples building a home will see it and reply.",
+      "cta": "Write the first post"
+    },
+    "no_results": "No posts match this filter",
+    "filter": {
+      "all_regions": "All regions",
+      "all_stages": "All stages",
+      "saved": "Saved"
+    },
+    "post_type": {
+      "question": "Question",
+      "professional_rec": "Pro recommendation",
+      "experience": "Experience",
+      "warning": "Warning"
+    },
+    "card": {
+      "by_author": "By {{name}}",
+      "anonymous": "User",
+      "open_post": "Open post: {{title}}",
+      "likes": "{{count}} likes",
+      "comments": "{{count}} comments",
+      "saves": "{{count}} saves"
+    },
+    "detail": {
+      "title": "Post",
+      "not_found": "This post was not found or has been removed",
+      "region_stage": "{{region}} · {{stage}}"
+    },
+    "comments": {
+      "title": "Comments",
+      "empty": "No comments yet. Be the first to reply.",
+      "placeholder": "Write a comment…",
+      "send": "Send",
+      "reply": "Reply",
+      "replying_to": "Replying to a comment",
+      "cancel_reply": "Cancel",
+      "you": "You",
+      "author": "User",
+      "send_failed": "Sending the comment failed. Try again."
+    },
+    "form": {
+      "create_title": "New post",
+      "edit_title": "Edit post",
+      "type_label": "Post type",
+      "title_label": "Title",
+      "title_placeholder": "What would you like to share?",
+      "title_error": "A title is required (up to 140 characters)",
+      "content_label": "Content",
+      "content_placeholder": "Add details (optional)…",
+      "region_label": "Region",
+      "stage_label": "Stage",
+      "image_label": "Image",
+      "add_image": "Add image",
+      "remove_image": "Remove image",
+      "content_or_image_error": "Add content or an image",
+      "submit_create": "Publish",
+      "submit_edit": "Save changes",
+      "creating": "Publishing…",
+      "saving": "Saving…",
+      "save_error": "Publishing failed. Please try again.",
+      "submit_hint": "To publish, add a title and either content or an image"
+    },
+    "flag": {
+      "button": "Report",
+      "sheet_title": "Report this post",
+      "sheet_body": "Choose a reason. The post will be hidden from your feed and sent for review.",
+      "spam": "Spam",
+      "off_topic": "Off-topic",
+      "harmful": "Harmful content",
+      "cancel": "Cancel",
+      "done_toast": "Report received. The post is hidden from your feed."
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "delete": {
+      "title": "Delete post",
+      "body": "The post and all its comments will be permanently deleted. Continue?",
+      "confirm": "Delete"
+    },
+    "edit": {
+      "window_closed": "The 1-hour edit window has closed. This post can no longer be edited."
+    }
+  },
+  "chat": {
+    "fab_label": "Ask the Building Advisor",
+    "header_title": "Building Advisor",
+    "header_subtitle": "Ask anything about your budget, payments and decisions",
+    "menu": {
+      "more_a11y": "Options",
+      "new_conversation": "New conversation",
+      "delete_conversation": "Delete conversation"
+    },
+    "clear": {
+      "button_a11y": "Delete conversation",
+      "confirm_title": "Delete this conversation?",
+      "confirm_body": "All messages in this conversation will be permanently deleted. This cannot be undone.",
+      "confirm_cta": "Delete",
+      "error": "Deleting the conversation failed. Try again."
+    },
+    "message_delete": {
+      "action": "Long-press to delete this message",
+      "confirm_title": "Delete message",
+      "confirm_body": "The message will be removed from the conversation history. Answers already given will not change.",
+      "confirm_cta": "Delete",
+      "success": "Message deleted",
+      "restored": "Message restored",
+      "error": "Deletion failed. Try again."
+    },
+    "input_placeholder": "Type a question...",
+    "send": "Send",
+    "attach": "Attach a file",
+    "voice": "Voice input",
+    "listening": "Listening…",
+    "thinking": "The Building Advisor is thinking…",
+    "greeting": "Hi! I know everything about your project — budget, payments, decisions and defects. How can I help?",
+    "quick_questions_title": "Quick questions",
+    "empty_title": "I'm here for any question",
+    "empty_subtitle": "Budget, professionals, permits, timelines — ask me anything.",
+    "starter_prompts_a11y": "Quick questions",
+    "starter_prompts": {
+      "payments_week": "What are my payments this week?",
+      "budget_left": "How much is left in my budget?",
+      "open_decisions": "Which open decisions are waiting for me?",
+      "open_defects": "Which defects are open and who's responsible?",
+      "spent_frame": "How much did I spend on the frame?"
+    },
+    "disclaimer": "Worth confirming with a professional",
+    "save_as_task": "Save as task",
+    "saved": "Saved",
+    "free_warning_one": "1 message left on the free plan",
+    "free_warning_other": "{{count}} messages left on the free plan",
+    "free_cap_title": "You've reached this month's message limit",
+    "free_cap_upgrade": "Upgrading to Digital Guidance gives you unlimited chat",
+    "upgrade_cta": "Upgrade to Digital Guidance",
+    "error_generic": "Something went wrong. Please try again.",
+    "error_rate_limited": "Our system is busy right now, please try again in a minute",
+    "attachment_processing": "Processing file…",
+    "attachment_image": "Image",
+    "attachment_pdf": "Document",
+    "remove_attachment": "Remove file",
+    "cancel": "Cancel",
+    "mic_permission_title": "Microphone access needed",
+    "mic_permission_body": "To use voice input, allow microphone access in Settings.",
+    "open_settings": "Open settings",
+    "origin_badge_label": "Created from a chat with the Building Advisor",
+    "origin_badge_short": "From the Building Advisor"
+  },
+  "success": {
+    "expense": {
+      "eyebrow": "Saved to budget",
+      "title": "Expense added",
+      "body": "The expense was saved to your project budget and synced to both partners in real time.",
+      "body_solo": "The expense was saved to the project budget and the numbers updated in real time.",
+      "remaining_label": "Remaining budget",
+      "primary": "Back to budget",
+      "secondary": "Add another expense"
+    },
+    "stage": {
+      "eyebrow": "Stage {{current}} of {{total}} complete",
+      "title": "Stage complete!",
+      "body": "Well done — you've passed another meaningful milestone on the way home. Update your timeline and budget to match.",
+      "progress_label": "Project progress",
+      "next_hint": "Next stage",
+      "primary": "Go to next stage",
+      "secondary": "Review what's done"
+    },
+    "community": {
+      "eyebrow": "Published in community",
+      "title": "Your post is live",
+      "body": "Community members can already see your post, reply and help. We'll let you know about every new response.",
+      "primary": "View post",
+      "secondary": "Back to community"
+    }
+  },
+  "pro": {
+    "clients": {
+      "title": "My Clients",
+      "empty_heading": "Your first client starts here",
+      "empty_body": "Invite a family to accompany, or share your professional link — your first client is always free.",
+      "empty_cta": "Invite your first client",
+      "invite_cta": "Invite a client",
+      "add_cta": "Add a client",
+      "projects_title": "My projects",
+      "projects_count_a11y": "{{count}} sites",
+      "scope_scoped": "Scoped access",
+      "scope_full": "Full access",
+      "pill": {
+        "pending_approval": "Awaiting your approval",
+        "over_budget": "Over budget",
+        "waiting_external": "Waiting on lender",
+        "ok": "Up to date",
+        "unclaimed": "Not joined yet"
+      },
+      "card_a11y": "{{name}}, {{subtitle}}, {{pill}}"
+    },
+    "supervision": {
+      "filter_count": "Showing {{shown}} of {{total}} sites",
+      "empty_filter": "No sites match this filter",
+      "empty_filter_body": "No site matches the selected filter. Clear it to see every site.",
+      "empty_filter_cta": "Clear filter",
+      "stat": {
+        "active_sites": "Active sites",
+        "awaiting_signoff": "Draws to sign off",
+        "urgent_defects": "Urgent defects",
+        "filter_a11y": "Filter by {{label}}",
+        "filter_all_a11y": "{{label}} — tap to show every site",
+        "filter_all_active_a11y": "{{label}}, showing every site",
+        "filter_active_a11y": "{{label}}, filtered — tap to clear"
+      },
+      "card": {
+        "next_visit_none": "No visit scheduled",
+        "defects_zero": "No open defects",
+        "defects_one": "One open defect",
+        "defects_other": "{{count}} open defects",
+        "milestones_zero": "No draws to sign off",
+        "milestones_one": "One draw to sign off",
+        "milestones_other": "{{count}} draws to sign off",
+        "pill_ok": "Up to date",
+        "pill_awaiting_signoff": "Awaiting your sign-off",
+        "pill_urgent_one": "One urgent defect",
+        "pill_urgent_other": "{{count}} urgent defects",
+        "a11y": "Site {{name}}, {{stage}}, {{status}}"
+      }
+    },
+    "site": {
+      "title": "Site dossier",
+      "loading": "Loading…",
+      "error": "Could not load this project",
+      "not_available": "This site is no longer available",
+      "section": {
+        "milestones": "Financing draws",
+        "defects": "Defects",
+        "reports": "Inspection reports",
+        "audit": "Inspection file"
+      },
+      "milestones_empty": "No draws recorded for this project",
+      "defects_empty": "No open defects in this project",
+      "reports_placeholder": "Inspection reports will appear here after the first visit",
+      "audit_placeholder": "The inspection file will record every action after the first visit",
+      "milestone_seq": "Drawdown {{n}}",
+      "defect_status": {
+        "open": "Open",
+        "in_repair": "In repair",
+        "closed": "Closed",
+        "verified_closed": "Verified fixed"
+      },
+      "defect_verify_cta": "Verify fixed",
+      "defect_verify_title": "Confirm the defect is fixed?",
+      "defect_verify_body": "Confirm you re-checked on site and \"{{title}}\" is fixed. This action is final and can't be undone.",
+      "defect_verified_toast": "Defect marked verified fixed",
+      "defect_urgency": {
+        "low": "Low",
+        "medium": "Medium",
+        "urgent": "Urgent"
+      },
+      "defect_a11y": "Defect: {{title}}, {{status}}, {{urgency}} urgency"
+    },
+    "visit": {
+      "capture_title": "Inspection report",
+      "error": "Couldn't load the visit",
+      "not_available": "This visit is no longer available",
+      "no_findings": "Inspection with no defects",
+      "report_summary": "{{total}} findings · {{urgent}} urgent",
+      "findings_empty_title": "Ready to capture findings",
+      "findings_empty_body": "Add the first finding — photos, location, severity and the required correction.",
+      "row_a11y": "Inspection report, {{status}}",
+      "status": {
+        "draft": "Draft",
+        "issued": "Issued",
+        "cancelled": "Cancelled"
+      },
+      "issue": {
+        "pending": "Report queued — it will send automatically when you're back online.",
+        "failed": "Sending the report failed. Your draft is saved — try again.",
+        "cta": "Issue report",
+        "confirm_title": "Issue the inspection report?",
+        "confirm_body": "The report will be sent to the couple and the contractor and locked read-only. Each finding enters the couple's defect list.",
+        "confirm_body_none": "No findings were recorded. This visit will be logged as an inspection with no defects and sent to the couple."
+      },
+      "start": {
+        "cta": "Start a new visit",
+        "title": "Choose a construction stage",
+        "body": "The visit will be recorded under the stage you choose.",
+        "option_a11y": "Choose stage {{stage}}",
+        "upgrade_required": "Starting a visit for another site requires a HaBoneh PRO subscription.",
+        "error": "Couldn't start the visit. Please try again."
+      },
+      "delete": {
+        "cta": "Delete visit",
+        "confirm_title": "Delete this visit?",
+        "confirm_body": "The visit and its captured findings will be permanently deleted. Meant for a draft opened by mistake — e.g. on the wrong client.",
+        "confirm_cta": "Delete"
+      }
+    },
+    "finding": {
+      "title_new": "New finding",
+      "title_edit": "Edit finding",
+      "add_cta": "Add finding",
+      "add_photo": "Add photo",
+      "photo_helper": "Up to 8 photos · tap a photo to annotate",
+      "remove_photo": "Remove photo",
+      "remove": "Remove finding",
+      "correction_label": "Required correction",
+      "correction_placeholder": "Describe the defect and what needs correcting",
+      "severity_label": "Severity",
+      "severity": {
+        "urgent": "Urgent",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "location_label": "Location",
+      "location_placeholder": "Choose a location",
+      "trade_label": "Responsible trade",
+      "trade_placeholder": "Choose a trade",
+      "dictate": "Voice dictation",
+      "dictate_denied": "Allow microphone access to dictate.",
+      "save": "Save finding",
+      "row_a11y": "{{severity}} finding: {{text}}",
+      "citation_label": "Standard citation",
+      "citation_placeholder": "e.g. IS 1752.1 (roof waterproofing)",
+      "cost_label": "Repair cost estimate (₪)",
+      "cost_placeholder": "0",
+      "cost_helper": "An estimate only — not a quote. Shown in the report next to the finding."
+    },
+    "report": {
+      "title": "Inspection report",
+      "discussion_title": "Report discussion",
+      "findings_title": "Findings",
+      "view_pdf": "View report (PDF)",
+      "pdf_error": "Couldn't open the report. Please try again.",
+      "from_visit_cta": "View inspection report",
+      "cancel": {
+        "cta": "Cancel report",
+        "confirm_title": "Cancel this report?",
+        "confirm_body": "The report will be cancelled and its defects removed from the family's defect list. The cancellation is recorded in the inspection file and cannot be undone.",
+        "confirm_cta": "Cancel report",
+        "blocked": "Cannot cancel — a defect from this report was already verified as fixed or anchors a payment block."
+      }
+    },
+    "audit": {
+      "actor_fallback": "Inspector",
+      "export_cta": "Export inspection file",
+      "export_dialog": "Inspection file",
+      "export_error": "Couldn't export the file. Please try again.",
+      "event": {
+        "visit_issued": "Inspection report issued",
+        "defect_flagged": "Defect recorded",
+        "defect_verified": "Defect verified fixed",
+        "payment_approved": "Payment approved & released",
+        "payment_blocked": "Payment blocked until repair",
+        "payment_block_lifted": "Payment block lifted",
+        "visit_report_cancelled": "Visit report cancelled",
+        "visit_drafted": "Visit draft opened",
+        "expense_recorded": "Expense recorded",
+        "client_task_created": "Task added for the client",
+        "client_decision_created": "Decision raised for the client"
+      }
+    },
+    "stats": {
+      "clients": "Clients",
+      "pending": "Awaiting approval",
+      "over_budget": "Over budget"
+    },
+    "hero": {
+      "pro_chip": "HaBoneh PRO",
+      "subtitle": "{{active}} active projects · {{pending}} pending actions",
+      "subtitle_named": "{{name}} · {{active}} active projects · {{pending}} pending actions",
+      "active_projects_one": "One active project",
+      "active_projects_other": "{{count}} active projects",
+      "pending_actions_one": "One pending action",
+      "pending_actions_other": "{{count}} pending actions"
+    },
+    "weekly": {
+      "title": "Weekly summary",
+      "range": "{{from}}–{{to}}",
+      "milestones": "Draws to approve",
+      "site_visits": "Site visits",
+      "payments": "Payments due",
+      "time_saved": "About 4 hours of collecting documents and records saved this week"
+    },
+    "pending": {
+      "section_title": "Pending actions",
+      "badge_a11y_one": "One pending action",
+      "badge_a11y_other": "{{count}} pending actions",
+      "card_a11y": "{{family}}, {{title}}, {{amount}}, {{status}}",
+      "milestone": {
+        "title": "Approve drawdown {{n}}",
+        "cta": "Go to approval"
+      },
+      "payment": {
+        "title": "Payment {{n}}",
+        "cta": "Go to payment"
+      }
+    },
+    "upgrade": {
+      "banner_title_one": "One client is view-only",
+      "banner_title_other": "{{count}} clients are view-only",
+      "banner_body": "Your first client is always free. For the rest you can see everything, but approving draws and generating the lender report unlock with a HaBoneh Pro subscription.",
+      "cta": "Upgrade to HaBoneh Pro",
+      "blocked_title": "HaBoneh Pro subscription required",
+      "blocked_body": "This client is beyond your free first client. Upgrade to HaBoneh Pro to approve draws and generate reports for them."
+    },
+    "client": {
+      "unavailable": "Access to this project is no longer available",
+      "tabs": {
+        "overview": "Overview",
+        "defects": "Defects",
+        "reports": "Reports",
+        "audit": "File"
+      },
+      "pending_title_one": "1 draw awaiting your approval",
+      "pending_title_other": "{{count}} draws awaiting your approval",
+      "pending_body": "Review the evidence and approve to generate the lender report.",
+      "pending_cta": "Go to draws",
+      "approve_cta": "Approve drawdown {{n}}",
+      "approve_upgrade_cta": "Upgrade to approve",
+      "bank_report_cta": "Lender report",
+      "stat_documents": "Shared documents",
+      "stat_documents_count_one": "1 file",
+      "stat_documents_count_other": "{{count}} files",
+      "budget_utilized": "Budget used",
+      "budget_hidden": "The budget isn't shared with you on this project.",
+      "payments_title": "Financing draws",
+      "payments_empty": "No draws on this project yet.",
+      "documents_title": "Shared documents",
+      "documents_empty": "No shared documents on this project yet.",
+      "tasks_private": "Tasks stay private to the family and aren't shown here.",
+      "budget": {
+        "in_budget": "Within budget",
+        "over_budget": "Over budget"
+      },
+      "stats": {
+        "documents": "Shared documents",
+        "documents_count_one": "1 file",
+        "documents_count_other": "{{count}} files",
+        "expenses": "Recent expenses",
+        "expenses_count_one": "1 this month",
+        "expenses_count_other": "{{count}} this month",
+        "defects": "Open defects",
+        "defects_count_one": "1 open",
+        "defects_count_other": "{{count}} open",
+        "reports": "Inspection reports",
+        "reports_count_one": "1 report",
+        "reports_count_other": "{{count}} reports",
+        "decisions": "Shared decisions",
+        "decisions_count_one": "1 decision",
+        "decisions_count_two": "2 decisions",
+        "decisions_count_other": "{{count}} decisions"
+      },
+      "timeline": {
+        "title": "Project journal",
+        "today": "Today",
+        "actor_unknown": "the family",
+        "document": {
+          "title": "{{title}} · version {{v}} uploaded",
+          "subtitle_none": "Uploaded by {{actor}}",
+          "subtitle_one": "Uploaded by {{actor}} · 1 comment in the thread",
+          "subtitle_other": "Uploaded by {{actor}} · {{count}} comments in the thread"
+        },
+        "milestone_sent": {
+          "title": "Drawdown {{n}} sent for your approval",
+          "subtitle": "Drawdown requested by {{actor}} · {{amount}}"
+        },
+        "milestone_approved": {
+          "title": "You approved drawdown {{n}}",
+          "subtitle": "The report was generated automatically and sent to the bank appraiser"
+        },
+        "defect": {
+          "title": "Defect reported: {{title}}",
+          "subtitle": "Reported by {{actor}}"
+        },
+        "expense": {
+          "title": "Expense recorded: {{title}}",
+          "subtitle": "{{actor}} · {{amount}}"
+        }
+      },
+      "trust_strip": "Every event is logged automatically with a timestamp — who approved, who chose, and what was reported. Your documentation dossier for the whole project.",
+      "list": {
+        "documents_title": "Shared documents",
+        "documents_empty": "No shared documents on this project yet.",
+        "expenses_title": "Expenses",
+        "expenses_empty": "No shared expenses on this project yet.",
+        "defects_title": "Open defects",
+        "defects_empty": "No open defects on this project.",
+        "decisions_title": "Shared decisions",
+        "decisions_empty": "No shared decisions on this project yet."
+      },
+      "decision": {
+        "screen_title": "Shared decision",
+        "loading": "Loading the decision…",
+        "not_found": "This decision is not available to view",
+        "not_found_back_button": "Back to the list",
+        "status_open": "Open",
+        "status_resolved": "Decided",
+        "opened_at": "Opened on {{date}}",
+        "resolved_at": "Decided on {{date}}",
+        "options_title": "Options",
+        "options_empty": "No shared options for this decision.",
+        "anonymous_note": "Answers are shown without identifying which partner answered.",
+        "response_count_one": "1 answer",
+        "response_count_two": "2 answers",
+        "response_count_other": "{{count}} answers",
+        "responses_empty": "No answers to this decision yet.",
+        "other_responses_title": "Other answers",
+        "responses_title": "Answers",
+        "pro_label": "Pro: {{value}}",
+        "con_label": "Con: {{value}}",
+        "resolution_title": "The decision made",
+        "resolution_missing": "The decision was closed without a written rationale."
+      },
+      "fab": {
+        "defect": "New defect",
+        "document": "Upload document"
+      },
+      "quick_actions": {
+        "section_title": "Quick actions",
+        "milestones": "Drawdowns",
+        "visit": "New visit",
+        "tile_open_a11y": "{{label}}, {{count}} waiting",
+        "add_defect": "New defect",
+        "add_expense": "New expense",
+        "add_task": "New task",
+        "add_decision": "New decision"
+      },
+      "add": {
+        "defect_heading": "New defect for the client",
+        "defect_placeholder": "What is the defect?",
+        "urgency_label": "Urgency",
+        "urgency_low": "Low",
+        "urgency_medium": "Medium",
+        "urgency_urgent": "Urgent",
+        "expense_heading": "New expense for the client",
+        "amount_placeholder": "Amount in shekels",
+        "expense_placeholder": "What is this expense for?",
+        "category_label": "Category",
+        "task_heading": "Task for the client",
+        "task_placeholder": "What needs doing?",
+        "due_placeholder": "Due date (optional)",
+        "due_clear": "Clear the due date",
+        "decision_heading": "Decision for the client",
+        "decision_placeholder": "What needs deciding?",
+        "options_label": "Options (2 to 6)",
+        "option_placeholder": "Option {{n}}",
+        "option_add": "Add an option",
+        "option_remove": "Remove option {{n}}",
+        "notes_placeholder": "More detail (optional)",
+        "shared_hint": "This lands in the clients' workspace with your name beside it.",
+        "money_hint": "This changes the clients' budget picture.",
+        "success_defect": "The defect is recorded on the clients' project.",
+        "success_expense": "The expense is recorded on the clients' budget.",
+        "success_task": "The task is on the clients' list.",
+        "success_decision": "The decision is in the clients' workspace.",
+        "error": "We couldn't save that. Give it another go in a moment.",
+        "error_scope": "Recording an expense is open only to a seat the clients granted full access.",
+        "error_no_access": "Your access to this site is no longer live.",
+        "category_missing": "We couldn't load the categories. Give it another go in a moment."
+      },
+      "authored_tasks": {
+        "title": "What you added for the client",
+        "hint": "These are only the items you added. The family's own list stays private.",
+        "empty": "You haven't added a task for the client yet.",
+        "done": "Done"
+      }
+    },
+    "switcher": {
+      "title": "My account",
+      "to_pro": "Go to Pro area",
+      "to_family": "Go to my project",
+      "sheet_title": "Switch site",
+      "open_a11y": "{{name}} — switch to another site",
+      "row_a11y": "{{name}}, {{state}}",
+      "row_current_a11y": "{{name}}, current site",
+      "row_waiting_one": "1 item waiting on you",
+      "row_waiting_other": "{{count}} items waiting on you"
+    },
+    "home": {
+      "hero_title": "HaBoneh PRO",
+      "hero_chip": "PRO",
+      "hero_subtitle": "Hi {{name}} · Site supervisor",
+      "hero_subtitle_no_name": "Your supervision workspace · Site supervisor",
+      "hero_bell_a11y": "Notifications",
+      "account_a11y": "My account",
+      "how_title": "How it works",
+      "how_step_1": "Document a visit and issue an inspection report",
+      "how_step_2": "Release or block the contractor's payment",
+      "how_step_3": "A signed inspection dossier that's kept on file",
+      "demo_title": "Want to see how it works?",
+      "demo_card_title": "Demo site · The Demo family",
+      "demo_card_subtitle": "A guided tour of the supervision area — no real data",
+      "demo_card_a11y": "Open the demo site",
+      "invite_cta": "Invite a client — free",
+      "share_cta": "Share your professional link",
+      "add_first_cta": "Add your first client — free"
+    },
+    "addClient": {
+      "title": "Add a client",
+      "body": "How do you connect to this client?",
+      "invite_label": "Invite a family with our code",
+      "invite_sub": "Generate a code, they type it, and the project opens on their side",
+      "invite_a11y": "Invite a family with our code — generate a join code",
+      "new_label": "Open a site for a client not on the app yet",
+      "new_sub": "Work as usual; the family joins later with a code",
+      "new_a11y": "Open a site for a client not on the app yet",
+      "code_label": "Enter a code I got from a family",
+      "code_sub": "The family already opened a project and sent you a join code",
+      "code_a11y": "Enter a code I got from a family"
+    },
+    "account": {
+      "title": "My account",
+      "section_profile": "Personal details",
+      "section_preferences": "Preferences",
+      "language_label": "Language",
+      "notifications_label": "Notifications on",
+      "notifications_description": "Updates on defects, draws and payments",
+      "logout_label": "Log out",
+      "logout_confirm_title": "Log out of your account?",
+      "logout_confirm_body": "You'll need to sign in again next time.",
+      "logout_confirm_button": "Log out",
+      "logout_cancel_button": "Cancel"
+    },
+    "demo": {
+      "title": "The Demo family",
+      "banner": "Demo mode",
+      "banner_body": "This is a sample site. The data isn't real and isn't saved.",
+      "tabs": {
+        "overview": "Overview",
+        "payments": "Payments",
+        "reports": "Reports & defects",
+        "documents": "Documents"
+      },
+      "overview": {
+        "site_name": "The Demo family home · Ramat HaSharon",
+        "stage": "Current stage: Structure",
+        "stage_chip": "Frame",
+        "stat_open_defects": "Open defects",
+        "stat_awaiting": "Awaiting approval",
+        "stat_reports": "Reports issued"
+      },
+      "report": {
+        "section_title": "Latest inspection report",
+        "issued_label": "Issued · Locked",
+        "date": "3 days ago",
+        "stage": "Structure stage",
+        "summary": "3 findings · report delivered to the couple and contractor",
+        "finding_1": "Crack in the safe-room wall",
+        "finding_1_severity": "Urgent",
+        "finding_2": "Missing roof insulation",
+        "finding_2_severity": "Medium",
+        "finding_3": "Poor finish at the door frame",
+        "finding_3_severity": "Low"
+      },
+      "milestone": {
+        "section_title": "Draw approval",
+        "stage": "Structure pour · 1st floor",
+        "amount_label": "Contractor payment",
+        "checklist_1": "Stage complete",
+        "checklist_2": "Supervision notes recorded",
+        "checklist_3": "Shared evidence attached",
+        "approve_cta": "Approve & release payment",
+        "block_cta": "Block payment",
+        "demo_note": "Display only"
+      },
+      "documents": {
+        "section_title": "Shared documents",
+        "doc_1": "Building permit",
+        "doc_2": "Inspection report · Structure stage",
+        "doc_3": "Structural drawings"
+      },
+      "expenses": {
+        "exp_1": "Floor tiling, 1st floor · ₪42,000",
+        "exp_2": "Stone facade cladding · ₪90,000"
+      },
+      "audit": {
+        "section_title": "Inspection dossier",
+        "immutable_note": "Permanent record — cannot be edited",
+        "entry_1_actor": "Dana, the supervisor",
+        "entry_1_desc": "Inspection report issued · Structure stage",
+        "entry_1_time": "3 days ago, 14:30",
+        "entry_2_actor": "Dana, the supervisor",
+        "entry_2_desc": "Payment blocked · urgent defect linked",
+        "entry_2_time": "3 days ago, 14:45",
+        "entry_3_actor": "Dana, the supervisor",
+        "entry_3_desc": "Defect fix approved · safe-room crack",
+        "entry_3_time": "Yesterday, 09:10"
+      },
+      "cta": "Invite a real client — free"
+    },
+    "catalog": {
+      "open_button": "Pick from defect catalog",
+      "open_hint": "A catalog finding arrives with a standard citation and cost estimate",
+      "linked": "Linked to the catalog — everything stays editable",
+      "sheet_title": "Defect catalog",
+      "search_placeholder": "Search by name, description or standard",
+      "all_categories": "All",
+      "empty": "No matching defects found",
+      "cost_estimate": "Estimate: {{range}}",
+      "cost_unit": {
+        "sqm": "per sqm",
+        "meter": "per meter"
+      },
+      "categories": {
+        "waterproofing": "Waterproofing & damp",
+        "plumbing": "Plumbing & sanitation",
+        "electrical": "Electrical & comms",
+        "flooring": "Flooring & cladding",
+        "plaster_paint": "Plaster & paint",
+        "windows_aluminum": "Windows & aluminum",
+        "doors_carpentry": "Doors & carpentry",
+        "shell_concrete": "Structure & concrete",
+        "railings_stairs": "Railings & stairs",
+        "gypsum": "Drywall",
+        "site_development": "Site & exterior",
+        "safety_general": "Safety & general"
+      }
+    },
+    "signature": {
+      "cta": "On-site client signature (optional)",
+      "signed_by": "Signed: {{name}} · change",
+      "sheet_title": "Report receipt confirmation",
+      "sheet_body": "The client's signature is attached to the issued report and records on-site receipt.",
+      "name_label": "Signer name",
+      "name_placeholder": "Full name",
+      "pad_label": "Signature",
+      "remove": "Remove signature",
+      "save": "Save signature"
+    },
+    "branding": {
+      "row_label": "My branded report",
+      "title": "Report branding",
+      "subtitle": "These details appear on every issued inspection report — logo, business name, credentials and limitations.",
+      "logo_label": "Logo",
+      "logo_cta": "Upload logo",
+      "business_name_label": "Business name",
+      "business_name_placeholder": "e.g. Israel Israeli — Building Inspection",
+      "credentials_label": "Credentials & experience",
+      "credentials_helper": "Shown under the business name at the top of the report.",
+      "credentials_placeholder": "e.g. Certified practical engineer · 15 years of experience",
+      "limitations_label": "Report limitations",
+      "limitations_helper": "A fixed legal section printed at the end of every report. Editable.",
+      "limitations_default": "This report reflects the property condition at the time of the visit only. The inspection is visual and does not include opening walls, destructive testing or lab tests. Cost figures are estimates only and are not a quote. This report does not replace a structural engineer inspection where one is required.",
+      "saved": "Branding saved"
+    },
+    "annotate": {
+      "title": "Annotate photo",
+      "open_a11y": "Open photo annotation",
+      "color_a11y": "Pick annotation color",
+      "undo": "Undo last stroke"
+    },
+    "newClient": {
+      "cta": "New client — not on the app yet",
+      "title": "New client",
+      "subtitle": "Open a site for a client who has not joined yet — visit, document and issue reports as usual. When the family joins with the pairing code, the site transfers to them with its full history.",
+      "name_label": "Client or site name",
+      "name_placeholder": "e.g. The Cohen family — Modiin",
+      "region_label": "Region",
+      "region_placeholder": "Pick a region",
+      "create": "Open site",
+      "upgrade_required": "A HaBoneh Pro subscription is required to add another client.",
+      "claim_title": "Family pairing code",
+      "claim_body": "When the family enters this code, this site transfers to them — reports, defects and history included.",
+      "claim_banner_title": "The family has not joined yet",
+      "claim_banner_cta": "Create a pairing code that hands them the site",
+      "delete_cta": "Delete site (created by mistake)",
+      "delete_confirm_title": "Delete this site?",
+      "delete_confirm_body": "The site, its visits and reports will be permanently deleted. Possible only while the family has not joined.",
+      "delete_confirm_cta": "Delete site"
+    },
+    "nextVisit": {
+      "title": "Next visit",
+      "set": "Set",
+      "change": "Change",
+      "empty": "No next visit set yet — the family sees the date the moment you set one.",
+      "note_placeholder": "What will this visit check? (optional)",
+      "clear": "Cancel visit"
+    },
+    "defect": {
+      "verify": {
+        "title": "Verify repair",
+        "cta": "Verify repair",
+        "intro": "Verifying the repair of \"{{title}}\" records what was checked. Add after-photos and a short note.",
+        "note_label": "Verification note",
+        "note_placeholder": "What was checked and found sound…",
+        "add_photo": "Add photo",
+        "photo_helper": "Up to 4 after-repair photos",
+        "remove_photo": "Remove photo",
+        "photos_scoped_seat": "Your current access level does not include photo uploads. You can verify with a note only.",
+        "terminal_warning": "Once verified, the defect closes permanently — neither it nor the note can be edited.",
+        "error": "Verification failed. Please try again.",
+        "upload_error": "The photo upload failed, so nothing was verified. Please try again.",
+        "unavailable": "This defect cannot be verified.",
+        "confirm_title": "Confirm the repair was made?",
+        "confirm_body": "Confirming states that you inspected \"{{title}}\" on site and found the repair done. The defect closes permanently, the statement is recorded in the supervision file, and it cannot be undone.",
+        "confirm_cta": "Confirm verification",
+        "success": "Repair verified — defect closed",
+        "note_too_long": "That note is too long. Trim it to 2000 characters.",
+        "evidence_required": "Add a photo or a note so the family knows what was checked.",
+        "upgrade_required": "Verifying a defect for an additional client requires a HaBoneh Pro subscription.",
+        "error_generic": "Verification failed. Please try again.",
+        "error_upload_failed": "The photo upload failed, so nothing was verified. Please try again.",
+        "error_not_active_advisor": "Your access to this site is no longer active.",
+        "error_already_verified": "This defect was already verified. Your note and photos were not saved.",
+        "error_deleted": "This defect was deleted and cannot be verified.",
+        "error_pro_upgrade_required": "Verifying a defect for an additional client requires a HaBoneh Pro subscription.",
+        "photo_permission_denied": "No camera or gallery permission. You can change that in Settings.",
+        "photo_unavailable": "Cannot take or pick a photo right now. Try another source."
+      }
+    },
+    "dashboard": {
+      "title": "My office",
+      "tab_label": "Office",
+      "open_a11y": "My office",
+      "open_waiting_a11y_one": "My office, 1 site waiting on you",
+      "open_waiting_a11y_other": "My office, {{count}} sites waiting on you",
+      "summary_title": "Today at a glance",
+      "summary": {
+        "visits": "Visits today",
+        "waiting": "Waiting on you",
+        "unscheduled": "No visit booked"
+      },
+      "today_title": "Today",
+      "agenda_overdue": "Past due",
+      "desk_title": "Waiting on you",
+      "desk_unavailable": "We couldn't load this list right now. Try again in a moment.",
+      "sites_title": "My sites",
+      "sites_empty": "No sites in the office yet. The first client starts here.",
+      "cleared_title": "Nothing is waiting on you",
+      "cleared_body": "Every report is issued, no drawdown needs approval and no defect is awaiting verification.",
+      "desk": {
+        "milestone": {
+          "title": "A drawdown is waiting for your approval",
+          "body": "frozen until you decide"
+        },
+        "draft": {
+          "title": "Visit report never issued",
+          "body_one": "A {{stage}} visit has been a draft for 1 day. Until it is issued the family sees none of the findings.",
+          "body_other": "A {{stage}} visit has been a draft for {{days}} days. Until it is issued the family sees none of the findings."
+        },
+        "verify": {
+          "title": "A defect was marked fixed and awaits your verification",
+          "body_one": "{{defect}} · marked fixed 1 day ago",
+          "body_other": "{{defect}} · marked fixed {{days}} days ago"
+        },
+        "urgent": {
+          "title_one": "Urgent defect open for 1 day",
+          "title_other": "Urgent defect open for {{days}} days"
+        }
+      }
+    },
+    "tasks": {
+      "title": "My tasks",
+      "title_in_site": "My tasks on this site",
+      "add_cta": "Add task",
+      "scope_global": "General",
+      "scope_client": "For a site",
+      "empty": "No open tasks.",
+      "private_hint": "Only you can see these.",
+      "unavailable": "We couldn't load your tasks right now. Please try again in a moment.",
+      "title_placeholder": "What needs doing?",
+      "notes_placeholder": "More detail (optional)",
+      "due_placeholder": "Due date (optional)",
+      "due_clear": "Clear the due date",
+      "overdue": "Overdue",
+      "completed_toggle": "Completed ({{count}})",
+      "completed_more": "And {{count}} more completed.",
+      "tick_a11y": "Mark \"{{title}}\" done",
+      "untick_a11y": "Unmark \"{{title}}\"",
+      "delete_a11y": "Delete \"{{title}}\"",
+      "create_success": "Task saved.",
+      "create_error": "We couldn't save the task. Please try again in a moment.",
+      "delete_success": "Task deleted.",
+      "delete_error": "We couldn't delete the task. Please try again in a moment.",
+      "delete_restored": "Task restored."
+    },
+    "journal": {
+      "title": "Work journal",
+      "entry_body": "Everything you documented, across every site",
+      "open_a11y": "Open the work journal",
+      "empty": "No entries in this range.",
+      "unavailable": "We couldn't load the journal right now. Try again in a moment.",
+      "range": {
+        "month": "This month",
+        "quarter": "Last 3 months",
+        "all": "Everything"
+      },
+      "export_cta": "Export the journal",
+      "export_dialog": "Work journal",
+      "export_error": "We couldn't export the journal. Try again in a moment.",
+      "export_empty": "Nothing to export in this range.",
+      "capped": "Showing {{shown}} of {{total}} entries in this range.",
+      "capped_cta": "Load more entries"
+    }
+  },
+  "professional_access": {
+    "title": "Manage access",
+    "manage_cta": "Manage access",
+    "no_advisor": "No advisor is connected to this project.",
+    "scoped_title": "Limited access",
+    "scoped_title_named": "{{name}}'s access is limited",
+    "scoped_explain": "Your advisor sees only what you've shared: shared documents, expenses and defects assigned to them, and draws awaiting their approval.",
+    "full_title": "Full access",
+    "full_title_named": "{{name}} has full access",
+    "full_explain": "Your advisor sees all project activity.",
+    "switch_to_full_cta": "Share everything with your advisor",
+    "switch_to_scoped_cta": "Limit to shared items only",
+    "revoke_cta": "Remove advisor access",
+    "confirm_full": {
+      "title": "Share the whole project?",
+      "body": "Your advisor will get access to all activity on this project only — not your account. You can remove access at any time.",
+      "confirm": "Share fully"
+    },
+    "confirm_revoke": {
+      "title": "Remove advisor access?",
+      "body": "Your advisor will lose access to the project. You can always invite them again.",
+      "confirm": "Remove access"
+    },
+    "full_success": "Your advisor now has full access to the project",
+    "scoped_success": "Your advisor is now limited to shared items only",
+    "revoke_success": "Advisor access removed",
+    "error": "Something went wrong. Please try again.",
+    "next_visit": "Next visit: {{date}}"
+  },
+  "proInvite": {
+    "presence": {
+      "none_title": "Add a professional",
+      "none_body": "Invite your accompanist or advisor to view the project and work alongside you.",
+      "none_cta": "Invite a professional",
+      "pending_title": "Invitation sent",
+      "pending_body": "Waiting for your professional to join the project.",
+      "pending_cta": "Resend",
+      "connected_title": "Professional connected",
+      "connected_body": "Your professional is viewing the project within the permissions you set."
+    },
+    "family": {
+      "title": "Invite a professional",
+      "body": "Send an invite link to your professional. Even if they don't have an account yet, they can join directly.",
+      "scope_disclosure": "The professional gets access to this project only, within the permissions you set, and you can revoke it at any time.",
+      "share_whatsapp": "Share on WhatsApp",
+      "share_other": "Share another way",
+      "share_message": "I've invited you to accompany our project on HaBoneh. Join here: {{link}}",
+      "sent_toast": "Invitation ready to share",
+      "error": "Couldn't create the invitation. Please try again."
+    },
+    "client": {
+      "title": "Invite a client",
+      "body": "Send the family a join link. Joining is free for them — as part of your accompaniment.",
+      "share_message": "I've invited you to join your project on HaBoneh, as part of my accompaniment. Join here: {{link}}",
+      "share_whatsapp": "Share on WhatsApp",
+      "share_other": "Share another way"
+    },
+    "landing": {
+      "title": "HaBoneh invitation",
+      "pitch_title": "You've been invited to accompany a project on HaBoneh",
+      "pitch_title_family": "You've been invited to your project on HaBoneh",
+      "pitch_body": "{{inviter}} invited you to the project \"{{project}}\". Sign in to go straight in — no complex setup, no sales call.",
+      "pitch_body_family": "{{inviter}} set up your project on HaBoneh. Sign in to get started.",
+      "scope_disclosure": "Your access is limited to this project only, within the permissions the family set.",
+      "fee_free": "Joining is free — part of your professional accompaniment.",
+      "accept_cta": "Enter the project",
+      "verify_cta": "Sign in and join",
+      "expired_title": "This invitation has expired",
+      "expired_body": "Ask the family for a new invitation.",
+      "claimed_title": "This invitation was already used",
+      "claimed_body": "You've already joined this project. Sign in to enter.",
+      "invalid_title": "This link isn't valid",
+      "invalid_body": "Ask the family for a new invitation."
+    },
+    "accept_error": {
+      "not_found": "Invitation not found. Ask for a new one.",
+      "already_claimed": "This invitation was already used.",
+      "expired": "This invitation has expired. Ask for a new one.",
+      "own_project": "You can't accompany a project you're a family member of.",
+      "generic": "Couldn't join. Please try again."
+    }
+  },
+  "milestone": {
+    "detail": {
+      "title": "Financing draw",
+      "not_found": "Draw not found"
+    },
+    "status": {
+      "pending_approval": "Pending approval",
+      "blocked": "Payment held for repair",
+      "approved": "Approved",
+      "sent_to_lender": "Sent to lender"
+    },
+    "evidence": {
+      "title": "Evidence",
+      "empty": "No shared evidence for this stage yet",
+      "kind_document": "Document"
+    },
+    "approval_hint": "You can approve this drawdown at any time. Attaching evidence and notes is optional — it strengthens the lender report.",
+    "notes": {
+      "title": "Accompanist notes",
+      "placeholder": "Add notes to accompany the lender report",
+      "save_cta": "Save notes",
+      "saved": "Notes saved",
+      "save_failed": "Couldn't save notes"
+    },
+    "approve": {
+      "cta": "Approve draw",
+      "confirm_title": "Approve this draw?",
+      "confirm_body": "After approval you can generate the report and send it to the lender.",
+      "confirm_cta": "Approve",
+      "success": "Draw approved",
+      "failed": "Approval failed"
+    },
+    "report": {
+      "generate_cta": "Generate & share",
+      "regenerate_cta": "Regenerate & share",
+      "share_title": "Lender Draw Report",
+      "generated": "Report generated",
+      "failed": "Report generation failed"
+    },
+    "sent": {
+      "cta": "Mark as sent to lender",
+      "confirm_title": "Mark as sent to lender?",
+      "confirm_body": "This updates the status for the family and the inspector.",
+      "confirm_cta": "Mark sent",
+      "success": "Marked as sent to lender",
+      "failed": "Update failed",
+      "done_note": "Report sent to lender"
+    },
+    "family": {
+      "waiting_body": "This draw is waiting for your Accompanist. It's sent to the bank after approval.",
+      "approved_body": "Your Accompanist approved this draw. The report is on its way to the bank.",
+      "sent_body": "The report was sent to the bank."
+    },
+    "schedule": {
+      "section_label": "Financing draws",
+      "waiting": "Waiting for your Accompanist · sent to the bank after approval",
+      "fallback_stage": "Draw"
+    },
+    "pro": {
+      "pending_pill_one": "1 pending",
+      "pending_pill_other": "{{count}} pending"
+    },
+    "signoff": {
+      "checklist_title": "Approval conditions",
+      "check": {
+        "stage_complete": "Stage complete",
+        "notes": "Inspection notes present",
+        "evidence": "Shared evidence attached"
+      },
+      "signer_fallback": "Inspector",
+      "signature": "Signed by {{name}} · final approval",
+      "approve_title": "Approve draw & release payment",
+      "approve_body": "The {{amount}} payment will be released to the contractor and the couple notified. This is recorded in the inspection file.",
+      "approve_confirm": "Sign & approve",
+      "block_cta": "Block payment",
+      "block_title": "Block payment until fixed",
+      "block_body": "The payment won't be released until the linked defects are fixed and verified. The couple and contractor are notified. This is recorded in the inspection file.",
+      "block_confirm": "Sign & block",
+      "link_label": "Link at least one open urgent defect",
+      "link_none": "No open urgent defects to link",
+      "block_success": "Payment held until repair",
+      "block_failed": "Couldn't block the payment. Please try again."
+    },
+    "block": {
+      "title": "Payment held for repair",
+      "explain": "The inspector blocked this payment until the following defects are fixed. The block lifts automatically once they are all fixed and verified."
+    }
+  },
+  "payments": {
+    "hero": {
+      "title": "Mortgage drawdowns",
+      "subtitle_one": "Construction mortgage · {{total}} · 1 drawdown",
+      "subtitle_other": "Construction mortgage · {{total}} · {{count}} drawdowns",
+      "released_note": "released so far"
+    },
+    "timeline": {
+      "pulse": "Drawdown {{n}}",
+      "sub_pending": "Awaiting your Accompanist",
+      "sub_approved": "Approved · report on its way to the bank",
+      "sub_sent": "Sent to the bank"
+    },
+    "future_link": "Upcoming payments",
+    "empty": {
+      "title": "No mortgage drawdowns yet",
+      "body": "Drawdowns will appear here once your Accompanist sets them up."
+    },
+    "error": {
+      "title": "We couldn't load the drawdowns",
+      "retry_cta": "Try again"
+    }
+  },
+  "pairingCode": {
+    "display": {
+      "family_title": "Connect your advisor",
+      "family_body": "Show your professional advisor this code. They enter it in the app to connect to your project.",
+      "family_scope": "Your advisor gets access to this project only, within the permissions you set — revocable anytime.",
+      "client_title": "Connect a new family",
+      "client_body": "Show the family this code. They enter it in the app to join — free, as part of your guidance.",
+      "expires_in": "Code expires in {{time}}",
+      "expired": "Code expired — generate a new one",
+      "regenerate": "New code",
+      "error": "Could not create the code. Please try again."
+    },
+    "entry": {
+      "title": "Enter connection code",
+      "subtitle": "Enter the 6-digit code shown on the other person's screen.",
+      "submit": "Connect",
+      "error": {
+        "not_found": "Code not found or expired. Ask for a new code.",
+        "already_claimed": "This code was already used.",
+        "expired": "The code expired. Ask for a new code.",
+        "own_project": "You can't advise a project you're a family member of.",
+        "rate_limited": "Too many attempts. Wait a moment and try again.",
+        "generic": "Connection failed. Please try again."
+      }
+    },
+    "pro_home": {
+      "enter_code_cta": "I have a family code"
+    }
+  },
+  "attribution": {
+    "by_pro": "Added by the inspector",
+    "by_pro_named": "Added by {{name}}",
+    "pro_short": "the inspector"
+  }
+}

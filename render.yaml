@@ -1,0 +1,51 @@
+# Render blueprint — free plan only.
+#   admin-console : Node web service (sleeps when idle on the free plan)
+#   landing       : static site built from landing/ (HE + EN, legal pages)
+# Secrets (SUPABASE_SERVICE_ROLE_KEY, ADMIN_PASSWORD) are set in the Render
+# dashboard, never here.
+services:
+  - type: web
+    name: haboneh-admin
+    runtime: node
+    plan: free
+    region: frankfurt
+    rootDir: admin-console
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: '20'
+      - key: SUPABASE_URL
+        value: https://bfuvdoeaoispektxfqid.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+
+  - type: web
+    name: haboneh-landing
+    runtime: static
+    plan: free
+    rootDir: landing
+    buildCommand: python3 build.py
+    staticPublishPath: dist
+    autoDeploy: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+    routes:
+      - type: rewrite
+        source: /privacy
+        destination: /privacy.html
+      - type: rewrite
+        source: /terms
+        destination: /terms.html
+      - type: rewrite
+        source: /accessibility
+        destination: /accessibility.html
