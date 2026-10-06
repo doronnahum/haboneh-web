@@ -144,7 +144,7 @@ app.get('/', wrap(async (req, res) => {
   const [{ count: projects }, { count: proSeats }, { data: appState }, { count: delReq }, { data: subs }, { count: fm }] =
     await Promise.all([
       sb.from('projects').select('id', { count: 'exact', head: true }),
-      sb.from('project_pro_access').select('id', { count: 'exact', head: true }).eq('status', 'active'),
+      sb.from('project_pro_access').select('id', { count: 'exact', head: true }).eq('status', 'accepted'),
       sb.from('app_state').select('fm_active_count, config_version').limit(1).maybeSingle(),
       sb.from('account_deletion_request').select('*', { count: 'exact', head: true }),
       sb.from('pro_subscriptions').select('user_id, expires_at').gt('expires_at', new Date().toISOString()),
@@ -188,7 +188,7 @@ app.get('/users', wrap(async (req, res) => {
     .map((u) => {
       const p = pById[u.id] ?? {};
       const fam = (members ?? []).filter((m) => m.user_id === u.id).length;
-      const pro = (proAccess ?? []).filter((m) => m.user_id === u.id && m.status === 'active').length;
+      const pro = (proAccess ?? []).filter((m) => m.user_id === u.id && m.status === 'accepted').length;
       const sub = (subs ?? []).find((s) => s.user_id === u.id && new Date(s.expires_at) > new Date());
       const banned = u.banned_until && new Date(u.banned_until) > new Date();
       const role = p.pro_portal_opt_in || p.is_pro_portal || pro ? 'פרו' : fam ? 'משפחה' : 'ללא פרויקט';
@@ -299,7 +299,7 @@ app.get('/projects', wrap(async (req, res) => {
   ]);
   const rows = (projects ?? []).map((p) => {
     const m = (members ?? []).filter((x) => x.project_id === p.id);
-    const pr = (pros ?? []).filter((x) => x.project_id === p.id && x.status === 'active');
+    const pr = (pros ?? []).filter((x) => x.project_id === p.id && x.status === 'accepted');
     return `<tr><td>${esc(p.name ?? '—')}<br><code>${short(p.id)}</code></td><td>${esc(p.build_type)} · ${esc(p.region_code ?? '—')} · ${esc(p.stage_code ?? '—')}</td>
 <td>${m.map((x) => `<code>${short(x.user_id)}</code> <span class="small muted">${esc(x.role)}</span>`).join('<br>') || '<span class="muted">—</span>'}</td>
 <td>${pr.map((x) => `<code>${short(x.user_id)}</code> <span class="small muted">${esc(x.engagement_type ?? '')} · ${esc(x.access_scope)}</span>
@@ -326,7 +326,7 @@ app.post('/projects/:id/member', wrap(async (req, res) => {
 app.post('/projects/:id/pro', wrap(async (req, res) => {
   const userId = String(req.body.user_id ?? '').trim();
   const scope = req.body.access_scope === 'scoped' ? 'scoped' : 'full';
-  const { error } = await sb.from('project_pro_access').insert({ project_id: req.params.id, user_id: userId, status: 'active', access_scope: scope, granted_at: new Date().toISOString() });
+  const { error } = await sb.from('project_pro_access').insert({ project_id: req.params.id, user_id: userId, status: 'accepted', access_scope: scope, granted_at: new Date().toISOString() });
   if (error) throw error;
   await audit('project.add_pro', req.params.id, { userId, scope });
   res.redirect('/projects?ok=' + encodeURIComponent('מושב פרו נוסף'));
