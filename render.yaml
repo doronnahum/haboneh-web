@@ -27,7 +27,6 @@ services:
   - type: web
     name: haboneh-landing
     runtime: static
-    plan: free
     rootDir: landing
     buildCommand: python3 build.py
     staticPublishPath: dist
