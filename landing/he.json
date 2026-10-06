@@ -588,7 +588,7 @@
     },
     "tools": {
       "section_title": "כלי עבודה",
-      "stage_recommended_badge": "מומלץ לשלב שלך",
+      "stage_recommended_badge": "מומלץ לשלב שלכם",
       "tile_a11y": "{{tool}} — פתחו"
     },
     "pro_attention": {
@@ -705,7 +705,7 @@
       "section_title": "כמה זה עולה בערך",
       "section_sub": "טווחי שוק · להערכה בלבד · לא נכנס אוטומטית לתקציב שלכם",
       "source_note": "מבוסס על נתונים שהוזנו ידנית ע״י עורכי הבונה",
-      "empty_title": "אין עדיין נתונים לשלב שלך",
+      "empty_title": "אין עדיין נתונים לשלב שלכם",
       "empty_body_no_data": "טווחי עלויות לשלב הזה ולאזור שלכם עדיין לא הוזנו. הצוות העריכה יוסיף נתונים בעדכונים הבאים.",
       "empty_body_quality_unset": "כדי לראות טווחים מותאמים, הגדירו רמת גימור בפרופיל הפרויקט.",
       "quality_unset": "רמת גימור לא הוגדרה"
@@ -1662,7 +1662,7 @@
       },
       "survey-opened": {
         "title": "{{partner_name}} פתח/ה סקר זוגי",
-        "body": "ממתינים לתשובה שלך."
+        "body": "ממתינים לתשובה שלכם."
       },
       "survey-answered": {
         "title": "{{partner_name}} השיב/ה לסקר",
@@ -1670,14 +1670,14 @@
       },
       "survey-nudge": {
         "title": "תזכורת לסקר מ{{partner_name}}",
-        "body": "ממתינים לתשובה שלך."
+        "body": "ממתינים לתשובה שלכם."
       },
       "comment-on-post": {
-        "title": "{{author_name}} הגיב/ה לפוסט שלך",
+        "title": "{{author_name}} הגיב/ה לפוסט שלכם",
         "body": ""
       },
       "comment-on-comment": {
-        "title": "{{author_name}} הגיב/ה לתגובה שלך",
+        "title": "{{author_name}} הגיב/ה לתגובה שלכם",
         "body": ""
       },
       "payment-due": {
@@ -2476,7 +2476,7 @@
     },
     "community": {
       "eyebrow": "פורסם בקהילה",
-      "title": "הפוסט שלך פורסם",
+      "title": "הפוסט שלכם פורסם",
       "body": "חברי הקהילה כבר יכולים לראות את הפוסט, להגיב ולעזור. נעדכן אותך על כל תגובה חדשה.",
       "primary": "צפייה בפוסט",
       "secondary": "חזרה לקהילה"
