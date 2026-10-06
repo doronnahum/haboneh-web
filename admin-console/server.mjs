@@ -21,6 +21,7 @@
 import { createClient } from '@supabase/supabase-js';
 import express from 'express';
 import { timingSafeEqual } from 'node:crypto';
+import WebSocket from 'ws';
 
 const { SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, ADMIN_PASSWORD, PORT = 3000 } = process.env;
 for (const [k, v] of Object.entries({ SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, ADMIN_PASSWORD })) {
@@ -32,6 +33,8 @@ for (const [k, v] of Object.entries({ SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, A
 
 const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
   auth: { persistSession: false, autoRefreshToken: false },
+  // Node < 22 has no global WebSocket; supabase-js initialises realtime eagerly.
+  realtime: { transport: WebSocket },
 });
 
 const app = express();
